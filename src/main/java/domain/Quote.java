@@ -1,8 +1,10 @@
 package domain;
 
 import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
-import java.util.Vector;
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -30,7 +32,7 @@ public class Quote implements Serializable{
 	@XmlIDREF
 	private Question question;
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	private Vector<Apustua> apustuak = new Vector<Apustua>(); 
+	private LinkedList<Apustua> apustuak = new LinkedList<Apustua>(); 
 
 	public Quote() {
 		super();
@@ -47,12 +49,12 @@ public class Quote implements Serializable{
 		this.forecast = forecast; 
 	}
 
-	public Vector<Apustua> getApustuak() {
+	public List<Apustua> getApustuak() {
 		return apustuak;
 	}
 
-	public void setApustuak(Vector<Apustua> apustuak) {
-		this.apustuak = apustuak;
+	public void setApustuak(List<Apustua> apustuak) {
+		this.apustuak = (LinkedList<Apustua>) apustuak;
 	}
 	
 	public Double getQuote() {

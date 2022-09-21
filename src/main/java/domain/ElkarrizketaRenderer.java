@@ -35,7 +35,7 @@ public class ElkarrizketaRenderer extends JLabel implements ListCellRenderer<Elk
 	         setIcon(imageIcon);
 	         
 	         
-	        	if (elkarrizketa.getElka().denakIrakurrita(user)==false && !isSelected) {
+	        	if (!elkarrizketa.getElka().denakIrakurrita(user) && !isSelected) {
 	 	             setBackground(list.getSelectionBackground().PINK);
 	 	           	 setForeground(list.getSelectionForeground().BLACK);
 	 	            

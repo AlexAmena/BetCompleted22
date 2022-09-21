@@ -23,7 +23,7 @@ public class Event implements Serializable {
 	private String description; 
 	private Date eventDate;
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	private Vector<Question> questions=new Vector<Question>();
+	private Vector<Question> questions=new Vector<>();
 	@XmlIDREF
 	private Sport sport;
 	@XmlIDREF
@@ -118,7 +118,7 @@ public class Event implements Serializable {
 	 * @param question that needs to be checked if there exists
 	 * @return true if the question exists and false in other case
 	 */
-	public boolean DoesQuestionExists(String question)  {	
+	public boolean doesQuestionExists(String question)  {	
 		for (Question q:this.getQuestions()){
 			if (q.getQuestion().compareTo(question)==0)
 				return true;
@@ -159,9 +159,9 @@ public class Event implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Event other = (Event) obj;
-		if (eventNumber != other.eventNumber)
-			return false;
-		return true;
+		return (eventNumber == other.eventNumber);
+			
+		
 	}
 	
 	

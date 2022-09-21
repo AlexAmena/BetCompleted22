@@ -12,7 +12,7 @@ public class Admin extends User implements Serializable{
 
 	public Admin(String username, String password, Integer bankAccount) {
 		super(username, password, bankAccount);
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Admin() {
 		super();
