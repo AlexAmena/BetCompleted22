@@ -1,4 +1,5 @@
 package businessLogic;
+import java.io.Serializable;
 import java.util.Collection;
 //hola
 import java.util.Date;
@@ -34,7 +35,7 @@ import exceptions.QuoteAlreadyExist;
  * It implements the business logic as a web service.
  */
 @WebService(endpointInterface = "businessLogic.BLFacade")
-public class BLFacadeImplementation  implements BLFacade {
+public class BLFacadeImplementation  implements BLFacade{
 	DataAccess dbManager;
 
 	public BLFacadeImplementation()  {		

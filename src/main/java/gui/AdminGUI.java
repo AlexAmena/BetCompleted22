@@ -22,7 +22,6 @@ import javax.swing.JRadioButton;
 import javax.swing.SwingConstants;
 
 import businessLogic.BLFacade;
-import domain.Admin;
 import domain.Event;
 import domain.User;
 
@@ -68,7 +67,6 @@ public class AdminGUI extends JFrame {
 				try {
 					//if (ConfigXML.getInstance().isBusinessLogicLocal()) facade.close();
 				} catch (Exception e1) {
-					// TODO Auto-generated catch block
 					System.out.println("Error: "+e1.toString()+" , probably problems with Business Logic or Database");
 				}
 				System.exit(1);
@@ -87,7 +85,6 @@ public class AdminGUI extends JFrame {
 	 * @return void
 	 */
 	private void initialize() {
-		// this.setSize(271, 295);
 		this.setSize(495, 300);
 		this.setContentPane(getJContentPane());
 		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("AdminTitle"));
