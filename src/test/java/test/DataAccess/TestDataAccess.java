@@ -2,15 +2,18 @@ package test.DataAccess;
 
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
 import domain.Event;
 import domain.Question;
+import domain.Sport;
 import domain.Team;
 
 public class TestDataAccess {
@@ -89,6 +92,74 @@ public class TestDataAccess {
 			} else 
 			return false;
 			
+		}
+		
+		public void addEvent(String description, Date d, Team l, Team k, Sport s) {
+			db.getTransaction().begin();
+			Event ev = new Event(description,d,l,k);
+			ev.setSport(s);
+			ev.setLokala(l);
+			ev.setKanpokoa(k);
+			db.persist(ev);
+			db.getTransaction().commit();
+		}
+		public Team addTeam(String t) {
+			db.getTransaction().begin();
+			Team l = new Team(t);
+			db.persist(l);
+			db.getTransaction().commit();
+			return l;
+		}
+		public Sport addSport(String sportName) {
+			db.getTransaction().begin();
+			Sport s = new Sport(sportName);
+			db.persist(s);
+			db.getTransaction().commit();
+			return s;
+		}
+		public boolean removeTeam(String teamName) {
+			System.out.println(">> DataAccessTest: removeTeam");
+			Team team = db.find(Team.class, teamName);
+			if (team!=null) {
+				db.getTransaction().begin();
+				db.remove(team);
+				db.getTransaction().commit();
+				return true;
+			} else 
+			return false;
+		}
+		public boolean removeSport(String sportName) {
+			System.out.println(">> DataAccessTest: removeSport");
+			Sport s = db.find(Sport.class, sportName);
+			if (s!=null) {
+				db.getTransaction().begin();
+				db.remove(s);
+				db.getTransaction().commit();
+				return true;
+			} else 
+			return false;
+		}
+		public Event findEventWithDescriptionAndDate(String description, Date d) {
+			System.out.println(">> DataAccessTest: findEvent");
+			//db.getTransaction().begin();
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description)) {
+					event = e;
+				}
+			}
+			//db.getTransaction().commit();
+			return event;
 		}
 }
 

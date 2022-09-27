@@ -40,9 +40,10 @@ public class CreateQuestionDAB {
 			String eventText="event1";
 			String queryText="query1";
 			Float betMinimum=new Float(2);
-			Team lokala=new Team("Team1");
-			Team kanpokoa=new Team("Team2");
-			
+			//Team lokala=new Team("Team1");
+			//Team kanpokoa=new Team("Team2");
+			Team lokala = null;
+			Team kanpokoa = null;
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate=null;;
 			try {

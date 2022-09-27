@@ -882,6 +882,7 @@ public void open(boolean initializeMode){
 	
 	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
 		boolean b = true;
+
 		db.getTransaction().begin();
 		Sport spo =db.find(Sport.class, sport);
 		if(spo!=null) {
