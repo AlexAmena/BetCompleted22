@@ -82,6 +82,7 @@ public class GertaerakSortuDAB {
 	public void test2() {
 		try {
 			//Beharrezko datuak sartu
+			System.out.println("Bigarren proba kasua:");
 			description1 = "a-b";
 			d = new Date();
 			l = "a";
@@ -121,8 +122,8 @@ public class GertaerakSortuDAB {
 			testDA.close();
 		}
 	}
-	//@Test
-	/*public void test3() {
+	@Test
+	public void test3() {
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -163,8 +164,8 @@ public class GertaerakSortuDAB {
 			//remove the event
 			testDA.close();
 		}
-	}*/
-	/*@Test
+	}
+	@Test
 	public void test4() {
 		try {
 			//Beharrezko datuak sartu
@@ -206,8 +207,8 @@ public class GertaerakSortuDAB {
 			//remove the event
 			testDA.close();
 		}
-	}*/
-	/*@Test
+	}
+	@Test
 	public void test5() {
 		try {
 			//Beharrezko datuak sartu
@@ -247,8 +248,8 @@ public class GertaerakSortuDAB {
 			//remove the event
 			testDA.close();
 		}
-	}*/
-	/*@Test
+	}
+	@Test
 	public void test6() {
 		try {
 			//Beharrezko datuak sartu
@@ -288,7 +289,7 @@ public class GertaerakSortuDAB {
 			//remove the event
 			testDA.close();
 		}
-	}*/
+	}
 	@Test
 	public void test7() {
 		try {
@@ -303,7 +304,6 @@ public class GertaerakSortuDAB {
 			testDA.open();
 			Team a = testDA.addTeam(l);
 			Team b = testDA.addTeam(k);
-			Sport s = testDA.addSport(sportName);
 			testDA.close();
 
 
@@ -323,7 +323,6 @@ public class GertaerakSortuDAB {
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
-			testDA.removeSport(sportName);
 			testDA.removeTeam(l);
 			testDA.removeTeam(k);
 			//remove the event

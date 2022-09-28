@@ -883,7 +883,7 @@ public void open(boolean initializeMode){
 	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
 		boolean b = true;
 
-		db.getTransaction().begin();
+		//db.getTransaction().begin();
 		Sport spo =db.find(Sport.class, sport);
 		if(spo!=null) {
 			TypedQuery<Event> Equery = db.createQuery("SELECT e FROM Event e WHERE e.getEventDate() =?1 ",Event.class);
@@ -900,12 +900,14 @@ public void open(boolean initializeMode){
 				Event e = new Event(description, eventDate, lokala, kanpokoa);
 				e.setSport(spo);
 				spo.addEvent(e);
+				db.getTransaction().begin();
 				db.persist(e);
+				db.getTransaction().commit();
 			}
 		}else {
 			return false;
 		}
-		db.getTransaction().commit();
+		//db.getTransaction().commit();
 		return b;
 	}
 	

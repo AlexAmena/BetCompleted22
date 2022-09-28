@@ -94,7 +94,7 @@ public class TestDataAccess {
 			
 		}
 		
-		public void addEvent(String description, Date d, Team l, Team k, Sport s) {
+		public Event addEvent(String description, Date d, Team l, Team k, Sport s) {
 			db.getTransaction().begin();
 			Event ev = new Event(description,d,l,k);
 			ev.setSport(s);
@@ -102,6 +102,7 @@ public class TestDataAccess {
 			ev.setKanpokoa(k);
 			db.persist(ev);
 			db.getTransaction().commit();
+			return ev;
 		}
 		public Team addTeam(String t) {
 			db.getTransaction().begin();
