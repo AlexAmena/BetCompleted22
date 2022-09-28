@@ -29,6 +29,7 @@ public class GertaerakSortuDAB {
 
 	@Test
 	public void test1() {
+		System.out.println("\nLehenengo probaren hasiera:\n");
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -76,10 +77,13 @@ public class GertaerakSortuDAB {
 			event = testDA.findEventWithDescriptionAndDate(description1, d);
 			testDA.removeEvent(event);
 			testDA.close();
+			System.out.println("Lehenengo probaren amaiera.\n");
 		}
 	}
 	@Test
 	public void test2() {
+		System.out.println("Bigarren probaren hasiera:\n");
+
 		try {
 			//Beharrezko datuak sartu
 			System.out.println("Bigarren proba kasua:");
@@ -120,10 +124,12 @@ public class GertaerakSortuDAB {
 			//remove the event
 			testDA.removeEvent(event);
 			testDA.close();
+			System.out.println("Bigarren probaren amaiera.\n");
 		}
 	}
 	@Test
 	public void test3() {
+		System.out.println("Hirugarren probaren hasiera:\n");
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -163,10 +169,14 @@ public class GertaerakSortuDAB {
 			//testDA.removeTeam(team);
 			//remove the event
 			testDA.close();
+			System.out.println("Hirugarren probaren amaiera.\n");
 		}
 	}
 	@Test
 	public void test4() {
+		String errorea = "java.lang.NullPointerException";
+		System.out.println("Laugarren probaren hasiera:\n");
+
 		try {
 			//Beharrezko datuak sartu
 			description1 = null;
@@ -188,15 +198,11 @@ public class GertaerakSortuDAB {
 			
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 
-			assertTrue(!emaitza);	
-
-
 			//Egiaztatu dena ondo doala.
 			assertTrue(!emaitza);	
 
 		}catch(Exception e) {
-			e.printStackTrace();
-			fail();
+			assertEquals(e.getClass().getName(),errorea);
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -206,10 +212,14 @@ public class GertaerakSortuDAB {
 			//testDA.removeTeam(team);
 			//remove the event
 			testDA.close();
+			System.out.println("Laugarren probaren amaiera.\n");
+
 		}
 	}
 	@Test
 	public void test5() {
+		System.out.println("Bostgarren probaren hasiera:\n");
+		String errorea = "java.lang.ArrayIndexOutOfBoundsException";
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a b";
@@ -227,18 +237,13 @@ public class GertaerakSortuDAB {
 
 
 			//Deitu probatu nahi den metodoari
-			
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
-
-			assertTrue(!emaitza);	
-
-
+			
 			//Egiaztatu dena ondo doala.
 			assertTrue(!emaitza);	
 
 		}catch(Exception e) {
-			e.printStackTrace();
-			fail();
+			assertEquals(e.getClass().getName(),errorea);
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -247,10 +252,12 @@ public class GertaerakSortuDAB {
 			testDA.removeTeam(k);
 			//remove the event
 			testDA.close();
+			System.out.println("Bostgarren probaren amaiera:\n");
 		}
 	}
 	@Test
 	public void test6() {
+		System.out.println("Seigarren probaren hasiera:\n");
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -288,10 +295,15 @@ public class GertaerakSortuDAB {
 			testDA.removeTeam(k);
 			//remove the event
 			testDA.close();
+			System.out.println("Seigarren probaren amaiera:\n");
+
 		}
 	}
 	@Test
 	public void test7() {
+		System.out.println("Zazpigarren probaren hasiera:\n");
+
+		String errorea = "Unexpected null argument";
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -306,20 +318,22 @@ public class GertaerakSortuDAB {
 			Team b = testDA.addTeam(k);
 			testDA.close();
 
-
 			//Deitu probatu nahi den metodoari
-			
+			try {
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
-
-			assertTrue(!emaitza);	
-
+	
+			
 
 			//Egiaztatu dena ondo doala.
 			assertTrue(!emaitza);	
 
+			}catch (java.lang.IllegalArgumentException e) {
+				System.out.println(e.getMessage());
+				assertEquals(e.getMessage(), errorea);
+			}
 		}catch(Exception e) {
 			e.printStackTrace();
-			fail();
+			assertEquals(e.getMessage(), errorea);
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -327,6 +341,8 @@ public class GertaerakSortuDAB {
 			testDA.removeTeam(k);
 			//remove the event
 			testDA.close();
+			System.out.println("Zazpigarren probaren amaiera.\n");
+
 		}
 	}
 }
