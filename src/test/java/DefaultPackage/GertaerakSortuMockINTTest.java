@@ -38,53 +38,50 @@ public class GertaerakSortuMockINTTest {
 	@Test
 	//sut.createQuestion:  The event has NOT a question with a queryText.
 	public void test1() {
+		String description=null;
+		String firstTeam=null;
+		String secondTeam=null;
+		String sportName = null;
+		Date d = new Date();
+		
 		try {
 			//define paramaters
-			String queryText="proba galdera";
-			Float betMinimum=new Float(2);
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			Date oneDate=null;;
-			try {
-				oneDate = sdf.parse("05/10/2022");
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}	
-
+			description = "a-b";
+			firstTeam = "a";
+			secondTeam = "b";
+			sportName = "sport";
+			d.setMonth(d.getMonth());
+			d.setHours(d.getHours()+24);
+			
 			//configure Mock
-			Mockito.doReturn(oneDate).when(mockedEvent).getEventDate();
-			Mockito.doReturn(new Question(queryText, betMinimum,mockedEvent)).when(dataAccess).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
+			Mockito.doReturn(true).when(dataAccess).gertaerakSortu(description, d, sportName);
 
 
 
 			//invoke System Under Test (sut) 
-			Question q=sut.createQuestion(mockedEvent, queryText, betMinimum);
-
+			boolean emaitza=sut.gertaerakSortu(description, d, sportName);
+			
+			//Egiaztatu emaitza zuzena dela
+			assertTrue(emaitza);
 			//verify the results
 			//Mockito.verify(dataAccess,Mockito.times(1)).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
 
 
-			ArgumentCaptor<Event> eventCaptor = ArgumentCaptor.forClass(Event.class);
-			ArgumentCaptor<String> questionStringCaptor = ArgumentCaptor.forClass(String.class);
-			ArgumentCaptor<Float> betMinimunCaptor = ArgumentCaptor.forClass(Float.class);
+			ArgumentCaptor<String> descriptionCaptor = ArgumentCaptor.forClass(String.class);
+			ArgumentCaptor<Date> dateCaptor = ArgumentCaptor.forClass(Date.class);
+			ArgumentCaptor<String> sportNameCaptor = ArgumentCaptor.forClass(String.class);
 
-			Mockito.verify(dataAccess,Mockito.times(1)).createQuestion(eventCaptor.capture(),questionStringCaptor.capture(), betMinimunCaptor.capture());
-			Float f=betMinimunCaptor.getValue();
+			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
 
-			assertEquals(eventCaptor.getValue(),mockedEvent);
-			assertEquals(questionStringCaptor.getValue(),queryText);
-			assertEquals(betMinimunCaptor.getValue(),betMinimum);
+			assertEquals(descriptionCaptor.getValue(),description);
+			assertEquals(dateCaptor.getValue(),d);
+			assertEquals(sportNameCaptor.getValue(),sportName);
 
-		} catch (QuestionAlreadyExist e) {
-			// TODO Auto-generated catch block
-			assertTrue(true);
-		} catch (EventFinished e) {
-			fail();
-			// TODO Auto-generated catch block
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	@Test
+	/*@Test
 	//sut.createQuestion:  The event is null.
 	public void test3() {
 		try {
@@ -162,10 +159,5 @@ public class GertaerakSortuMockINTTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-
-
-
-
-
+	}*/
 }

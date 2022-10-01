@@ -26,7 +26,6 @@ public class TestFacadeImplementation {
 			boolean b=dbManagerTest.removeEvent(ev);
 			dbManagerTest.close();
 			return b;
-
 		}
 		
 		public Event addEventWithQuestion(String desc, Date d, String q, float qty, Team lokal, Team kanpokoa) {
@@ -34,7 +33,6 @@ public class TestFacadeImplementation {
 			Event o=dbManagerTest.addEventWithQuestion(desc,d,q, qty,lokal,kanpokoa);
 			dbManagerTest.close();
 			return o;
-
 		}
 
 }
