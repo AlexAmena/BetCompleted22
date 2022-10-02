@@ -1,0 +1,4825 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:00:04 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 77-95)
+
+[2022-10-02 00:00:04 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 13644@DESKTOP-V42EGP8
+
+[2022-10-02 00:00:04 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:00:04 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:00:04 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:00:04 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:00:04 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:00:04 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:00:04 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:00:04 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:00:04 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:00:04 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:00:04 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:00:04 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:00:04 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:00:04 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:00:04 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:04:47 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 97-117)
+
+[2022-10-02 00:04:47 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 14180@DESKTOP-V42EGP8
+
+[2022-10-02 00:04:47 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:04:47 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:04:47 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:04:47 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:04:47 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:04:47 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:04:47 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:04:47 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:04:47 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:04:47 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:04:47 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:04:47 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:04:47 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:04:47 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:04:47 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:05:03 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 119-141)
+
+[2022-10-02 00:05:03 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 15660@DESKTOP-V42EGP8
+
+[2022-10-02 00:05:03 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:05:03 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:05:03 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:05:03 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:05:03 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:05:03 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:05:03 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:05:03 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:05:03 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:05:03 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:05:03 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:05:03 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:05:03 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:05:03 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:05:03 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:05:38 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 143-162)
+
+[2022-10-02 00:05:38 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 1548@DESKTOP-V42EGP8
+
+[2022-10-02 00:05:38 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:05:38 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:05:38 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:05:38 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:05:38 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:05:38 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:05:38 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:05:38 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:05:38 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:05:38 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:05:38 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:05:38 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:05:38 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:05:38 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:05:38 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:05:58 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 165-179)
+
+[2022-10-02 00:05:58 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 15788@DESKTOP-V42EGP8
+
+[2022-10-02 00:05:58 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:05:58 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:05:58 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:05:58 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:05:58 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:05:58 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:05:58 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:05:58 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:05:58 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:05:58 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:05:58 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:05:58 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:05:58 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:05:58 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:05:58 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:06:57 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 9532@DESKTOP-V42EGP8
+
+[2022-10-02 00:06:57 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 00:06:57 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:06:57 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 00:06:57 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 00:06:57 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 00:06:57 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 00:06:57 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 00:06:57 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:06:57 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 00:06:57 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 00:06:57 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 00:06:57 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:06:57 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 00:06:57 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 00:06:57 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 00:06:57 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 00:06:57 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:06:57 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 00:06:57 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 00:06:57 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 00:06:57 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 00:06:57 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 00:06:57 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 00:06:57 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 00:06:57 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 00:06:57 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:06:57 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:06:57 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 00:06:57 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 00:06:57 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:06:57 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:06:57 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:06:57 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:06:57 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:06:57 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 00:06:57 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 00:06:57 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:06:57 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:06:57 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 00:06:57 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:06:57 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 00:06:57 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 00:06:57 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 00:06:57 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:07:00 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 00:07:00 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 11140@DESKTOP-V42EGP8
+
+[2022-10-02 00:07:00 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:07:00 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:07:00 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:07:00 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:07:00 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:07:00 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:07:00 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:07:00 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:07:00 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:07:00 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:07:00 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:07:00 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:07:00 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:07:00 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:07:00 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:10:17 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 9640@DESKTOP-V42EGP8
+
+[2022-10-02 00:10:17 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:10:17 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:10:17 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:10:17 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:10:17 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:10:17 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:10:17 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:10:17 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:10:17 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:10:17 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:10:17 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:10:17 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:10:17 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:10:17 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:10:17 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:10:50 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 37-70)
+
+[2022-10-02 00:10:50 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 892@DESKTOP-V42EGP8
+
+[2022-10-02 00:10:50 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:10:50 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:10:50 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:10:50 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:10:50 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:10:50 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:10:50 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:10:50 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:10:50 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:10:50 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:10:50 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:10:50 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:10:50 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:10:50 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:10:50 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:11:28 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 72-105)
+
+[2022-10-02 00:11:28 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10252@DESKTOP-V42EGP8
+
+[2022-10-02 00:11:28 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:11:28 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:11:28 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:11:28 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:11:28 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:11:28 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:11:28 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:11:28 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:11:28 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:11:28 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:11:28 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:11:28 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:11:28 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:11:28 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:11:28 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:11:44 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 107-140)
+
+[2022-10-02 00:11:44 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 9784@DESKTOP-V42EGP8
+
+[2022-10-02 00:11:44 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:11:44 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:11:44 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:11:44 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:11:44 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:11:44 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:11:44 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:11:44 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:11:44 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:11:44 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:11:44 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:11:44 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:11:44 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:11:44 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:11:44 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:12:37 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 142-174)
+
+[2022-10-02 00:12:37 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 12700@DESKTOP-V42EGP8
+
+[2022-10-02 00:12:37 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:12:37 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:12:37 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:12:37 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:12:37 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:12:37 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:12:37 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:12:37 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:12:37 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:12:37 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:12:37 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:12:37 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:12:37 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:12:37 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:12:37 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:15:16 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 176-208)
+
+[2022-10-02 00:15:16 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 19160@DESKTOP-V42EGP8
+
+[2022-10-02 00:15:17 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:15:17 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:15:17 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:15:17 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:15:17 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:15:17 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:15:17 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:15:17 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:15:17 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:15:17 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:15:17 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:15:17 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:15:17 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:15:17 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:15:17 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:15:45 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 210-248)
+
+[2022-10-02 00:15:45 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 16468@DESKTOP-V42EGP8
+
+[2022-10-02 00:15:45 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:15:45 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:15:45 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:15:45 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:15:45 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:15:45 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:15:45 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:15:45 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:15:45 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:15:45 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:15:45 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:15:45 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:15:45 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:15:45 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:15:45 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:16:19 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 250-288)
+
+[2022-10-02 00:16:19 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 18404@DESKTOP-V42EGP8
+
+[2022-10-02 00:16:20 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:16:20 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:16:20 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:16:20 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:16:20 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:16:20 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:16:20 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:16:20 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:16:20 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:16:20 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:16:20 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:16:20 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:16:20 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:16:20 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:16:20 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:18:17 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 290-322)
+
+[2022-10-02 00:18:17 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 15860@DESKTOP-V42EGP8
+
+[2022-10-02 00:18:17 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:18:17 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:18:17 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:18:17 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:18:17 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:18:17 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:18:17 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:18:17 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:18:17 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:18:17 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:18:17 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:18:17 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:18:17 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:18:17 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:18:17 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:21:12 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 324-356)
+
+[2022-10-02 00:21:12 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 1784@DESKTOP-V42EGP8
+
+[2022-10-02 00:21:12 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:21:12 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:21:12 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:21:12 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:21:12 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:21:12 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:21:12 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:21:12 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:21:12 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:21:12 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:21:12 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:21:12 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:21:12 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:21:12 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:21:12 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:22:07 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 358-396)
+
+[2022-10-02 00:22:07 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 8932@DESKTOP-V42EGP8
+
+[2022-10-02 00:22:07 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:22:07 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:22:07 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:22:07 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:22:07 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:22:07 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:22:07 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:22:07 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:22:07 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:22:07 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:22:07 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:22:07 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:22:07 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:22:07 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:22:07 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:22:42 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 398-436)
+
+[2022-10-02 00:22:42 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 15056@DESKTOP-V42EGP8
+
+[2022-10-02 00:22:42 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:22:42 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:22:42 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:22:42 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:22:42 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:22:42 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:22:42 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:22:42 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:22:42 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:22:42 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:22:42 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:22:42 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:22:42 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:22:42 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:22:42 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:24:26 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 438-476)
+
+[2022-10-02 00:24:26 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 13020@DESKTOP-V42EGP8
+
+[2022-10-02 00:24:26 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:24:26 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:24:26 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:24:26 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:24:26 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:24:26 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:24:26 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:24:26 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:24:26 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:24:26 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:24:26 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:24:26 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:24:26 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:24:26 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:24:26 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:25:12 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 478-517)
+
+[2022-10-02 00:25:12 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 5184@DESKTOP-V42EGP8
+
+[2022-10-02 00:25:12 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:25:12 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:25:12 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:25:12 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:25:12 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:25:12 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:25:12 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:25:12 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:25:12 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:25:12 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:25:12 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:25:12 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:25:12 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:25:12 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:25:12 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:25:41 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 519-527)
+
+[2022-10-02 00:25:41 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10760@DESKTOP-V42EGP8
+
+[2022-10-02 00:25:41 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:25:41 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:25:41 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:25:41 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:25:41 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:25:41 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:25:41 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:25:41 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:25:41 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:25:41 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:25:41 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:25:41 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:25:41 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:25:41 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:25:41 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:26:13 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 530-560)
+
+[2022-10-02 00:26:13 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4892@DESKTOP-V42EGP8
+
+[2022-10-02 00:26:13 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:26:13 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:26:13 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:26:13 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:26:13 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:26:13 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:26:13 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:26:13 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:26:13 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:26:13 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:26:13 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:26:13 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:26:13 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:26:13 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:26:13 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:26:16 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 562-601)
+
+[2022-10-02 00:26:16 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4796@DESKTOP-V42EGP8
+
+[2022-10-02 00:26:16 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:26:16 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:26:16 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:26:16 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:26:16 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:26:16 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:26:16 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:26:16 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:26:16 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:26:16 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:26:16 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:26:16 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:26:16 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:26:16 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:26:16 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:26:39 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 603-642)
+
+[2022-10-02 00:26:39 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 18796@DESKTOP-V42EGP8
+
+[2022-10-02 00:26:39 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:26:39 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:26:39 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:26:39 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:26:39 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:26:39 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:26:39 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:26:39 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:26:39 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:26:39 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:26:39 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:26:39 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:26:39 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:26:39 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:26:39 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:26:42 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7188@DESKTOP-V42EGP8
+
+[2022-10-02 00:26:42 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 00:26:42 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:26:42 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 00:26:42 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 00:26:42 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 00:26:42 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 00:26:42 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 00:26:42 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:26:42 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 00:26:42 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 00:26:42 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 00:26:42 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:26:42 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 00:26:42 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 00:26:42 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 00:26:42 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 00:26:42 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:26:42 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 00:26:42 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 00:26:42 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 00:26:42 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 00:26:42 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 00:26:42 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 00:26:42 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 00:26:42 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 00:26:42 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:26:42 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:26:42 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 00:26:42 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 00:26:42 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:26:42 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:26:42 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:26:42 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:26:42 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:26:42 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 00:26:42 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 00:26:42 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:26:42 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:26:42 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 00:26:42 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:26:42 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 00:26:42 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 00:26:42 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 00:26:42 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:26:46 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 00:26:46 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 3804@DESKTOP-V42EGP8
+
+[2022-10-02 00:26:46 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:26:46 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:26:46 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:26:46 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:26:46 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:26:46 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:26:46 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:26:46 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:26:46 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:26:46 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:26:46 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:26:46 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:26:46 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:26:46 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:26:46 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:27:06 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 13-52)
+
+[2022-10-02 00:27:06 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 14316@DESKTOP-V42EGP8
+
+[2022-10-02 00:27:06 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:27:06 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:27:06 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:27:06 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:27:06 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:27:06 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:27:06 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:27:06 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:27:06 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:27:06 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:27:06 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:27:06 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:27:06 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:27:06 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:27:06 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:27:43 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 54-93)
+
+[2022-10-02 00:27:43 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 12600@DESKTOP-V42EGP8
+
+[2022-10-02 00:27:43 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:27:43 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:27:43 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:27:43 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:27:43 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:27:43 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:27:43 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:27:43 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:27:43 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:27:43 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:27:43 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:27:43 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:27:43 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:27:43 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:27:43 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 00:28:52 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 95-134)
+
+[2022-10-02 00:28:52 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10948@DESKTOP-V42EGP8
+
+[2022-10-02 00:28:52 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 00:28:52 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 00:28:52 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 00:28:52 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 00:28:52 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 00:28:52 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 00:28:52 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 00:28:52 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 00:28:52 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 00:28:52 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 00:28:52 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 00:28:52 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 00:28:52 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 00:28:52 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 00:28:52 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:31:35 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 136-168)
+
+[2022-10-02 11:31:35 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 6580@DESKTOP-V42EGP8
+
+[2022-10-02 11:31:35 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:31:35 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:31:35 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:31:35 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:31:35 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:31:35 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:31:35 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:31:35 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:31:35 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:31:35 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:31:35 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:31:35 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:31:35 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:31:35 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:31:35 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:34:00 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 12172@DESKTOP-V42EGP8
+
+[2022-10-02 11:34:00 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:34:00 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:34:00 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:34:00 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:34:00 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:34:00 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:34:00 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:34:00 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:34:00 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:34:00 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:34:00 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:34:00 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:34:00 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:34:00 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:34:00 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:34:00 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:34:00 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:34:00 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:34:00 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:34:00 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:34:00 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:34:00 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:34:00 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:34:00 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:34:00 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:34:00 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:34:00 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:34:00 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:34:00 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:34:00 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:34:00 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:34:00 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:34:00 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:34:00 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:34:00 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:34:00 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:34:00 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:34:00 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:34:00 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:34:00 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:34:00 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:34:00 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:34:00 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:34:00 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:34:03 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 11:34:03 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10816@DESKTOP-V42EGP8
+
+[2022-10-02 11:34:03 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:34:03 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:34:03 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:34:03 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:34:03 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:34:03 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:34:03 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:34:03 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:34:03 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:34:03 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:34:03 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:34:03 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:34:03 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:34:03 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:34:03 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:36:55 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 8944@DESKTOP-V42EGP8
+
+[2022-10-02 11:36:55 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:36:55 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:36:55 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:36:55 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:36:55 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:36:55 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:36:55 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:36:55 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:36:55 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:36:55 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:36:55 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:36:55 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:36:55 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:36:55 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:36:55 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:36:55 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:36:55 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:36:55 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:36:55 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:36:55 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:36:55 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:36:55 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:36:55 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:36:55 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:36:55 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:36:55 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:36:55 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:36:55 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:36:55 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:36:55 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:36:55 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:36:55 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:36:55 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:36:55 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:36:55 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:36:55 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:36:55 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:36:55 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:36:55 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:36:55 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:36:55 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:36:55 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:36:55 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:36:55 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:36:58 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 11:36:58 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7568@DESKTOP-V42EGP8
+
+[2022-10-02 11:36:58 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:36:58 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:36:58 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:36:58 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:36:58 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:36:58 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:36:58 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:36:58 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:36:58 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:36:58 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:36:58 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:36:58 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:36:58 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:36:58 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:36:58 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:37:18 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 19316@DESKTOP-V42EGP8
+
+[2022-10-02 11:37:18 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:37:18 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:37:18 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:37:18 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:37:18 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:37:18 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:37:18 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:37:18 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:37:18 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:37:18 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:37:18 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:37:18 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:37:18 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:37:18 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:37:18 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:37:18 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:37:18 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:37:18 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:37:18 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:37:18 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:37:18 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:37:18 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:37:18 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:37:18 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:37:18 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:37:18 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:37:18 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:37:18 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:37:18 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:37:18 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:37:18 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:37:18 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:37:18 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:37:18 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:37:18 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:37:18 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:37:18 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:37:18 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:37:18 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:37:18 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:37:18 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:37:18 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:37:18 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:37:18 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:37:21 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 11:37:21 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 2688@DESKTOP-V42EGP8
+
+[2022-10-02 11:37:21 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:37:21 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:37:21 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:37:21 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:37:21 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:37:21 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:37:21 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:37:21 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:37:21 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:37:21 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:37:21 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:37:21 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:37:21 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:37:21 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:37:21 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:45:17 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7792@DESKTOP-V42EGP8
+
+[2022-10-02 11:45:17 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:45:17 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:45:17 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:45:17 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:45:17 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:45:17 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:45:17 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:45:17 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:45:17 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:45:17 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:45:17 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:45:17 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:45:17 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:45:17 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:45:17 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:48:58 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 324@DESKTOP-V42EGP8
+
+[2022-10-02 11:48:58 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:48:58 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:48:58 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:48:58 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:48:58 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:48:58 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:48:58 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:48:58 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:48:58 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:48:58 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:48:58 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:48:58 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:48:58 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:48:58 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:48:58 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:49:13 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 18-23)
+
+[2022-10-02 11:49:13 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 11496@DESKTOP-V42EGP8
+
+[2022-10-02 11:49:13 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:49:13 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:49:13 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:49:13 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:49:13 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:49:13 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:49:13 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:49:13 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:49:13 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:49:13 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:49:13 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:49:13 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:49:13 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:49:13 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:49:13 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:49:30 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4560@DESKTOP-V42EGP8
+
+[2022-10-02 11:49:30 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:49:30 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:49:31 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:49:31 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:49:31 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:49:31 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:49:31 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:49:31 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:49:31 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:49:31 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:49:31 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:49:31 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:49:31 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:49:31 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:49:31 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:49:31 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:49:31 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:49:31 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:49:31 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:49:31 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:49:31 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:49:31 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:49:31 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:49:31 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:49:31 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:49:31 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:49:31 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:49:31 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:49:31 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:49:31 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:49:31 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:49:31 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:49:31 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:49:31 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:49:31 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:49:31 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:49:31 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:49:31 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:49:31 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:49:31 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:49:31 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:49:31 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:49:31 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:49:31 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:51:51 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 18656@DESKTOP-V42EGP8
+
+[2022-10-02 11:51:51 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:51:51 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:51:51 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:51:51 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:51:51 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:51:51 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:51:51 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:51:51 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:51:51 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:51:51 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:51:51 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:51:51 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:51:51 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:51:51 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:51:51 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:51:51 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:51:51 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:51:51 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:51:51 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:51:51 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:51:51 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:51:51 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:51:51 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:51:51 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:51:51 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:51:51 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:51:51 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:51:51 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:51:51 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:51:51 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:51:51 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:51:51 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:51:51 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:51:51 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:51:51 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:51:51 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:51:51 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:51:51 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:51:51 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:51:51 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:51:51 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:51:51 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:51:51 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:51:51 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:51:53 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 11:51:53 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7632@DESKTOP-V42EGP8
+
+[2022-10-02 11:51:53 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:51:53 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:51:53 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:51:53 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:51:53 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:51:53 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:51:53 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:51:53 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:51:53 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:51:53 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:51:53 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:51:53 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:51:53 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:51:53 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:51:53 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:53:22 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7816@DESKTOP-V42EGP8
+
+[2022-10-02 11:53:22 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:53:22 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:53:22 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:53:22 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:53:22 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:53:22 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:53:22 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:53:22 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:53:22 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:53:22 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:53:22 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:53:22 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:53:22 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:53:22 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:53:22 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:53:45 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 3776@DESKTOP-V42EGP8
+
+[2022-10-02 11:53:45 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:53:45 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:53:45 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:53:45 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:53:45 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:53:45 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:53:45 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:53:45 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:53:45 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:53:45 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:53:45 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:53:45 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:53:45 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:53:45 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:53:45 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:53:59 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10752@DESKTOP-V42EGP8
+
+[2022-10-02 11:53:59 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 11:53:59 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:53:59 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 11:53:59 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 11:53:59 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 11:53:59 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 11:53:59 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 11:53:59 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:53:59 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 11:53:59 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 11:53:59 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 11:53:59 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:53:59 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 11:53:59 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 11:53:59 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 11:53:59 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 11:53:59 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:53:59 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 11:53:59 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 11:53:59 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 11:53:59 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 11:53:59 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 11:53:59 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 11:53:59 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 11:53:59 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 11:53:59 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:53:59 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:53:59 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 11:53:59 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 11:53:59 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:53:59 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:53:59 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:53:59 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:53:59 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:53:59 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 11:53:59 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 11:53:59 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:53:59 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:53:59 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 11:53:59 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:53:59 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 11:53:59 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 11:53:59 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 11:53:59 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:54:01 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 11:54:01 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7936@DESKTOP-V42EGP8
+
+[2022-10-02 11:54:02 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:54:02 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:54:02 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:54:02 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:54:02 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:54:02 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:54:02 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:54:02 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:54:02 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:54:02 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:54:02 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:54:02 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:54:02 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:54:02 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:54:02 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:54:38 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 12-67)
+
+[2022-10-02 11:54:38 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 9944@DESKTOP-V42EGP8
+
+[2022-10-02 11:54:38 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:54:38 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:54:38 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:54:38 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:54:38 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:54:38 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:54:38 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:54:38 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:54:38 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:54:38 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:54:38 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:54:38 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:54:38 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:54:38 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:54:38 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 11:54:50 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 12380@DESKTOP-V42EGP8
+
+[2022-10-02 11:54:50 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 11:54:50 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 11:54:50 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 11:54:50 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 11:54:50 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 11:54:50 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 11:54:50 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 11:54:50 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 11:54:50 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 11:54:50 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 11:54:50 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 11:54:50 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 11:54:50 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 11:54:50 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 11:54:50 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:00:14 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 69-101)
+
+[2022-10-02 12:00:14 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 13080@DESKTOP-V42EGP8
+
+[2022-10-02 12:00:14 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:00:14 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:00:14 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:00:14 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:00:14 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:00:14 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:00:14 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:00:14 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:00:14 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:00:14 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:00:14 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:00:14 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:00:14 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:00:14 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:00:14 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:00:38 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 103-119)
+
+[2022-10-02 12:00:38 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4516@DESKTOP-V42EGP8
+
+[2022-10-02 12:00:38 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:00:38 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:00:38 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:00:38 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:00:38 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:00:38 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:00:38 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:00:38 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:00:38 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:00:38 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:00:38 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:00:38 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:00:38 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:00:38 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:00:38 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:01:42 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 121-136)
+
+[2022-10-02 12:01:42 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 2332@DESKTOP-V42EGP8
+
+[2022-10-02 12:01:42 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:01:42 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:01:42 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:01:42 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:01:42 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:01:42 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:01:42 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:01:42 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:01:42 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:01:42 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:01:42 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:01:42 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:01:42 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:01:42 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:01:42 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:03:14 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 18824@DESKTOP-V42EGP8
+
+[2022-10-02 12:03:14 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:03:14 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:03:14 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:03:14 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:03:14 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:03:14 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:03:14 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:03:14 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:03:14 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:03:14 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:03:14 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:03:14 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:03:14 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:03:14 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:03:14 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:03:28 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 157-175)
+
+[2022-10-02 12:03:28 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 6052@DESKTOP-V42EGP8
+
+[2022-10-02 12:03:28 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:03:28 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:03:28 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:03:28 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:03:28 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:03:28 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:03:28 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:03:28 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:03:28 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:03:28 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:03:28 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:03:28 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:03:28 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:03:28 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:03:28 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:03:33 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 177-228)
+
+[2022-10-02 12:03:33 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 13784@DESKTOP-V42EGP8
+
+[2022-10-02 12:03:33 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:03:33 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:03:33 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:03:33 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:03:33 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:03:33 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:03:33 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:03:33 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:03:33 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:03:33 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:03:33 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:03:33 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:03:33 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:03:33 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:03:33 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:04:15 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 17864@DESKTOP-V42EGP8
+
+[2022-10-02 12:04:15 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:04:15 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:04:15 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:04:15 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:04:15 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:04:15 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:04:15 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:04:15 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:04:15 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:04:15 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:04:15 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:04:15 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:04:15 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:04:15 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:04:15 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:04:43 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 2708@DESKTOP-V42EGP8
+
+[2022-10-02 12:04:43 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 12:04:43 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:04:43 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 12:04:43 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 12:04:43 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 12:04:43 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 12:04:43 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 12:04:43 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:04:43 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 12:04:43 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 12:04:43 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 12:04:43 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:04:43 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 12:04:43 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 12:04:43 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 12:04:43 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 12:04:43 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:04:43 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 12:04:43 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 12:04:43 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 12:04:43 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 12:04:43 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 12:04:43 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 12:04:43 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 12:04:43 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 12:04:43 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:04:43 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:04:43 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 12:04:43 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 12:04:43 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:04:43 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:04:43 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:04:43 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:04:43 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:04:43 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 12:04:43 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 12:04:43 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:04:43 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:04:43 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 12:04:43 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:04:43 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 12:04:43 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 12:04:43 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 12:04:43 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:05:07 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 12:05:07 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 3492@DESKTOP-V42EGP8
+
+[2022-10-02 12:05:07 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:05:07 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:05:07 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:05:07 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:05:07 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:05:07 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:05:07 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:05:07 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:05:07 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:05:07 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:05:07 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:05:07 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:05:07 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:05:07 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:05:07 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:05:37 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4080@DESKTOP-V42EGP8
+
+[2022-10-02 12:05:37 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 12:05:37 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:05:37 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 12:05:37 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 12:05:37 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 12:05:37 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 12:05:37 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 12:05:37 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:05:37 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 12:05:37 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 12:05:37 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 12:05:37 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:05:37 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 12:05:37 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 12:05:37 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 12:05:37 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 12:05:37 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:05:37 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 12:05:37 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 12:05:37 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 12:05:37 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 12:05:37 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 12:05:37 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 12:05:37 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 12:05:37 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 12:05:37 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:05:37 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:05:37 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 12:05:37 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 12:05:37 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:05:37 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:05:37 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:05:37 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:05:37 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:05:37 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 12:05:37 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 12:05:37 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:05:37 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:05:37 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 12:05:37 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:05:37 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 12:05:37 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 12:05:37 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 12:05:37 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:05:40 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 12:05:40 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 16352@DESKTOP-V42EGP8
+
+[2022-10-02 12:05:40 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:05:40 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:05:40 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:05:40 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:05:40 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:05:40 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:05:40 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:05:40 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:05:40 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:05:40 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:05:40 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:05:40 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:05:40 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:05:40 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:05:40 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:06:05 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 17804@DESKTOP-V42EGP8
+
+[2022-10-02 12:06:05 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 12:06:05 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:06:05 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 12:06:05 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 12:06:05 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 12:06:05 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 12:06:05 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 12:06:05 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:06:05 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 12:06:05 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 12:06:05 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 12:06:05 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:06:05 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 12:06:05 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 12:06:05 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 12:06:05 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 12:06:05 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:06:05 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 12:06:05 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 12:06:05 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 12:06:05 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 12:06:05 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 12:06:05 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 12:06:05 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 12:06:05 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 12:06:05 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:06:05 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:06:05 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 12:06:05 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 12:06:05 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:06:05 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:06:05 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:06:05 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:06:05 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:06:05 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 12:06:05 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 12:06:05 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:06:05 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:06:05 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 12:06:05 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:06:05 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 12:06:05 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 12:06:05 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 12:06:05 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:06:07 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 12:06:07 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 18560@DESKTOP-V42EGP8
+
+[2022-10-02 12:06:07 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:06:07 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:06:07 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:06:07 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:06:07 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:06:07 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:06:07 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:06:07 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:06:07 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:06:07 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:06:07 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:06:07 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:06:07 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:06:07 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:06:07 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:06:13 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 13-46)
+
+[2022-10-02 12:06:13 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 8284@DESKTOP-V42EGP8
+
+[2022-10-02 12:06:13 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:06:13 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:06:13 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:06:13 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:06:13 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:06:13 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:06:13 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:06:13 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:06:13 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:06:13 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:06:13 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:06:13 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:06:13 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:06:13 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:06:13 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:06:51 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 9796@DESKTOP-V42EGP8
+
+[2022-10-02 12:06:51 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 12:06:51 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:06:51 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 12:06:51 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 12:06:51 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 12:06:51 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 12:06:51 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 12:06:51 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:06:51 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 12:06:51 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 12:06:51 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 12:06:51 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:06:51 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 12:06:51 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 12:06:51 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 12:06:51 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 12:06:51 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:06:51 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 12:06:51 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 12:06:51 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 12:06:51 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 12:06:51 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 12:06:51 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 12:06:51 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 12:06:51 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 12:06:51 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:06:51 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:06:51 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 12:06:51 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 12:06:51 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:06:51 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:06:51 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:06:51 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:06:51 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:06:51 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 12:06:51 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 12:06:51 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:06:51 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:06:51 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 12:06:51 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:06:51 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 12:06:51 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 12:06:51 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 12:06:51 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:06:54 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 12:06:54 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 17180@DESKTOP-V42EGP8
+
+[2022-10-02 12:06:54 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:06:54 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:06:54 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:06:54 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:06:54 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:06:54 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:06:54 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:06:54 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:06:54 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:06:54 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:06:54 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:06:54 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:06:54 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:06:54 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:06:54 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:07:04 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 12-67)
+
+[2022-10-02 12:07:04 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 4848@DESKTOP-V42EGP8
+
+[2022-10-02 12:07:04 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:07:04 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:07:04 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:07:04 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:07:04 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:07:04 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:07:04 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:07:04 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:07:04 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:07:04 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:07:04 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:07:04 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:07:04 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:07:04 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:07:04 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:07:23 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 16720@DESKTOP-V42EGP8
+
+[2022-10-02 12:07:23 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:07:23 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:07:23 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:07:23 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:07:23 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:07:23 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:07:23 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:07:23 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:07:23 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:07:23 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:07:23 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:07:23 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:07:23 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:07:23 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:07:23 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:08:13 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 7956@DESKTOP-V42EGP8
+
+[2022-10-02 12:08:13 #2 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:08:13 #3 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:08:13 #4 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:08:13 #5 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:08:13 #6 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:08:13 #7 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:08:13 #8 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:08:13 #9 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:08:13 #10 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:08:13 #11 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:08:13 #12 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:08:13 #13 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:08:13 #14 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:08:13 #15 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:08:13 #16 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:08:33 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 132-163)
+
+[2022-10-02 12:08:33 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 17448@DESKTOP-V42EGP8
+
+[2022-10-02 12:08:33 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:08:33 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:08:33 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:08:33 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:08:33 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:08:33 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:08:33 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:08:33 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:08:33 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:08:33 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:08:33 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:08:33 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:08:33 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:08:33 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:08:33 #17 type] 
+Type domain.Admin is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:09:11 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 10952@DESKTOP-V42EGP8
+
+[2022-10-02 12:09:11 #2 type.registry] 
+New type domain.Team
+
+[2022-10-02 12:09:11 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:09:11 #4 type.registry] 
+New type domain.Event
+
+[2022-10-02 12:09:11 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2022-10-02 12:09:11 #6 type.registry] 
+New type domain.User
+
+[2022-10-02 12:09:11 #7 type.registry] 
+New type domain.Registered
+
+[2022-10-02 12:09:11 #8 type.registry] 
+New type java.util.Vector<domain.Registered>
+
+[2022-10-02 12:09:11 #9 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:09:11 #10 type.registry] 
+New type domain.Sport
+
+[2022-10-02 12:09:11 #11 type.registry] 
+New type domain.Question
+
+[2022-10-02 12:09:11 #12 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2022-10-02 12:09:11 #13 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:09:11 #14 type.registry] 
+New type domain.Elkarrizketa
+
+[2022-10-02 12:09:11 #15 type.registry] 
+New type java.util.Vector<domain.Elkarrizketa>
+
+[2022-10-02 12:09:11 #16 type.registry] 
+New type domain.Message
+
+[2022-10-02 12:09:11 #17 type.registry] 
+New type java.util.Vector<domain.Message>
+
+[2022-10-02 12:09:11 #18 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:09:11 #19 type.registry] 
+New type domain.KirolEstatistikak
+
+[2022-10-02 12:09:11 #20 type.registry] 
+New type java.util.Vector<domain.KirolEstatistikak>
+
+[2022-10-02 12:09:11 #21 type.registry] 
+New type domain.Jarraitzailea
+
+[2022-10-02 12:09:11 #22 type.registry] 
+New type java.util.Vector<domain.Jarraitzailea>
+
+[2022-10-02 12:09:11 #23 type.registry] 
+New type domain.ApustuAnitza
+
+[2022-10-02 12:09:11 #24 type.registry] 
+New type java.util.Vector<domain.ApustuAnitza>
+
+[2022-10-02 12:09:11 #25 type.registry] 
+New type domain.Transaction
+
+[2022-10-02 12:09:11 #26 type.registry] 
+New type java.util.Vector<domain.Transaction>
+
+[2022-10-02 12:09:11 #27 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:09:11 #28 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:09:11 #29 type.registry] 
+New type domain.Quote
+
+[2022-10-02 12:09:11 #30 type.registry] 
+New type java.util.Vector<domain.Quote>
+
+[2022-10-02 12:09:11 #31 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:09:11 #32 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:09:11 #33 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:09:11 #34 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:09:11 #35 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:09:11 #36 type.registry] 
+New type domain.Apustua
+
+[2022-10-02 12:09:11 #37 type.registry] 
+New type java.util.Vector<domain.Apustua>
+
+[2022-10-02 12:09:11 #38 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:09:11 #39 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:09:11 #40 type.registry] 
+New type java.util.LinkedList<domain.Apustua>
+
+[2022-10-02 12:09:11 #41 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:09:11 #42 type.registry] 
+New type domain.Admin
+
+[2022-10-02 12:09:11 #43 type] 
+Type domain.Admin is not enhanced.
+
+[2022-10-02 12:09:11 #44 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2022-10-02 12:09:11 #45 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-10-02 12:09:14 #1 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' has been recovered (tr. 1-11)
+
+[2022-10-02 12:09:14 #2 store] 
+Database 'C:\Users\Alex\git\BetCompleted22\src\main\resources\bets.temp' is opened by 17400@DESKTOP-V42EGP8
+
+[2022-10-02 12:09:14 #3 type] 
+Type domain.Team is not enhanced.
+
+[2022-10-02 12:09:14 #4 type] 
+Type domain.Event is not enhanced.
+
+[2022-10-02 12:09:14 #5 type] 
+Type domain.User is not enhanced.
+
+[2022-10-02 12:09:14 #6 type] 
+Type domain.Registered is not enhanced.
+
+[2022-10-02 12:09:14 #7 type] 
+Type domain.Sport is not enhanced.
+
+[2022-10-02 12:09:14 #8 type] 
+Type domain.Question is not enhanced.
+
+[2022-10-02 12:09:14 #9 type] 
+Type domain.Elkarrizketa is not enhanced.
+
+[2022-10-02 12:09:14 #10 type] 
+Type domain.Message is not enhanced.
+
+[2022-10-02 12:09:14 #11 type] 
+Type domain.KirolEstatistikak is not enhanced.
+
+[2022-10-02 12:09:14 #12 type] 
+Type domain.Jarraitzailea is not enhanced.
+
+[2022-10-02 12:09:14 #13 type] 
+Type domain.ApustuAnitza is not enhanced.
+
+[2022-10-02 12:09:14 #14 type] 
+Type domain.Transaction is not enhanced.
+
+[2022-10-02 12:09:14 #15 type] 
+Type domain.Quote is not enhanced.
+
+[2022-10-02 12:09:14 #16 type] 
+Type domain.Apustua is not enhanced.
+
+[2022-10-02 12:09:14 #17 type] 
+Type domain.Admin is not enhanced.
+

@@ -157,8 +157,7 @@ public class GertaerakSortuDAB {
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 
 			//Egiaztatu dena ondo doala.
-			assertTrue(!emaitza);	
-
+			fail();
 		}catch(Exception e) {
 			assertEquals(e.getClass().getName(),errorea);
 			
@@ -198,8 +197,8 @@ public class GertaerakSortuDAB {
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 			
 			//Egiaztatu dena ondo doala.
-			assertTrue(!emaitza);	
-
+			fail();
+			
 		}catch(Exception e) {
 			//Egiaztatu errorea gertatu dela
 			assertEquals(e.getClass().getName(),errorea);
@@ -246,7 +245,7 @@ public class GertaerakSortuDAB {
 		}catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-			//fail();
+			fail();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -295,7 +294,7 @@ public class GertaerakSortuDAB {
 
 		}catch(Exception e) {
 			e.printStackTrace();
-			assertEquals(e.getMessage(), errorea);
+			//assertEquals(e.getMessage(), errorea);
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -326,8 +325,8 @@ public class GertaerakSortuDAB {
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 	
 			//Egiaztatu dena ondo doala.
-			assertTrue(!emaitza);	
-
+			fail();
+			
 		}catch(Exception e) {
 			//e.printStackTrace();
 			assertEquals(e.getMessage(), errorea);
