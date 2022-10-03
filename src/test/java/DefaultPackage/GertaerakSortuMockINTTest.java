@@ -370,15 +370,13 @@ public class GertaerakSortuMockINTTest {
 			//invoke System Under Test (sut) 
 			boolean emaitza=sut.gertaerakSortu(description, d, sportName);
 
-			fail();
-		
-		} catch (Exception e) {
-			assertTrue(true);
 			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
+			assertTrue(true);
 			assertEquals(descriptionCaptor.getValue(),description);
 			assertEquals(dateCaptor.getValue(),d);
 			assertEquals(sportNameCaptor.getValue(),sportName);
+		} catch (Exception e) {
+			fail();
 		}
 	}
 	@Test
@@ -485,7 +483,7 @@ public class GertaerakSortuMockINTTest {
 			descriptionCaptor = ArgumentCaptor.forClass(String.class);
 			dateCaptor = ArgumentCaptor.forClass(Date.class);
 			sportNameCaptor = ArgumentCaptor.forClass(String.class);
-			Mockito.doReturn(new EventFinished()).when(dataAccess).gertaerakSortu(description, d, sportName);
+			Mockito.doReturn(true).when(dataAccess).gertaerakSortu(description, d, sportName);
 
 			//invoke System Under Test (sut) 
 			boolean emaitza=sut.gertaerakSortu(description, d, sportName);

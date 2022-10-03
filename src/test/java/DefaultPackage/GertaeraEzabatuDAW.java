@@ -96,7 +96,7 @@ public class GertaeraEzabatuDAW {
 				testDA.open();
 				ev = testDA.addEventWithQuestion("Europa League", oneDate, "Who will win the match", 1, team1, team2);
 				
-				testDA.addQuestiontoEvent(ev, "How many Yellow Cards?", 2);
+				testDA.addQuestiontoEvent(ev, "How many Yellow Cards?", 2.0);
 				
 				
 				Question q3= ev.getQuestions().get(0);
