@@ -11,19 +11,15 @@ import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
-import domain.ApustuAnitza;
-import domain.Apustua;
 import domain.Event;
 import domain.Question;
 import domain.Quote;
 import domain.Registered;
-import domain.Sport;
-import domain.Team;
-import domain.User;
+impoain.User;
 
 public class TestDataAccess {
 	protected  EntityManager  db;
-	protected  EntityManagerFactory emf;
+	protected  Enti
 
 	ConfigXML  c=ConfigXML.getInstance();
 
@@ -74,93 +70,7 @@ public class TestDataAccess {
 		return false;
     }
 	
-	public boolean addQuestiontoEvent(Event ev,String desc, double betMin) {
-		System.out.println(">> PROBATZEN");
-		Event e = db.find(Event.class, ev.getEventNumber());
-		if (e!=null) {
-			db.getTransaction().begin();
-			e.addQuestion(desc,betMin);
-			db.getTransaction().commit();
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public boolean setQuestionResult(Question quest, String res) {
-		System.out.println(">> setQuestionResult");
-		Question q = db.find(Question.class, quest.getQuestionNumber());
-		if (q!=null) {
-			db.getTransaction().begin();
-			q.setResult(res);
-			db.getTransaction().commit();
-			
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public boolean questionExistitzenDa(Question quest) {
-		System.out.println(">> existQuestion");
-		Question q = db.find(Question.class, quest.getQuestionNumber());
-		if (q!=null) {
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public boolean kuotaExistitzenDa(Quote kuota) {
-		System.out.println(">> existQuote");
-		Quote q = db.find(Quote.class, kuota.getQuoteNumber());
-		if (q!=null) {
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public boolean apustuaExistitzenDa(Apustua a, ApustuAnitza apa, Quote k) {
-		System.out.println(">> existApustu");
-		Apustua q = db.find(Apustua.class, a.getApustuAnitza()==apa );
-		if (q!=null) {
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public ApustuAnitza apustuAnitzaExistitzenDa(ApustuAnitza a) {
-		System.out.println(">> existApustuAnitza");
-		TypedQuery<ApustuAnitza> query = null;             
-		try {            
-			query = db.createQuery("SELECT e FROM ApustuAnitza e",ApustuAnitza.class);             
-		}catch(Exception e) {                 
-			e.printStackTrace();}
-		List<ApustuAnitza> apustuanitzak = query.getResultList();             
-		             
-		for(ApustuAnitza e : apustuanitzak) {                 
-			if(a.getBalioa().equals(e.getBalioa()) && a.getData().equals(e.getData())) {                     
-				return e;                
-			}             
-		}
-		return null;	
-		
-		
-	}
-	
-	public boolean userExistitzenDa(User a) {
-		System.out.println(">> existUser");
-		User q = db.find(User.class, a.getUsername());
-		if (q!=null) {
-			return true;
-		} else 
-		return false;
-		
-	}
-	
-	public Event addEventWithQuestion(String desc, Date d, String question, float qty, Team lok, Team kanpokoa) {
+		public Event addEventWithQuestion(String desc, Date d, String question, float qty, Team lok, Team kanpokoa) {
 			System.out.println(">> DataAccessTest: addEvent");
 			Event ev=null;
 				db.getTransaction().begin();
@@ -187,71 +97,7 @@ public class TestDataAccess {
 		
 		public boolean existQuote(Question quest, String fore) {
 			System.out.println(">> DataAccessTest: existQuestion");
-			Question q = db.find(Question.class, quest.getQuestionNumber());
-			if (q!=null) {
-				return q.doesQuoteExist(fore);
-			} else 
-				
-			return false;
-			
-		}
-		
-		public boolean addQuotetoQuestion(Question quest,double kuota,String forecast) {
-			System.out.println(">> DataAccessTest: addQuote");
-			Question q = db.find(Question.class, quest.getQuestionNumber());
-			if (q!=null) {
-				db.getTransaction().begin();
-				q.addQuote(kuota, forecast, q);
-				db.getTransaction().commit();
-				return true;
-			} else 
-			return false;
-			
-		}
-		
-		public ApustuAnitza sortuApusutuAnitza(Registered r,double bal) {
-			db.getTransaction().begin();
-			ApustuAnitza ap=new ApustuAnitza(r,bal);
-			db.persist(ap);
-			db.getTransaction().commit();
-			return ap;
-			
-		}
-		
-		public Apustua sortuApustua(ApustuAnitza apa, Quote kuota) {
-			System.out.println(">> DataAccessTest: addApustuatoKuota");
-			Quote q = db.find(Quote.class, kuota.getQuoteNumber());
-			ApustuAnitza apaDB =this.apustuAnitzaExistitzenDa(apa);
-			if (q!=null) {
-				db.getTransaction().begin();
-				Apustua a=new Apustua(apaDB,q);
-				db.persist(a);
-				apaDB.addApustua(a);
-				q.addApustua(a);
-				
-				db.getTransaction().commit();
-				return a;
-			} else 
-			return null;
-			
-		}
-		
-		public boolean addApustuatoQuote(Quote k, Apustua a) {
-			System.out.println(">> DataAccessTest: addApustua");
-			Quote q = db.find(Quote.class, k.getQuoteNumber());
-			if (q!=null) {
-				db.getTransaction().begin();
-				q.addApustua(a);
-				db.getTransaction().commit();
-				return true;
-			} else 
-			return false;
-			
-		}
-		
-		public Event addEvent(String description, Date d, Team l, Team k, Sport s) {
-			db.getTransaction().begin();
-			Event ev = new Event(description,d,l,k);
+			v = new Event(description,d,l,k);
 			ev.setSport(s);
 			ev.setLokala(l);
 			ev.setKanpokoa(k);
@@ -329,11 +175,199 @@ public class TestDataAccess {
 			List<Event> events = query.getResultList();
 			Event event=null;
 			for(Event e : events) {
-				if(e.getDescription().equals(description)) {
+				if(e.getDescription().equals(description) && e.getSport().getIzena().equals(sportName)) {
 					event = e;
 				}
 			}
 			//db.getTransaction().commit();
+			return event;
+		}
+		public Event findEventWhenDateIsNull(String description, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			//db.getTransaction().begin();
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
+			//db.getTransaction().commiion().equals(description) && e.getEventDate().equals(d)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithDescriptionNull(Date d, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query		public Event findEventWithDescriptionAndDate(String description, Date d, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			//db.getTransaction().begin();
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description) && e.getEventDate().equals(d) && e.getSport().getIzena().equals(sportName)) {
+				if(e.getDescription().equals(description) && e.getSport().getIzena().equals(sportName)) {
+				if(e.getDescription().equals(description) && e.getSport().getIzena().equals(sportName)) {
+				if(e.getDescription().equals(description) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
+			//db.getTransaction().commit();
+			return event;
+		}
+		public Event findEventWhenDateIsNull(String description, String sportName) {
+getEventDate().equals(d) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithoutSport(String description, Date d) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description) && e.getEventDate().equals(d)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithDescriptionNull(Date d, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getEventDate().equals(d) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithoutSport(String description, Date d) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description) && e.getEventDate().equals(d)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithDescriptionNull(Date d, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getEventDate().equals(d) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithoutSport(String description, Date d) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getDescription().equals(description) && e.getEventDate().equals(d)) {
+					event = e;
+				}
+			}
+			return event;
+		}
+		public Event findEventWithDescriptionNull(Date d, String sportName) {
+			System.out.println(">> DataAccessTest: findEvent");
+			System.out.println("hola");
+			TypedQuery<Event> query = null;
+			try {
+			query = db.createQuery("SELECT e FROM Event e",Event.class);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("hola");
+			
+			List<Event> events = query.getResultList();
+			Event event=null;
+			for(Event e : events) {
+				if(e.getEventDate().equals(d) && e.getSport().getIzena().equals(sportName)) {
+					event = e;
+				}
+			}
 			return event;
 		}
 }

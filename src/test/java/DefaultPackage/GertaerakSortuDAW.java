@@ -48,6 +48,12 @@ public class GertaerakSortuDAW {
 			
 			//egiaztatu emaitza
 			assertTrue(!emaitza);
+			
+			testDA.open();
+			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			assertNull(event);
+			testDA.close();
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 			fail();
@@ -81,15 +87,18 @@ public class GertaerakSortuDAW {
 
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 
-			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("a-b", d);
-			testDA.close();
+		
 			assertTrue(emaitza);
-			/*assertEquals(event.getDescription(),description1);
+			
+			//Egiaztatu gertaera DB-an dagoela.
+			testDA.open();
+			event = testDA.findEventWithDescriptionAndDate("a-b", d, sportName);
+			testDA.close();
+			assertEquals(event.getDescription(),description1);
 			assertEquals(event.getEventDate(), d);
 			assertEquals(event.getSport().getIzena(), sportName);
 			assertEquals(event.getLokala().getIzena(), l);
-			assertEquals(event.getKanpokoa().getIzena(),k);	*/
+			assertEquals(event.getKanpokoa().getIzena(),k);	
 		}catch(Exception e) {
 			e.printStackTrace();
 			fail();
@@ -100,7 +109,6 @@ public class GertaerakSortuDAW {
 			testDA.removeTeam(l);
 			testDA.removeTeam(k);
 			testDA.removeEvent(event);
-			//remove the event
 			testDA.close();
 			System.out.println("Bigarren probaren amaiera:\n");
 		}
@@ -127,22 +135,26 @@ public class GertaerakSortuDAW {
 			Sport s =testDA.addSport(sportName);
 
 			ev1 = testDA.addEvent(description1, d, a, b, s);
-			testDA.close();
 			
 			//Deitu probatu nahi den metodoari
 			String description2 = "b-a";
-			boolean emaitza = sut.gertaerakSortu(description2, d, sportName);
-			
-			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("b-a", d);
+			String sport2Name = "sport2";
+			Sport s2 = testDA.addSport(sport2Name);
 			testDA.close();
+
+			boolean emaitza = sut.gertaerakSortu(description2, d, sport2Name);
 			
 			assertTrue(emaitza);
-			/*assertEquals(event.getDescription(),description2);
+			
+			//Egiaztatu gertaera gehitu dela DB-ra
+			testDA.open();
+			event = testDA.findEventWithDescriptionAndDate("b-a", d, sport2Name);
+			testDA.close();
+			assertEquals(event.getDescription(),description2);
 			assertEquals(event.getEventDate(), d);
-			assertEquals(event.getSport().getIzena(), sportName);
+			assertEquals(event.getSport().getIzena(), "sport2");
 			assertEquals(event.getLokala().getIzena(), k);
-			assertEquals(event.getKanpokoa().getIzena(),l);	*/
+			assertEquals(event.getKanpokoa().getIzena(),l);	
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -151,11 +163,11 @@ public class GertaerakSortuDAW {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
 			testDA.removeSport(sportName);
+			testDA.removeSport("sport2");
 			testDA.removeTeam(l);
 			testDA.removeTeam(k);
 			testDA.removeEvent(ev1);
 			testDA.removeEvent(event);
-			//remove the event
 			testDA.close();
 			System.out.println("\n4.probaren amaiera.");
 		}
@@ -180,24 +192,21 @@ public class GertaerakSortuDAW {
 			Team a = testDA.addTeam(l);
 			Team b = testDA.addTeam(k);
 			Sport s =testDA.addSport(sportName);
-
+			Sport s2 = testDA.addSport("sport2");
 			ev1 = testDA.addEvent(description1, d, a, b, s);
 			testDA.close();
 			
 			//Deitu probatu nahi den metodoari
 
-			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
-			
-			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("a-b", d);
-			testDA.close();
+			boolean emaitza = sut.gertaerakSortu(description1, d, "sport2");
 			
 			assertTrue(!emaitza);
-			/*assertEquals(event.getDescription(),description1);
-			assertEquals(event.getEventDate(), d);
-			assertEquals(event.getSport().getIzena(), sportName);
-			assertEquals(event.getLokala().getIzena(), l);
-			assertEquals(event.getKanpokoa().getIzena(),k);	*/
+			
+			//Egiaztatu DBra ez dela gertaera gehitu, hau da, DB-an dagoen kirola "sport" kirola duena dela, ez "sport2" duena.
+			testDA.open();
+			event = testDA.findEventWithDescriptionAndDate("a-b", d, "sport2");
+			testDA.close();
+			assertNull(event);
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -209,6 +218,7 @@ public class GertaerakSortuDAW {
 			testDA.removeTeam(l);
 			testDA.removeTeam(k);
 			testDA.removeEvent(ev1);
+			testDA.removeSport("sport2");
 			testDA.close();
 			System.out.println("\n5.probaren amaiera.");
 		}
