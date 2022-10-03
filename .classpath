@@ -30,7 +30,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="src/main/resources/jcalendar-1.4.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="src/main/resources/objectdb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alex/git/lab13-Mocks/lab13-mocks/libs/mockito-core-3.0.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
