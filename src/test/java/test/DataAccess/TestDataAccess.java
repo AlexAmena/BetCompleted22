@@ -225,6 +225,7 @@ public class TestDataAccess {
 			if (q!=null) {
 				db.getTransaction().begin();
 				Apustua a=new Apustua(apaDB,q);
+				db.persist(a);
 				apaDB.addApustua(a);
 				q.addApustua(a);
 				
