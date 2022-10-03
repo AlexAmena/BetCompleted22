@@ -14,6 +14,7 @@ import configuration.ConfigXML;
 import domain.ApustuAnitza;
 import domain.Apustua;
 import domain.Event;
+import domain.KirolEstatistikak;
 import domain.Question;
 import domain.Quote;
 import domain.Registered;
@@ -89,6 +90,24 @@ public class TestDataAccess {
 				}
 				return ev;
 	    }
+		
+		public Event addEventWithQuestionAndSport(String desc, Date d, String question, float qty, Team lok, Team kanpokoa, Sport s) {
+			System.out.println(">> DataAccessTest: addEvent");
+			Event ev=null;
+				db.getTransaction().begin();
+				try {
+				    ev=new Event(desc,d,lok,kanpokoa);
+				    ev.addQuestion(question, qty);
+				    ev.setSport(s);
+					db.persist(ev);
+					db.getTransaction().commit();
+				}
+				catch (Exception e){
+					e.printStackTrace();
+				}
+				return ev;
+	    }
+		
 		public boolean existQuestion(Event ev,Question q) {
 			System.out.println(">> DataAccessTest: existQuestion");
 			Event e = db.find(Event.class, ev.getEventNumber());
@@ -116,6 +135,16 @@ public class TestDataAccess {
 			db.getTransaction().commit();
 			return l;
 		}
+		
+		public Registered addUser(String name,String pass,Integer bank,Sport sp) {
+			db.getTransaction().begin();
+			Registered u=new Registered(name,pass,bank);
+			u.kirolEstatistikakLortu(sp);
+			db.persist(u);
+			db.getTransaction().commit();
+			return u;
+		}
+		
 		public Sport addSport(String sportName) {
 			db.getTransaction().begin();
 			Sport s = new Sport(sportName);
@@ -278,9 +307,9 @@ public class TestDataAccess {
 			
 		}
 		
-		public boolean apustuaExistitzenDa(Apustua a, ApustuAnitza apa, Quote k) {
+		public boolean apustuaExistitzenDa(Apustua a) {
 			System.out.println(">> existApustu");
-			Apustua q = db.find(Apustua.class, a.getApustuAnitza()==apa );
+			Apustua q = db.find(Apustua.class, a.getApostuaNumber() );
 			if (q!=null) {
 				return true;
 			} else 
@@ -288,28 +317,28 @@ public class TestDataAccess {
 			
 		}
 		
-		public ApustuAnitza apustuAnitzaExistitzenDa(ApustuAnitza a) {
+		public boolean apustuAnitzaExistitzenDa(ApustuAnitza a) {
 			System.out.println(">> existApustuAnitza");
-			TypedQuery<ApustuAnitza> query = null;             
-			try {            
-				query = db.createQuery("SELECT e FROM ApustuAnitza e",ApustuAnitza.class);             
-			}catch(Exception e) {                 
-				e.printStackTrace();}
-			List<ApustuAnitza> apustuanitzak = query.getResultList();             
-			             
-			for(ApustuAnitza e : apustuanitzak) {                 
-				if(a.getBalioa().equals(e.getBalioa()) && a.getData().equals(e.getData())) {                     
-					return e;                
-				}             
-			}
-			return null;	
-			
-			
+				ApustuAnitza q = db.find(ApustuAnitza.class, a.getApustuAnitzaNumber() );
+				if (q!=null) {
+					return true;
+				} else 
+				return false;
 		}
 		
 		public boolean userExistitzenDa(User a) {
 			System.out.println(">> existUser");
-			User q = db.find(User.class, a.getUsername());
+			Registered q = db.find(Registered.class, a.getUsername());
+			if (q!=null) {
+				return true;
+			} else 
+			return false;
+			
+		}
+		
+		public boolean teamExistitzenDa(Team a) {
+			System.out.println(">> existUser");
+			Team q = db.find(Team.class, a.getIzena());
 			if (q!=null) {
 				return true;
 			} else 
@@ -320,7 +349,7 @@ public class TestDataAccess {
 		
 			
 			
-			public boolean existQuote(Question quest, String fore) {
+		public boolean existQuote(Question quest, String fore) {
 				System.out.println(">> DataAccessTest: existQuestion");
 				Question q = db.find(Question.class, quest.getQuestionNumber());
 				if (q!=null) {
@@ -329,9 +358,9 @@ public class TestDataAccess {
 					
 				return false;
 				
-			}
+		}
 			
-			public boolean addQuotetoQuestion(Question quest,double kuota,String forecast) {
+		public boolean addQuotetoQuestion(Question quest,double kuota,String forecast) {
 				System.out.println(">> DataAccessTest: addQuote");
 				Question q = db.find(Question.class, quest.getQuestionNumber());
 				if (q!=null) {
@@ -342,12 +371,15 @@ public class TestDataAccess {
 				} else 
 				return false;
 				
-			}
+		}
 			
-			public ApustuAnitza sortuApusutuAnitza(Registered r,double bal) {
+			public ApustuAnitza sortuApusutuAnitza(Registered r,double bal,Sport sp) {
 				db.getTransaction().begin();
 				ApustuAnitza ap=new ApustuAnitza(r,bal);
 				db.persist(ap);
+				KirolEstatistikak ke=new KirolEstatistikak(r,sp);
+				db.persist(ke);
+				r.addKirolEstatistikak(ke);
 				db.getTransaction().commit();
 				return ap;
 				
@@ -356,7 +388,7 @@ public class TestDataAccess {
 			public Apustua sortuApustua(ApustuAnitza apa, Quote kuota) {
 				System.out.println(">> DataAccessTest: addApustuatoKuota");
 				Quote q = db.find(Quote.class, kuota.getQuoteNumber());
-				ApustuAnitza apaDB =this.apustuAnitzaExistitzenDa(apa);
+				ApustuAnitza apaDB =db.find(ApustuAnitza.class, apa.getApustuAnitzaNumber());
 				if (q!=null) {
 					db.getTransaction().begin();
 					Apustua a=new Apustua(apaDB,q);
@@ -386,7 +418,17 @@ public class TestDataAccess {
 			
 			
 			
-			
+			public boolean removeApustuAnitza(ApustuAnitza z) {
+				System.out.println(">> DataAccessTest: removeUser");
+				ApustuAnitza s = db.find(ApustuAnitza.class, z.getApustuAnitzaNumber());
+				if (s!=null) {
+					db.getTransaction().begin();
+					db.remove(s);
+					db.getTransaction().commit();
+					return true;
+				} else 
+				return false;
+			}
 			
 
 			

@@ -290,12 +290,17 @@ public class GertaeraEzabatuDAW {
 		
 		@Test //kuotak apustuak dituzte, baino ez apustuak eta gainera egoera != galduta
 		public void proba7() {
+			ApustuAnitza apa = null;
 			try {
 				//define paramaters
 				
-				Team team1=new Team("Atletico de Madrid");
-				Team team2= new Team("FC Barcelona");
-				Registered u=new Registered("Iosu","passwd123",12);
+				testDA.open();
+			
+				Team team1=testDA.addTeam("RSO");
+				Team team2=testDA.addTeam("RMA");
+				Sport sport=testDA.addSport("futboola");
+				Registered u=testDA.addUser("IOSU_ABALL", "passwd123", 12,sport);
+				
 				
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 				Date oneDate=null;
@@ -305,29 +310,22 @@ public class GertaeraEzabatuDAW {
 					e.printStackTrace();
 				}	
 				//configure the state of the system (create object in the dabatase)
-				testDA.open();
-				ev = testDA.addEventWithQuestion("Europa League", oneDate, "How many penalties there will be?", 1, team1, team2);				
+				
+				ev = testDA.addEventWithQuestionAndSport("Europa League", oneDate, "How many penalties there will be?", 1, team1, team2,sport);				
 				Question q7= ev.getQuestions().get(0);
 				testDA.setQuestionResult(q7, "2 penalties");
 				testDA.addQuotetoQuestion(q7, 1.43, "Forecast 1 penalty");
-				
 				Quote k2=q7.getQuotes().get(0);
-				
-				ApustuAnitza apa=testDA.sortuApusutuAnitza(u, 2);
+				apa=testDA.sortuApusutuAnitza(u, 2,sport);
 				Apustua apustu=testDA.sortuApustua(apa,k2);//sortu ere ApustuAnitza hemen barruan
-				//boolean p=testDA.addApustuatoQuote(k2, apustu);
-				//k2.addApustua(apustu);
-				
-				
-				
-				boolean proba1=testDA.apustuaExistitzenDa(apustu, apa, k2);
-				//boolean proba2=testDA.apustuAnitzaExistitzenDa(apa);
+				boolean proba1=testDA.apustuaExistitzenDa(apustu);
+				boolean proba2=testDA.apustuAnitzaExistitzenDa(apa);
 				assertTrue(proba1);
+				assertTrue(proba2);
 				
 				testDA.close();
 				
-				
-								
+									
 				//invoke System Under Test (sut)  
 				boolean emaitza=sut.gertaeraEzabatu(ev);
 								
@@ -340,28 +338,40 @@ public class GertaeraEzabatuDAW {
 				Event dagoena=testDA.existsEvent(ev);
 				boolean existq7 = testDA.questionExistitzenDa(q7);
 				boolean existKuote=testDA.kuotaExistitzenDa(k2);
-				boolean existAp=testDA.apustuaExistitzenDa(apustu, apa,k2);
-				//boolean existApA= testDA.apustuAnitzaExistitzenDa(apa);
+				boolean existAp=testDA.apustuaExistitzenDa(apustu);
+				boolean existApA= testDA.apustuAnitzaExistitzenDa(apa);
 				boolean existUser=testDA.userExistitzenDa(u);
+				boolean existTeam=testDA.teamExistitzenDa(team1);
+				boolean existTeam2=testDA.teamExistitzenDa(team2);
 				
 				System.out.println("AAAAAAA"+existUser);
 				assertNull(dagoena);			
 				assertFalse(existq7);
 				assertFalse(existKuote);
 				assertFalse(existAp);
-				//assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar
+				assertFalse(existApA);//apustuAnitza ez da berez automatikoki borratu behar?????
 				assertTrue(existUser);//user ez da berez automatikoki borratu behar
+				assertTrue(existTeam);//user ez da berez automatikoki borratu behar
+				assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
+				
 				
 				testDA.close();
 				
 			   } catch (Exception e) {
+				   System.out.println("Errorea proba 7");
 				   e.printStackTrace();
 				   fail();
 				} finally {
 					testDA.open();
-					boolean b=testDA.removeUser("Iosu");
+					//boolean b3=testDA.removeApustuAnitza(apa);
+					boolean b0=testDA.removeUser("IOSU_ABALL");
+					boolean b1=testDA.removeTeam("RSO");
+					boolean b2=testDA.removeTeam("RMA");
+					boolean b4=testDA.removeSport("futboola");
+					
+					
 					testDA.close();
-					System.out.println("Finally "+b);         
+					System.out.println("Finally "+b0+b1+b2+b4);         
 			        }
 		}
 }
