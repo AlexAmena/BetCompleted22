@@ -1,5 +1,6 @@
 package test.DataAccess;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +14,7 @@ import javax.persistence.TypedQuery;
 import configuration.ConfigXML;
 import domain.Event;
 import domain.Question;
+import domain.Registered;
 import domain.Sport;
 import domain.Team;
 
@@ -223,6 +225,31 @@ public class TestDataAccess {
 				}
 			}
 			return event;
+		}
+		
+		public Registered addUser(Registered user) {
+			db.getTransaction().begin();
+			db.persist(user);
+			db.getTransaction().commit();
+			return user;
+		}
+		
+		public boolean deleteUser(Registered user) {
+			System.out.println(">> DataAccessTest: removeSport");
+			user= db.find(Registered.class, user);
+			if (user!=null) {
+				db.getTransaction().begin();
+				db.remove(user);
+				db.getTransaction().commit();
+				return true;
+			} else 
+			return false;
+		}
+		
+		public List<Registered> getAllUsers(){
+			TypedQuery<Registered> Rquery = db.createQuery("SELECT r FROM Registered r", Registered.class);
+			List<Registered> listR = Rquery.getResultList();
+			return listR;
 		}
 }
 
