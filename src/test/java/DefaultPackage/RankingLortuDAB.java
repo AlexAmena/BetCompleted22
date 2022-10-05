@@ -49,7 +49,7 @@ public class RankingLortuDAB {
 			 ra.add(user3);
 			 ra.add(user2);
 			 ra.add(user1);
-		 
+		 //a
 			 testDA.open();
 			 testDA.addUser(user1);
 			 testDA.addUser(user2);
