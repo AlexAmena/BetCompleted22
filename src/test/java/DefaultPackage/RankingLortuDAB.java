@@ -1,6 +1,7 @@
 package DefaultPackage;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -29,15 +30,15 @@ public class RankingLortuDAB {
 			 String username1="user1";
 			 String password1="password";
 			 int bankAccount1=1;
-			 double gains1=2.1;
+			 Double gains1=2.1;
 			 String username2="user2";
 			 String password2="password";
 			 int bankAccount2=2;
-			 double gains2=22.1;
+			 Double gains2=22.1;
 			 String username3="user3";
 			 String password3="password";
 			 int bankAccount3=3;
-			 double gains3=41.1;
+			 Double gains3=41.1;
 		 
 			 List<Registered>List1 = new ArrayList<Registered>();
 			 List<Registered>testList = new ArrayList<Registered>();
@@ -49,7 +50,7 @@ public class RankingLortuDAB {
 			 ra.add(user3);
 			 ra.add(user2);
 			 ra.add(user1);
-		 //a
+			 
 			 testDA.open();
 			 testDA.addUser(user1);
 			 testDA.addUser(user2);
@@ -67,7 +68,7 @@ public class RankingLortuDAB {
 				 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 				 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 				 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-				 assertTrue(ra.get(i).getIrabazitakoa()==testList.get(i).getIrabazitakoa());
+				 assertEquals(ra.get(i).getIrabazitakoa(),testList.get(i).getIrabazitakoa());
 			 }
 			 	
 		 }
@@ -83,7 +84,8 @@ public class RankingLortuDAB {
 		 } 
 	 }
 	 
-	 @Test
+	
+	@Test
 	 public void test2(){
 		 testDA.open();
 		 List<Registered> testList= testDA.getAllUsers();
@@ -93,7 +95,7 @@ public class RankingLortuDAB {
 			 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 			 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 			 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-			 assertTrue(ra.get(i).getIrabazitakoa()==0.0);
+			 assertTrue(ra.get(i).getIrabazitakoa().equals(0.0));
 		 }
 		 
 	 }
@@ -101,16 +103,31 @@ public class RankingLortuDAB {
 	 
 	 @Test
 	 public void test3() {
-		 testDA.open();
-		 List<Registered> testList= testDA.getAllUsers();
-		 for (Registered r : testList) {
-			 testDA.deleteUser(r);
+		 
+			 testDA.open();
+			 List<Registered> testList= testDA.getAllUsers();
+		 try {
+			 for (Registered r : testList) {
+				 testDA.deleteUser(r);
+			 }
+			 
+			 
+			 
+			 ra=sut.rankingLortu();
+			 assertEquals(ra.size(), 0);
+		 }
+		 catch(Exception e){
+			 fail();
+		 }
+		 finally{
+			 for (Registered r : testList) {
+				 testDA.addUser(r);
+			 }
 		 }
 		 testDA.close();
 		 
 		 
-		 ra=sut.rankingLortu();
-		 assertTrue(ra == null);
+		 
 		 
 	 }
 	 
@@ -120,15 +137,15 @@ public class RankingLortuDAB {
 			 String username1="user1";
 			 String password1="password";
 			 int bankAccount1=1;
-			 double gains1=5.0;
+			 Double gains1=5.0;
 			 String username2="user2";
 			 String password2="password";
 			 int bankAccount2=2;
-			 double gains2=5.0;
+			 Double gains2=5.0;
 			 String username3="user3";
 			 String password3="password";
 			 int bankAccount3=3;
-			 double gains3=5.0;
+			 Double gains3=5.0;
 	 
 			 List<Registered>List1 = new ArrayList<Registered>();
 			 List<Registered>testList = new ArrayList<Registered>();
@@ -158,7 +175,7 @@ public class RankingLortuDAB {
 				 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 				 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 				 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-				 assertTrue(ra.get(i).getIrabazitakoa()==testList.get(i).getIrabazitakoa());
+				 assertEquals(ra.get(i).getIrabazitakoa(),testList.get(i).getIrabazitakoa());
 			 }
 		 	
 		 }
@@ -173,6 +190,43 @@ public class RankingLortuDAB {
 			 testDA.close();
 		 } 
 		 
+	 }
+	 
+	 @Test
+	 public void test5() {
+		 String username1="user1";
+		 String password1="password";
+		 int bankAccount1=1;
+		 Double gains1=5.0;
+		 Registered user11 = new Registered(username1, password1, bankAccount1, gains1);
+		 testDA.open();
+		 List<Registered> testList= testDA.getAllUsers();
+		 try {
+			 for (Registered r : testList) {
+				 testDA.deleteUser(r);
+			 }
+			 testDA.addUser(user11);
+			 List<Registered> a = testDA.getAllUsers();
+			 List<Registered> lista = sut.rankingLortu();
+			 
+			 assertEquals(lista.size(),1);
+			 assertTrue(lista.get(1).getUsername().equals(user11.getUsername()));
+			 assertTrue(lista.get(1).getPassword().equals(user11.getPassword()));
+			 assertTrue(lista.get(1).getBankAccount()==user11.getBankAccount());
+			 assertEquals(lista.get(1).getIrabazitakoa(),user11.getIrabazitakoa());
+		 }
+		 catch (Exception e) {
+			 fail();
+		 }
+		 finally { 
+				 for (Registered r : testList) {
+					 testDA.addUser(r);
+				 }
+				 testDA.deleteUser(user11);
+			 
+		 }
+		 
+		 testDA.close();
 	 }
 	 
 	 

@@ -19,7 +19,7 @@ public class Registered extends User implements Serializable{
 	private Vector<Transaction> transakzioak; 
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private Vector<ApustuAnitza> apustuAnitzak; 
-	private double irabazitakoa;
+	private Double irabazitakoa;
 	private int zenbat;
 	private String mode;
 	private Double diruLimitea;
@@ -78,7 +78,7 @@ public class Registered extends User implements Serializable{
 		this.apustuAnitzak = apustuak;
 	}
 	
-	public double getIrabazitakoa() {
+	public Double getIrabazitakoa() {
 		return irabazitakoa;
 	}
 	
