@@ -181,7 +181,7 @@ public class GertaerakSortuINTTest {
 			ev1 = testBL.findEventWithDescriptionNull(d, sportName);
 			assertNull(ev1);
 			fail();
-		} finally {//
+		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
 			System.out.println("Finally ");          
