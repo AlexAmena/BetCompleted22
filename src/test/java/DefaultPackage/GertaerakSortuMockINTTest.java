@@ -165,7 +165,6 @@ public class GertaerakSortuMockINTTest {
 			fail();
 			
 		} catch (Exception e) {
-			e.printStackTrace();
 			fail();
 			
 		}
@@ -199,7 +198,6 @@ public class GertaerakSortuMockINTTest {
 			fail();
 			
 		} catch (Exception e) {
-			e.printStackTrace();
 			fail();
 		}
 	}
@@ -235,7 +233,6 @@ public class GertaerakSortuMockINTTest {
 			fail();			
 
 		} catch (Exception e) {
-			e.printStackTrace();
 			fail();
 		}
 	}
@@ -275,7 +272,6 @@ public class GertaerakSortuMockINTTest {
 			//Egiaztatu emaitza zuzena dela
 			fail();
 			//verify the results
-			//Mockito.verify(dataAccess,Mockito.times(1)).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
 
 		} catch (EventFinished e) {
 			assertTrue(true);
@@ -321,7 +317,6 @@ public class GertaerakSortuMockINTTest {
 			fail();
 
 		} catch (Exception e) {
-			e.printStackTrace();
 			fail();
 		}
 	}
