@@ -1163,7 +1163,7 @@ public void open(boolean initializeMode){
 					db.getTransaction().begin();
 					ap1.removeApustua(quo.getApustuak().get(i));
 					db.getTransaction().commit();
-					if(ap1.getApustuak().isEmpty() && !ap1.getEgoera().equals("galduta")) {
+					if( ap1.getApustuak().isEmpty() && !ap1.getEgoera().equals("galduta")) {
 						this.apustuaEzabatu(ap1.getUser(), ap1);
 					}else if(!ap1.getApustuak().isEmpty() && ap1.irabazitaMarkatu()){
 						this.ApustuaIrabazi(ap1);

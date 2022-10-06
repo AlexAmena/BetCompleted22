@@ -33,7 +33,7 @@ public class CreateQuestionDAB {
 	
 	@Test
 	//sut.createQuestion:  The event has NOT one question with a queryText. 
-	public void test1() {
+	public void test1() {//
 		try {
 			
 			//define paramaters
