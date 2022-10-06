@@ -27,6 +27,10 @@ import org.mockito.runners.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class GertaerakSortuMockINTTest {
 	DataAccess dataAccess=Mockito.mock(DataAccess.class);
+	/*
+	 * @Mock
+	 * DataAccess dataAccess
+	 */
 	Event mockedEvent=Mockito.mock(Event.class);
 
 	@InjectMocks
@@ -36,7 +40,7 @@ public class GertaerakSortuMockINTTest {
 
 
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//Ondo sortuko den gertaera bat
 	public void test1() {
 		String description=null;
 		String firstTeam=null;
@@ -77,10 +81,11 @@ public class GertaerakSortuMockINTTest {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			fail();
 		}
 	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//Gertaera ez da sortuko jadanik deskribapen eta data hori dituen gertaera DBan dagoelako
 	public void test2() {
 		String description=null;
 		String firstTeam=null;
@@ -121,10 +126,11 @@ public class GertaerakSortuMockINTTest {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			fail();
 		}
 	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//description null den kasua
 	public void test3() {
 		String description=null;
 		String firstTeam=null;
@@ -159,25 +165,19 @@ public class GertaerakSortuMockINTTest {
 			fail();
 			
 		} catch (Exception e) {
-			assertTrue(true);
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			e.printStackTrace();
+			fail();
+			
 		}
 	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//Deskribapenaren formatu okerra
 	public void test4() {
 		String description=null;
 		String firstTeam=null;
 		String secondTeam=null;
 		String sportName = null;
 		Date d = new Date();
-		ArgumentCaptor<String> descriptionCaptor = null;;
-		ArgumentCaptor<Date> dateCaptor = null;
-		ArgumentCaptor<String> sportNameCaptor = null;
 		
 		try {
 			//define paramaters
@@ -191,24 +191,20 @@ public class GertaerakSortuMockINTTest {
 			d.setSeconds(0);
 			
 			//configure Mock
-			descriptionCaptor = ArgumentCaptor.forClass(String.class);
-			dateCaptor = ArgumentCaptor.forClass(Date.class);
-			sportNameCaptor = ArgumentCaptor.forClass(String.class);
+			
 			Mockito.doReturn(new Exception()).when(dataAccess).gertaerakSortu(description, d, sportName);
 
+			sut.gertaerakSortu(description, d, sportName);
+			
 			fail();
 			
 		} catch (Exception e) {
-			assertTrue(true);
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			e.printStackTrace();
+			fail();
 		}
 	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//data null
 	public void test5() {
 		String description=null;
 		String firstTeam=null;
@@ -239,16 +235,12 @@ public class GertaerakSortuMockINTTest {
 			fail();			
 
 		} catch (Exception e) {
-			assertTrue(true);
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			e.printStackTrace();
+			fail();
 		}
 	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//Pasatu den data bat
 	public void test6() {
 		String description=null;
 		String firstTeam=null;
@@ -285,17 +277,16 @@ public class GertaerakSortuMockINTTest {
 			//verify the results
 			//Mockito.verify(dataAccess,Mockito.times(1)).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
 
-		} catch (Exception e) {
+		} catch (EventFinished e) {
 			assertTrue(true);
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
-
+		}catch(Exception e2) {
+			e2.printStackTrace();
+			fail();
 		}
+		
 	}
-	/*@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	@Test
+	//Kirola null denean
 	public void test7() {
 		String description=null;
 		String firstTeam=null;
@@ -317,7 +308,7 @@ public class GertaerakSortuMockINTTest {
 			d.setMinutes(0);
 			d.setSeconds(0);
 
-			//configure Mock 
+			//configure Mock
 			descriptionCaptor = ArgumentCaptor.forClass(String.class);
 			dateCaptor = ArgumentCaptor.forClass(Date.class);
 			sportNameCaptor = ArgumentCaptor.forClass(String.class);
@@ -330,16 +321,12 @@ public class GertaerakSortuMockINTTest {
 			fail();
 
 		} catch (Exception e) {
-			assertTrue(true);
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			e.printStackTrace();
+			fail();
 		}
-	}*/
+	}
 	@Test
-	//sut.createQuestion:  The event has NOT a question with a queryText.
+	//Kirola ez dago DBan
 	public void test8() {
 		String description=null;
 		String firstTeam=null;
@@ -412,13 +399,9 @@ public class GertaerakSortuMockINTTest {
 			fail();
 			
 		} catch (Exception e) {
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			fail();
 		}
-	}
+	}//
 	@Test
 	//sut.createQuestion:  The event has NOT a question with a queryText.
 	public void test1MB2() {
@@ -451,11 +434,7 @@ public class GertaerakSortuMockINTTest {
 			fail();
 			
 		} catch (Exception e) {
-			Mockito.verify(dataAccess,Mockito.times(1)).gertaerakSortu(descriptionCaptor.capture(),dateCaptor.capture(), sportNameCaptor.capture());
-
-			assertEquals(descriptionCaptor.getValue(),description);
-			assertEquals(dateCaptor.getValue(),d);
-			assertEquals(sportNameCaptor.getValue(),sportName);
+			fail();
 		}
 	}
 	@Test

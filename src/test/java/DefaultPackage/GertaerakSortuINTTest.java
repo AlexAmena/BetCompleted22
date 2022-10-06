@@ -43,7 +43,7 @@ public class GertaerakSortuINTTest {
 	}
 
 	@Test
-	//sut.createQuestion:  The event has one question with a queryText. 
+	//gertaera sortuko da
 	public void test1() {
 		String description=null;
 		String sportName = null;
@@ -95,7 +95,7 @@ public class GertaerakSortuINTTest {
 	}
 
 	@Test
-	//sut.createQuestion:  The event has NOT one question with a queryText. 
+	//Gertaera ez da sortuko, data horretan badago eta deskribapen hori duen beste gertaera bat
 	public void test2() {
 		//Parametroak
 		String sportName = "sport";
@@ -146,6 +146,7 @@ public class GertaerakSortuINTTest {
 		}
 	}
 	@Test
+	//Deskribapena null da, beraz gertaera ez da sortuko eta salbuespen bat jarti beharko luke
 	public void test3() {
 		//Parametroak
 		String sportName = "sport";
@@ -173,11 +174,13 @@ public class GertaerakSortuINTTest {
 			
 
 		} catch (Exception e) {
-			// if the program goes to this point fail
-			assertTrue(true);
+			e.printStackTrace();
+
+			//Javaren defektuzko salbuespen bat jaurti da.
 			//egiaztatu gertaera ez dagoela datu basean:
 			ev1 = testBL.findEventWithDescriptionNull(d, sportName);
 			assertNull(ev1);
+			fail();
 		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
@@ -185,6 +188,7 @@ public class GertaerakSortuINTTest {
 		}
 	}
 	@Test
+	//Deskribapenaren formatu ez zuzena
 	public void test4() {
 		//Parametroak
 		String sportName = "sport";
@@ -211,11 +215,13 @@ public class GertaerakSortuINTTest {
 			
 
 		} catch (Exception e) {
+			e.printStackTrace();
+
 			// if the program goes to this point fail
-			assertTrue(true);
 			//egiaztatu gertaera ez dagoela datu basean:
 			ev1 = testBL.findEventWhenDateIsNull(description, sportName);
 			assertNull(ev1);
+			fail();	
 		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
@@ -223,6 +229,7 @@ public class GertaerakSortuINTTest {
 		}
 	}
 	@Test
+	//Data null izanik
 	public void test5() {
 		//Parametroak
 		String sportName = "sport2";
@@ -250,11 +257,13 @@ public class GertaerakSortuINTTest {
 			
 
 		} catch (Exception e) {
+			e.printStackTrace();
 			// if the program goes to this point fail
 			assertTrue(true);
 			//egiaztatu gertaera ez dagoela datu basean:
 			ev1 = testBL.findEventWhenDateIsNull(description, sportName);
 			assertNull(ev1);
+			fail();
 		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
@@ -264,6 +273,7 @@ public class GertaerakSortuINTTest {
 		}
 	}
 	@Test
+	//^Pasata dagoen data batekin
 	public void test6() {
 		//Parametroak
 		String sportName = "sport3";
@@ -290,10 +300,13 @@ public class GertaerakSortuINTTest {
 			//verify the results
 			fail();			
 			
-		} catch (Exception e) {
+		} catch (EventFinished e) {
 			//egiaztatu gertaera ez dagoela datu basean:
 			ev1 = testBL.findEventWhenDateIsNull(description, sportName);
 			assertNull(ev1);
+		}catch(Exception e2) {
+			e2.printStackTrace();
+			fail();
 		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
@@ -303,6 +316,7 @@ public class GertaerakSortuINTTest {
 		}
 	}
 	@Test
+	//Kirol izena null denean
 	public void test7() {
 		//Parametroak
 		String sportName = null;
@@ -322,15 +336,18 @@ public class GertaerakSortuINTTest {
 			fail();			
 			
 		} catch (Exception e) {
+			e.printStackTrace();
 			//egiaztatu gertaera ez dagoela datu basean:
 			ev1 = testBL.findEventWhenDateIsNull(description, sportName);
 			assertNull(ev1);
+			fail();
 		} finally {
 			//Remove the created objects in the database (cascade removing)   
 			System.out.println("Finally ");          
 		}
 	}
 	@Test
+	//kirola DBan ez dagoenean
 	public void test8() {
 		//Parametroak
 		String sportName = "sport";
@@ -492,4 +509,3 @@ public class GertaerakSortuINTTest {
 		}
 	}
 }
-

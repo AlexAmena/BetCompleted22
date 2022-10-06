@@ -29,6 +29,9 @@ public class GertaerakSortuDAW {
 	private String team;
 	private String sportName;
 
+	/*
+	 * Pasatako kirola ez dago DBan. Esperotako emaitza false da eta gertaera ez sortzea DBan.
+	 */
 	@Test
 	public void test1() {
 		System.out.println("\nLehenengo probaren hasiera:\n");
@@ -51,8 +54,8 @@ public class GertaerakSortuDAW {
 			
 			testDA.open();
 			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
-			assertNull(event);
 			testDA.close();
+			assertNull(event);
 			
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -62,6 +65,13 @@ public class GertaerakSortuDAW {
 		}
 
 	}
+	/*
+	 * Bigarren bidea ez da probatu, ezinezko bidea baita.
+	 */
+	
+	/*
+	 * Gertaera berria sortuko da DBan.
+	 */
 	@Test
 	public void test3() {
 		System.out.println("\nBigarren probaren hasiera:\n");
@@ -113,6 +123,9 @@ public class GertaerakSortuDAW {
 			System.out.println("Bigarren probaren amaiera:\n");
 		}
 	}
+	/*
+	 * DBan gertaera berria sortuko da.
+	 */
 	@Test
 	public void test4() {
 		System.out.println("\n4. probaren hasiera:\n");
@@ -172,6 +185,9 @@ public class GertaerakSortuDAW {
 			System.out.println("\n4.probaren amaiera.");
 		}
 	}
+	/*
+	 * Data eta deskribapen hori dituen gertaera jadanik DBan dago, beraz ez du bigarren gertaera sortuko.
+	 */
 	@Test
 	public void test5() {
 		System.out.println("\n5.probaren hasiera:\n");

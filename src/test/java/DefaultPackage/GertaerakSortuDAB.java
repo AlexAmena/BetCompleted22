@@ -27,6 +27,9 @@ public class GertaerakSortuDAB {
 	private String team;
 	private String sportName;
 
+	/*
+	 * Gertaera berria sortuko du
+	 */
 	@Test
 	public void test1() {
 		System.out.println("\nLehenengo probaren hasiera:\n");
@@ -79,6 +82,10 @@ public class GertaerakSortuDAB {
 			System.out.println("Lehenengo probaren amaiera.\n");
 		}
 	}
+	/*
+	 * Ez du gertaera sortuko, jadanik deskribapen eta data hori dituen
+	 * gertaera DBan existitzen baita
+	 */
 	@Test
 	public void test2() {
 		System.out.println("2.probaren hasiera:\n");
@@ -131,9 +138,11 @@ public class GertaerakSortuDAB {
 			System.out.println("Bigarren probaren amaiera.\n");
 		}
 	}
+	/*
+	 * Deskribapena null denez salbuespena jaurtiko du.
+	 */
 	@Test
 	public void test3() {
-		String errorea = "java.lang.NullPointerException";
 		System.out.println("3.probaren hasiera:\n");
 
 		try {
@@ -157,15 +166,16 @@ public class GertaerakSortuDAB {
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 
 			//Egiaztatu dena ondo doala.
-			fail();
-		}catch(Exception e) {
-			assertEquals(e.getClass().getName(),errorea);
 			
+			fail();
+			
+		}catch(Exception e) {
 			//Egiaztatu ez dela gertaera DB-ra gehitu
 			testDA.open();
 			event = testDA.findEventWithDescriptionNull(d, sportName);
 			testDA.close();
 			assertNull(event);
+			fail();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -174,10 +184,12 @@ public class GertaerakSortuDAB {
 			System.out.println("3.probaren amaiera.\n");
 		}
 	}
+	/*
+	 * Deskribapenaren formatu ez egokia
+	 */
 	@Test
 	public void test4() {
 		System.out.println("4.probaren hasiera:\n");
-		String errorea = "java.lang.ArrayIndexOutOfBoundsException";
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a b";
@@ -201,12 +213,11 @@ public class GertaerakSortuDAB {
 			
 		}catch(Exception e) {
 			//Egiaztatu errorea gertatu dela
-			assertEquals(e.getClass().getName(),errorea);
-			
 			//Egiaztatu ez dela gertaera DB-ra sartu
 			testDA.open();
 			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
 			assertNull(event);
+			fail();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -215,6 +226,9 @@ public class GertaerakSortuDAB {
 			System.out.println("4.probaren amaiera:\n");
 		}
 	}
+	/*
+	 * Data null izanik
+	 */
 	@Test
 	public void test5() {
 		System.out.println("5.probaren hasiera:\n");
@@ -240,7 +254,9 @@ public class GertaerakSortuDAB {
 			testDA.open();
 			event = testDA.findEventWhenDateIsNull(description1, sportName);
 			testDA.close();
-			assertNotNull(event);	
+			//gertaera ez da sortu behar
+			assertNull(event);
+			fail();
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -256,11 +272,13 @@ public class GertaerakSortuDAB {
 			System.out.println("5.probaren amaiera:\n");
 		}
 	}
+	/*
+	 * Pasata dagoen data batean gertaera sortzen saiatu
+	 */
 	@Test
 	public void test6() {
 		System.out.println("6.probaren hasiera:\n");
 
-		String errorea = "Unexpected null argument";
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -290,11 +308,11 @@ public class GertaerakSortuDAB {
 			testDA.open();
 			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
 			testDA.close();
-			assertNotNull(event);
+			assertNull(event);
+			fail();
 
 		}catch(Exception e) {
 			e.printStackTrace();
-			//assertEquals(e.getMessage(), errorea);
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -306,11 +324,13 @@ public class GertaerakSortuDAB {
 			System.out.println("6.probaren amaiera.\n");
 		}
 	}
+	/*
+	 * Pasatako kirola null izanik
+	 */
 	@Test
 	public void test7() {
 		System.out.println("7.probaren hasiera:\n");
 
-		String errorea = "Unexpected null argument";
 		try {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
@@ -328,18 +348,21 @@ public class GertaerakSortuDAB {
 			fail();
 			
 		}catch(Exception e) {
-			//e.printStackTrace();
-			assertEquals(e.getMessage(), errorea);
+			e.printStackTrace();
 			
 			//Egiaztatu ez dela gertaera DB-ra gehitu
 			testDA.open();
 			event = testDA.findEventWithoutSport(description1, d);
 			testDA.close();
 			assertNull(event);
+			fail();
 		} finally {
 			System.out.println("7.probaren amaiera.\n");
 		}
 	}
+	/*
+	 * Kirola ez dago DBan, false itzuliko du eta gertaera ez da DBra gehituko
+	 */
 	@Test
 	public void test8() {
 		System.out.println("8.probaren hasiera:\n");
@@ -410,7 +433,8 @@ public class GertaerakSortuDAB {
 			testDA.open();
 			event = testDA.findEventWithDescriptionAndDate(description1, d,sportName);
 			testDA.close();
-			assertNotNull(event);	
+			assertNull(event);
+			fail();
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -433,7 +457,6 @@ public class GertaerakSortuDAB {
 			//Beharrezko datuak sartu
 			description1 = "a-b";
 			d = new Date();
-			d.setMonth(d.getMonth());
 			l = "a";
 			k =  "b";
 			sportName = "sport11";
@@ -456,7 +479,8 @@ public class GertaerakSortuDAB {
 
 			//Egiaztatu dena ondo doala.
 			assertTrue(emaitza);
-			assertNotNull(event);	
+			assertNull(event);	
+			fail();
 
 		}catch(Exception e) {
 			e.printStackTrace();
