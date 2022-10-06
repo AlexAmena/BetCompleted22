@@ -313,6 +313,7 @@ public class GertaerakSortuDAB {
 
 		}catch(Exception e) {//
 			e.printStackTrace();
+			fail();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
