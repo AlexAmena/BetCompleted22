@@ -294,7 +294,7 @@ public class GertaerakSortuMockINTTest {
 
 		}
 	}
-	@Test
+	/*@Test
 	//sut.createQuestion:  The event has NOT a question with a queryText.
 	public void test7() {
 		String description=null;
@@ -317,7 +317,7 @@ public class GertaerakSortuMockINTTest {
 			d.setMinutes(0);
 			d.setSeconds(0);
 
-			//configure Mock
+			//configure Mock 
 			descriptionCaptor = ArgumentCaptor.forClass(String.class);
 			dateCaptor = ArgumentCaptor.forClass(Date.class);
 			sportNameCaptor = ArgumentCaptor.forClass(String.class);
@@ -337,7 +337,7 @@ public class GertaerakSortuMockINTTest {
 			assertEquals(dateCaptor.getValue(),d);
 			assertEquals(sportNameCaptor.getValue(),sportName);
 		}
-	}
+	}*/
 	@Test
 	//sut.createQuestion:  The event has NOT a question with a queryText.
 	public void test8() {
