@@ -311,7 +311,7 @@ public class GertaerakSortuDAB {
 			assertNull(event);
 			fail();
 
-		}catch(Exception e) {
+		}catch(Exception e) {//
 			e.printStackTrace();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
