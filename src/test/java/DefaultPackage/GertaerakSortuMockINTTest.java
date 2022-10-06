@@ -475,7 +475,7 @@ public class GertaerakSortuMockINTTest {
 			assertEquals(sportNameCaptor.getValue(),sportName);
 			
 		} catch (Exception e) {
-			fail();
+			fail();//huts egin du
 		}
 	}
 }
