@@ -345,8 +345,9 @@ public class TestDataAccess {
 				return true;
 			} else 
 			return false;
-			
 		}
+		
+		
 		
 		public boolean teamExistitzenDa(Team a) {
 			System.out.println(">> existUser");
@@ -464,10 +465,12 @@ public class TestDataAccess {
 				return false;
 			}
 			
-			public Event existsEvent(Event ev) {
+			public boolean existsEvent(Event ev) {
 				System.out.println(">> DataAccessTest: findEvent");
 				Event e = db.find(Event.class, ev.getEventNumber());
-				return e;
+				if(e!=null) {
+					return true;
+				}return false;
 			}
 			
 			public boolean apustuBikoitza(User u, Vector<Quote> quote, Double balioa, Integer apustuBikoitzaGalarazi) {

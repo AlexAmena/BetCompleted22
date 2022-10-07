@@ -57,10 +57,11 @@ public class GertaeraEzabatuDAW {
 				
 				//ev is DB
 				testDA.open();
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean exist = testDA.existQuestion(ev,q);
 					
-				assertEquals(ev.getEventNumber(),dagoena.getEventNumber());//datubasean dago
+				//assertEquals(ev.getEventNumber(),dago.getEventNumber());//datubasean dago
+				assertTrue(dago);
 				
 				assertTrue(exist);
 				testDA.close();
@@ -115,12 +116,13 @@ public class GertaeraEzabatuDAW {
 				
 				//ev is DB
 				testDA.open();
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq3 = testDA.existQuestion(ev,q3);
-				boolean existq4 = testDA.existQuestion(dagoena,q4);
+				boolean existq4 = testDA.existQuestion(ev,q4);
 				
 					
-				assertEquals(ev.getEventNumber(),dagoena.getEventNumber());//datubasean dago
+				//assertEquals(ev.getEventNumber(),dago.getEventNumber());//datubasean dago
+				assertTrue(dago);
 				
 				assertTrue(existq3);
 				assertTrue(existq4);				
@@ -173,9 +175,9 @@ public class GertaeraEzabatuDAW {
 				
 				//ev is DB
 				testDA.open();
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq3 = testDA.questionExistitzenDa(q5);
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq3);
 				testDA.close();
 				
@@ -218,9 +220,9 @@ public class GertaeraEzabatuDAW {
 				
 				//ev is DB
 				testDA.open();
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq3 = testDA.questionExistitzenDa(q50);
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq3);
 				testDA.close();
 				
@@ -269,11 +271,11 @@ public class GertaeraEzabatuDAW {
 				
 				//ev is DB
 				testDA.open();
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq6 = testDA.questionExistitzenDa(q6);
 				
 				//aldatu doesQuestion exist eta doesKuote exist, 
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq6);
 				assertFalse(testDA.kuotaExistitzenDa(k1));
 				testDA.close();
@@ -346,7 +348,7 @@ public class GertaeraEzabatuDAW {
 				testDA.open();
 				testDA.ezabatuKE(u);
 				
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq7 = testDA.questionExistitzenDa(q7);
 				boolean existKuote=testDA.kuotaExistitzenDa(k2);
 				boolean existAp=testDA.apustuaExistitzenDa(apustu);
@@ -356,14 +358,14 @@ public class GertaeraEzabatuDAW {
 				boolean existTeam2=testDA.teamExistitzenDa(team2);
 				testDA.close();
 				
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq7);
 				assertFalse(existKuote);
 				assertFalse(existAp);
 				assertTrue(existUser);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
-				assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar AKATSA!
+				assertFalse(existApA);//bide honetan ApusuAnitza borratu behar da
 				
 				
 				
@@ -460,7 +462,7 @@ public class GertaeraEzabatuDAW {
 				testDA.open();
 				testDA.ezabatuKE(u);
 				
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq7 = testDA.questionExistitzenDa(q7);
 				boolean existKuote=testDA.kuotaExistitzenDa(k2);
 				boolean existAp=testDA.apustuaExistitzenDa(apustu);
@@ -470,15 +472,16 @@ public class GertaeraEzabatuDAW {
 				boolean existTeam2=testDA.teamExistitzenDa(team2);
 				
 				
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq7);
 				assertFalse(existKuote);
 				assertFalse(existAp);
+				assertFalse(existApA);
 				
 				assertTrue(existUser);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
-				assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar  AKATSA!
+				
 				
 				
 				testDA.close();
@@ -579,7 +582,7 @@ public class GertaeraEzabatuDAW {
 				testDA.open();
 				testDA.ezabatuKE(u);
 				
-				Event dagoena=testDA.existsEvent(ev);
+				boolean dago=testDA.existsEvent(ev);
 				boolean existq7 = testDA.questionExistitzenDa(q7);
 				boolean existKuote=testDA.kuotaExistitzenDa(k2);
 				boolean existAp=testDA.apustuaExistitzenDa(apustu);
@@ -589,14 +592,16 @@ public class GertaeraEzabatuDAW {
 				boolean existTeam2=testDA.teamExistitzenDa(team2);
 				
 				
-				assertNull(dagoena);			
+				assertFalse(dago);			
 				assertFalse(existq7);
 				assertFalse(existKuote);
 				assertFalse(existAp);
-				assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar AKATSA!
+				assertFalse(existApA);
+				
 				assertTrue(existUser);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 				assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
+				
 				
 				
 				testDA.close();
