@@ -10,6 +10,7 @@ import dataAccess.DataAccess;
 import domain.Event;
 import domain.Sport;
 import domain.Team;
+import exceptions.EventFinished;
 import test.DataAccess.TestDataAccess;
 
 public class GertaerakSortuDAB {
@@ -171,6 +172,7 @@ public class GertaerakSortuDAB {
 			
 		}catch(Exception e) {
 			//Egiaztatu ez dela gertaera DB-ra gehitu
+			e.printStackTrace();
 			testDA.open();
 			event = testDA.findEventWithDescriptionNull(d, sportName);
 			testDA.close();
@@ -310,9 +312,11 @@ public class GertaerakSortuDAB {
 			testDA.close();
 			assertNull(event);
 			fail();
-
+		
+		
 		}catch(Exception e) {//
 			e.printStackTrace();
+			fail();
 		} finally {
 			//Itzuli DB-a aurreko egoerara
 			testDA.open();
@@ -479,8 +483,12 @@ public class GertaerakSortuDAB {
 
 			//Egiaztatu dena ondo doala.
 			assertTrue(emaitza);
-			assertNull(event);	
-			fail();
+			assertNotNull(event);	
+			assertEquals(event.getDescription(),description1);
+			assertEquals(event.getEventDate(), d);
+			assertEquals(event.getSport().getIzena(), sportName);
+			assertEquals(event.getLokala().getIzena(), l);
+			assertEquals(event.getKanpokoa().getIzena(),k);		
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -528,6 +536,12 @@ public class GertaerakSortuDAB {
 			//Egiaztatu dena ondo doala.
 			assertTrue(emaitza);
 			assertNotNull(event);
+			assertEquals(event.getDescription(),description1);
+			assertEquals(event.getEventDate(), d);
+			assertEquals(event.getSport().getIzena(), sportName);
+			assertEquals(event.getLokala().getIzena(), l);
+			assertEquals(event.getKanpokoa().getIzena(),k);		
+
 
 		}catch(Exception e) {
 			e.printStackTrace();
