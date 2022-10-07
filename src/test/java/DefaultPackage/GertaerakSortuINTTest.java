@@ -87,7 +87,7 @@ public class GertaerakSortuINTTest {
 		}finally {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
-			boolean b=testBL.removeEvent(ev);
+			testBL.removeEvent(ev);
 			testBL.removeTeam(team1);
 			testBL.removeTeam(team2);
 			System.out.println("Finally ");          
@@ -139,10 +139,10 @@ public class GertaerakSortuINTTest {
 			//Remove the created objects in the database (cascade removing)   
 			testBL.removeSport(sportName);
 			testBL.removeSport(sport2Name);
-			boolean b=testBL.removeEvent(ev1);
+			testBL.removeEvent(ev1);
 			testBL.removeTeam(team1);
 			testBL.removeTeam(team2);
-			System.out.println("Finally "+b);          
+			System.out.println("Finally ");          
 		}
 	}
 	@Test
