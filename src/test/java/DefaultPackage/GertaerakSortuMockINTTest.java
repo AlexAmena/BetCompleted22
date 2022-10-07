@@ -387,14 +387,12 @@ public class GertaerakSortuMockINTTest {
 			dateCaptor = ArgumentCaptor.forClass(Date.class);
 			sportNameCaptor = ArgumentCaptor.forClass(String.class);
 			Mockito.doReturn(new EventFinished()).when(dataAccess).gertaerakSortu(description, d, sportName);
-
 			//invoke System Under Test (sut) 
 			boolean emaitza=sut.gertaerakSortu(description, d, sportName);
 
 			fail();
-			
 		} catch (Exception e) {
-			fail();
+			assertTrue(true);
 		}
 	}//
 	@Test
@@ -428,8 +426,10 @@ public class GertaerakSortuMockINTTest {
 
 			fail();
 			
+		
 		} catch (Exception e) {
-			fail();
+			assertTrue(true);
+
 		}
 	}
 	@Test//
