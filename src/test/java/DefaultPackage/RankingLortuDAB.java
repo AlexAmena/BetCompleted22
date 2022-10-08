@@ -30,7 +30,7 @@ public class RankingLortuDAB {
 			 String username1="user1";
 			 String password1="password";
 			 int bankAccount1=1;
-			 Double gains1=2.1;
+			 Double gains1=5.0;
 			 String username2="user2";
 			 String password2="password";
 			 int bankAccount2=2;
@@ -206,14 +206,13 @@ public class RankingLortuDAB {
 				 testDA.deleteUser(r);
 			 }
 			 testDA.addUser(user11);
-			 List<Registered> a = testDA.getAllUsers();
 			 List<Registered> lista = sut.rankingLortu();
 			 
 			 assertEquals(lista.size(),1);
-			 assertTrue(lista.get(1).getUsername().equals(user11.getUsername()));
-			 assertTrue(lista.get(1).getPassword().equals(user11.getPassword()));
-			 assertTrue(lista.get(1).getBankAccount()==user11.getBankAccount());
-			 assertEquals(lista.get(1).getIrabazitakoa(),user11.getIrabazitakoa());
+			 assertTrue(lista.get(0).getUsername().equals(user11.getUsername()));
+			 assertTrue(lista.get(0).getPassword().equals(user11.getPassword()));
+			 assertTrue(lista.get(0).getBankAccount()==user11.getBankAccount());
+			 assertEquals(lista.get(0).getIrabazitakoa(),user11.getIrabazitakoa());
 		 }
 		 catch (Exception e) {
 			 fail();
