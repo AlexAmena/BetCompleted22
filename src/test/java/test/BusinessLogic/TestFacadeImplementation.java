@@ -8,6 +8,7 @@ import javax.persistence.TypedQuery;
 
 import configuration.ConfigXML;
 import domain.Event;
+import domain.Registered;
 import domain.Sport;
 import domain.Team;
 import test.DataAccess.TestDataAccess;
@@ -19,7 +20,7 @@ public class TestFacadeImplementation {
 	   public TestFacadeImplementation()  {
 			
 			System.out.println("Creating TestFacadeImplementation instance");
-			ConfigXML c=ConfigXML.getInstance();
+			ConfigXML c=ConfigXML.getInstance(); 
 			dbManagerTest=new TestDataAccess(); 
 			dbManagerTest.close();
 		}
@@ -92,5 +93,24 @@ public class TestFacadeImplementation {
 			Event e = dbManagerTest.findEventWithDescriptionNull(d,sportName);
 			dbManagerTest.close();
 			return e;
+		}
+		
+		public List<Registered> deleteAllUsers(){
+			dbManagerTest.open();
+			List<Registered> e = dbManagerTest.deleteAllUsers();
+			dbManagerTest.close();
+			return e;
+		}
+		
+		public void addUser(Registered r) {
+			dbManagerTest.open();
+			dbManagerTest.addUser(r);
+			dbManagerTest.close();
+		}
+		public List<Registered> getAllUsers() {
+			dbManagerTest.open();
+			List<Registered> x =dbManagerTest.getAllUsers();
+			dbManagerTest.close();
+			return x;
 		}
 }

@@ -251,5 +251,16 @@ public class TestDataAccess {
 			List<Registered> listR = Rquery.getResultList();
 			return listR;
 		}
+		
+		public List<Registered> deleteAllUsers(){
+			TypedQuery<Registered> Rquery = db.createQuery("SELECT r FROM Registered r", Registered.class);
+			List<Registered> listR = Rquery.getResultList();
+			for(Registered r:listR) {
+				db.getTransaction().begin();
+				db.remove(r);
+				db.getTransaction().commit();
+			}
+			return listR;
+		}
 }
 
