@@ -20,7 +20,7 @@ import domain.*;
 import exceptions.QuestionAlreadyExist;
 import test.DataAccess.TestDataAccess;
 
-public class GertaeraEzabatuDAW {
+public class GertaeraEzabatuDAWTest {
 	//sut:system under test
 	static DataAccess sut=new DataAccess();
 		 
@@ -436,7 +436,7 @@ public class GertaeraEzabatuDAW {
 				sut.DiruaSartu(u, 10.0, oneDate, "Diruasartu");
 								
 				testDA.open();
-				testDA.apustuBikoitza(u, ev.getQuestions().get(0).getQuotes(), 4.0, 2);
+				testDA.apustuaXaldiz(u, ev.getQuestions().get(0).getQuotes(), 4.0, 2,true);//bikoitza egin
 				Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
 				ApustuAnitza apa=apustu.getApustuAnitza();
 				testDA.aldatuEgoeraApustuari(apustu, "irabazita");

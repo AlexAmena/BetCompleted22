@@ -13,7 +13,7 @@ import domain.Team;
 import exceptions.EventFinished;
 import test.DataAccess.TestDataAccess;
 
-public class GertaerakSortuDAB {
+public class GertaerakSortuDABTest {
 
 	static DataAccess sut=new DataAccess();
 

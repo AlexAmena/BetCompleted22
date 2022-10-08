@@ -1,7 +1,9 @@
 package test.DataAccess;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
@@ -15,6 +17,8 @@ import javax.persistence.TypedQuery;
 import configuration.ConfigXML;
 import domain.ApustuAnitza;
 import domain.Apustua;
+import domain.Elkarrizketa;
+import domain.ElkarrizketaContainer;
 import domain.Event;
 import domain.Jarraitzailea;
 import domain.KirolEstatistikak;
@@ -330,13 +334,7 @@ public class TestDataAccess {
 				return false;
 		}
 		
-		public ApustuAnitza lortuLehenengoApustuAnitza(Apustua a) {
-			Apustua q = db.find(Apustua.class, a.getApostuaNumber() );
-			ApustuAnitza q2 = db.find(ApustuAnitza.class, q.getApustuAnitza() );
-			return q2;
-		}
-		
-		
+	
 		
 		public boolean userExistitzenDa(User a) {
 			System.out.println(">> existUser");
@@ -406,7 +404,9 @@ public class TestDataAccess {
 				Question q = db.find(Question.class, quest.getQuestionNumber());
 				if (q!=null) {
 					db.getTransaction().begin();
+					//quest.addQuote(kuota, forecast, quest);//AA
 					q.addQuote(kuota, forecast, q);
+					db.persist(q);
 					db.getTransaction().commit();
 					return true;
 				} else 
@@ -473,7 +473,7 @@ public class TestDataAccess {
 				}return false;
 			}
 			
-			public boolean apustuBikoitza(User u, Vector<Quote> quote, Double balioa, Integer apustuBikoitzaGalarazi) {
+			public boolean apustuaXaldiz(User u, Vector<Quote> quote, Double balioa, Integer apustuBikoitzaGalarazi,boolean bikoitza) {
 				Registered user = (Registered) db.find(User.class, u.getUsername());
 				Boolean b;
 				if(user.getDirukop()>=balioa) {
@@ -486,10 +486,14 @@ public class TestDataAccess {
 						db.persist(ap);
 						apustuAnitza.addApustua(ap);
 						kuote.addApustua(ap);
-						Apustua ap2 = new Apustua(apustuAnitza, kuote);
-						db.persist(ap2);
-						apustuAnitza.addApustua(ap2);
-						kuote.addApustua(ap2);
+						quo.addApustua(ap);
+						if(bikoitza) {
+							Apustua ap2 = new Apustua(apustuAnitza, kuote);
+							db.persist(ap2);
+							apustuAnitza.addApustua(ap2);
+							kuote.addApustua(ap2);
+						}
+						
 					}
 					db.getTransaction().commit();
 					db.getTransaction().begin();
@@ -528,9 +532,9 @@ public class TestDataAccess {
 						}
 						if(b) {
 							if(erab.getNork().getDiruLimitea()<balioa) {
-								this.apustuBikoitza(erab.getNork(), quote, erab.getNork().getDiruLimitea(), apustuBikoitzaGalarazi);
+								this.apustuaXaldiz(erab.getNork(), quote, erab.getNork().getDiruLimitea(), apustuBikoitzaGalarazi,bikoitza);
 							}else{
-								this.apustuBikoitza(erab.getNork(), quote, balioa, apustuBikoitzaGalarazi);
+								this.apustuaXaldiz(erab.getNork(), quote, balioa, apustuBikoitzaGalarazi,bikoitza);
 							}
 						}
 					}
@@ -540,7 +544,65 @@ public class TestDataAccess {
 				}
 				
 			}
+			
+			public void DiruaSartu(Registered u, Double dirua, Date data, String mota) {
+				Registered user = (Registered) db.find(User.class, u.getUsername()); 
+				db.getTransaction().begin();
+				Transaction t = new Transaction(user, dirua, data, mota); 
+				System.out.println(t.getMota());
+				user.addTransaction(t);
+				user.updateDiruKontua(dirua);
+				u.addTransaction(t);
+				u.updateDiruKontua(dirua);
+				db.persist(t);
+				db.getTransaction().commit();
+			}
+			
+			public String saldoaBistaratu(User u) {
+				Registered reg = (Registered)db.find(User.class, u.getUsername());
+				return reg.getDirukop().toString();
+			}
 
+
+			public Question getQuestion(Event ev) {
+				Event dbev = db.find(Event.class, ev.getEventNumber());
+				if(dbev!=null) {
+					Question q= db.find(Question.class, dbev.getQuestions().get(0).getQuestionNumber()) ;
+					return q;
+				}
+				return null;
+			}
+
+
+			public Vector<Quote> getQuotes(Question q7) {
+				Question dbq = db.find(Question.class, q7.getQuestionNumber());
+				Vector<Quote> qlist=new Vector<Quote>();
+				if(dbq!=null) {
+					for(Quote kuota:dbq.getQuotes()) {
+						qlist.add( db.find(Quote.class, kuota.getQuoteNumber()));
+					}
+				}
+				return qlist;
+			
+			}
+
+
+			public Registered getRegistered(Registered u) {
+				Registered dbR=db.find(Registered.class, u.getUsername());
+				return dbR;
+			}
+
+
+			public Event setSport(Event ev, Sport sport) {
+				Event dbEv=db.find(Event.class, ev.getEventNumber());
+				if(dbEv!=null) {
+					db.getTransaction().begin();
+					dbEv.setSport(sport);
+					db.getTransaction().commit();
+					return dbEv;
+				}
+				return null;
+			}
 
 			
 			

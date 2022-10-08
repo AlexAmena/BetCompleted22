@@ -28,7 +28,7 @@ import domain.Sport;
 import domain.Team;
 import test.DataAccess.TestDataAccess;
 
-public class GertaeraEzabatuDAB {
+public class GertaeraEzabatuDABTest {
 	//sut:system under test
 	static DataAccess sut=new DataAccess();
 			 
