@@ -303,7 +303,13 @@ public class TestFacadeImplementation {
 			return x;
 		}
 		
-		
+		public boolean deleteUser(Registered r) {
+			boolean a;
+			dbManagerTest.open();
+			a = dbManagerTest.deleteUser(r);
+			dbManagerTest.close();
+			return a;
+		}
 		
 		
 		

@@ -36,8 +36,8 @@ public class RankingLortuINTT {
 	@Test
 	public void test1() {
 		
-		List<Registered> a  = testBL.deleteAllUsers();
-		List<Registered> List1;
+		//List<Registered> a  = testBL.deleteAllUsers();
+		List<Registered> List1=null;
 		
 		
 		try {
@@ -71,20 +71,23 @@ public class RankingLortuINTT {
 		 
 		 List<Registered>ra=sut.rankingLortu();
 		 for(int i=0; i<ra.size();i++) {
-			 assertTrue(ra.get(i).getUsername().equals(List1.get(i).getUsername()));
-			 assertTrue(ra.get(i).getPassword().equals(List1.get(i).getPassword()));
-			 assertTrue(ra.get(i).getBankAccount()==List1.get(i).getBankAccount());
-			 assertEquals(ra.get(i).getIrabazitakoa(),List1.get(i).getIrabazitakoa());
-		 }
+			 if(ra.get(i).getIrabazitakoa()>0) {
+				 assertTrue(ra.get(i).getUsername().equals(List1.get(i).getUsername()));
+			 	assertTrue(ra.get(i).getPassword().equals(List1.get(i).getPassword()));
+			 	assertTrue(ra.get(i).getBankAccount()==List1.get(i).getBankAccount());
+			 	assertEquals(ra.get(i).getIrabazitakoa(),List1.get(i).getIrabazitakoa());
+			 	}		 
+			 }
 		}
 		catch (Exception e) {
+			e.printStackTrace();
 			fail();
 		}
 		
 		finally {
-			testBL.deleteAllUsers();
-			for(Registered r:a) {
-				testBL.addUser(r);
+			//testBL.deleteAllUsers();
+			for(Registered r:List1) {
+				testBL.deleteUser(r);
 			}
 		}
 		 
@@ -105,7 +108,7 @@ public class RankingLortuINTT {
 		
 		
 	}
-	@Test
+	/*@Test
 	public void test3() {
 		 
 		 List<Registered> testList= testBL.deleteAllUsers();
@@ -122,7 +125,7 @@ public class RankingLortuINTT {
 			 testBL.addUser(r);
 		 }
 	 }
-	}
+	}*/
 	
 	
 	
