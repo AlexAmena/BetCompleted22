@@ -24,11 +24,11 @@ import domain.Jarraitzailea;
 import domain.KirolEstatistikak;
 import domain.Question;
 import domain.Quote;
-import domain.Registered;
 import domain.Sport;
 import domain.Team;
 import domain.Transaction;
 import domain.User;
+import domain.Registered;
 
 public class TestDataAccess {
 	protected  EntityManager  db;
@@ -602,6 +602,42 @@ public class TestDataAccess {
 					return dbEv;
 				}
 				return null;
+			}
+			
+			public Registered addUser(Registered user) {
+				db.getTransaction().begin();
+				db.persist(user);
+				db.getTransaction().commit();
+				return user;
+			}
+			
+			public boolean deleteUser(Registered user) {
+				System.out.println(">> DataAccessTest: removeSport");
+				user= db.find(Registered.class, user);
+				if (user!=null) {
+					db.getTransaction().begin();
+					db.remove(user);
+					db.getTransaction().commit();
+					return true;
+				} else 
+				return false;
+			}
+			
+			public List<Registered> getAllUsers(){
+				TypedQuery<Registered> Rquery = db.createQuery("SELECT r FROM Registered r", Registered.class);
+				List<Registered> listR = Rquery.getResultList();
+				return listR;
+			}
+			
+			public List<Registered> deleteAllUsers(){
+				TypedQuery<Registered> Rquery = db.createQuery("SELECT r FROM Registered r", Registered.class);
+				List<Registered> listR = Rquery.getResultList();
+				for(Registered r:listR) {
+					db.getTransaction().begin();
+					db.remove(r);
+					db.getTransaction().commit();
+				}
+				return listR;
 			}
 
 			

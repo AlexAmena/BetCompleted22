@@ -49,6 +49,11 @@ public class Registered extends User implements Serializable{
 		super();
 	}
 	
+	public Registered(String username, String password, Integer bankAccount, Double gains) {
+		super(username, password, bankAccount);
+		this.irabazitakoa=gains;
+	}
+	
 	public Vector<Transaction> getTransakzioak() {
 		return transakzioak;
 	}
