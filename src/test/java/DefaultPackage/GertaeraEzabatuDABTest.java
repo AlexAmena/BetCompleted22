@@ -58,7 +58,7 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(sut.gertaeraEzabatu(ev)); //GAIZKI  metodoak ez du ezer bueltatzen, programak errorea jaurtitzen du eta tratatu gabe dago
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
-			System.out.println("ERROREA TEST7");
+			System.out.println("TEST 1 EZ GAINDITUTA");
 			System.out.println(e.getMessage());
 			fail();
 		}
@@ -517,7 +517,7 @@ public class GertaeraEzabatuDABTest {
 		try {
 			assertFalse(sut.gertaeraEzabatu(ev));//GAIZKI  emaitza ez du ezer bueltatzen, programak errorea jaurtitzen du eta tratatu gabe dago
 		}catch(Exception e) {
-			System.out.println("ERROREA TEST7");
+			System.out.println("TEST 7 EZ GAINDITUTA");
 			System.out.println(e.getMessage());
 			fail();
 		}	
