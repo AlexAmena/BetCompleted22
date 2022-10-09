@@ -41,15 +41,15 @@ public class RankingLortuINTT {
 		
 		
 		try {
-		 String username1="user41";
+		 String username1="user412343";
 		 String password1="password";
 		 int bankAccount1=1;
 		 Double gains1=5.0;
-		 String username2="user26";
+		 String username2="user2124146";
 		 String password2="password";
 		 int bankAccount2=2;
 		 Double gains2=22.1;
-		 String username3="user312";
+		 String username3="user3112412";
 		 String password3="password";
 		 int bankAccount3=3;
 		 Double gains3=41.1;
@@ -99,7 +99,7 @@ public class RankingLortuINTT {
 			 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 			 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 			 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-			 assertEquals(ra.get(i).getIrabazitakoa(),0.0);
+			 assertTrue(ra.get(i).getIrabazitakoa()==0.0);
 		 }
 		
 		
