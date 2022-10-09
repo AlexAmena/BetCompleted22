@@ -212,7 +212,7 @@ public class RankingLortuDAB {
 			 assertTrue(lista.get(0).getUsername().equals(user11.getUsername()));
 			 assertTrue(lista.get(0).getPassword().equals(user11.getPassword()));
 			 assertTrue(lista.get(0).getBankAccount()==user11.getBankAccount());
-			 assertEquals(lista.get(0).getIrabazitakoa(),user11.getIrabazitakoa());
+			 assertEquals(lista.get(0).getIrabazitakoa(),user11.getIrabazitakoa());//
 		 }
 		 catch (Exception e) {
 			 fail();
