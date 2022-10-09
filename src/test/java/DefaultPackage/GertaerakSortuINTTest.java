@@ -75,7 +75,7 @@ public class GertaerakSortuINTTest {
 			//egiaztatu emaitzak
 			assertTrue(b);
 
-			ev = testBL.findEventWithDescriptionAndDate(description, d, sportName);
+			ev = testBL.findEventWithDescriptionDateAndSport(description, d, sportName);
 			assertEquals(ev.getDescription(),description);
 			assertEquals(ev.getEventDate(),d);
 			assertEquals(ev.getSport().getIzena(),sportName);
@@ -127,7 +127,7 @@ public class GertaerakSortuINTTest {
 			assertTrue(!b);
 			
 			//egiaztatu gertaera ez dela datu basera gehitu:
-			Event event = testBL.findEventWithDescriptionAndDate(description, d, sport2Name);
+			Event event = testBL.findEventWithDescriptionDateAndSport(description, d, sport2Name);
 			assertNull(event);
 
 		} catch (Exception e) {
@@ -488,7 +488,7 @@ public class GertaerakSortuINTTest {
 			assertTrue(b);
 			
 			//egiaztatu gertaera ez dagoela datu basean:
-			ev = testBL.findEventWithDescriptionAndDate(description, d, sportName);
+			ev = testBL.findEventWithDescriptionDateAndSport(description, d, sportName);
 			assertEquals(ev.getDescription(),description);
 			assertEquals(ev.getEventDate(),d);
 			assertEquals(ev.getSport().getIzena(),sportName);

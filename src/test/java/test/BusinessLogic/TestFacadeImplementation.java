@@ -95,9 +95,9 @@ public class TestFacadeImplementation {
 			dbManagerTest.close();
 			return b;
 		}
-		public Event findEventWithDescriptionAndDate(String description, Date d, String sportName) {
+		public Event findEventWithDescriptionDateAndSport(String description, Date d, String sportName) {
 			dbManagerTest.open();
-			Event e = dbManagerTest.findEventWithDescriptionAndDate(description,d,sportName);
+			Event e = dbManagerTest.findEventWithDescriptionDateAndSport(description,d,sportName);
 			dbManagerTest.close();
 			return e;
 		}

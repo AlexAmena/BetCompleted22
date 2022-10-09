@@ -182,7 +182,7 @@ public class TestDataAccess {
 			} else 
 			return false;
 		}
-		public Event findEventWithDescriptionAndDate(String description, Date d, String sportName) {
+		public Event findEventWithDescriptionDateAndSport(String description, Date d, String sportName) {
 			System.out.println(">> DataAccessTest: findEvent");
 			//db.getTransaction().begin();
 			System.out.println("hola");

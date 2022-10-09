@@ -61,7 +61,7 @@ public class GertaerakSortuDABTest {
 			
 			//Egiaztatu objektua ondo gehitu dela DBra.
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			testDA.close();
 			assertEquals(event.getDescription(),description1);
 			assertEquals(event.getEventDate(), d);
@@ -120,7 +120,7 @@ public class GertaerakSortuDABTest {
 			
 			//Egiaztatu gertaera ez dela DB-ra gehitu
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("a-b", d, "sport2");
+			event = testDA.findEventWithDescriptionDateAndSport("a-b", d, "sport2");
 			testDA.close();
 			assertNull(event);
 
@@ -217,7 +217,7 @@ public class GertaerakSortuDABTest {
 			//Egiaztatu errorea gertatu dela
 			//Egiaztatu ez dela gertaera DB-ra sartu
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			assertNull(event);
 			fail();
 		} finally {
@@ -306,7 +306,7 @@ public class GertaerakSortuDABTest {
 
 			//Egiaztatu ez dela gertaera sortu:
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			testDA.close();
 			assertNull(event);
 			assertTrue(!emaitza);
@@ -390,7 +390,7 @@ public class GertaerakSortuDABTest {
 			
 			//Egiaztati gertaera ez dagpela DBan.
 			testDA.open();
-			testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			testDA.close();
 			assertNull(event);
 		}catch(Exception e) {
@@ -434,7 +434,7 @@ public class GertaerakSortuDABTest {
 			assertTrue(emaitza);
 			
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d,sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d,sportName);
 			testDA.close();
 			assertNull(event);
 			fail();
@@ -476,7 +476,7 @@ public class GertaerakSortuDABTest {
 
 			//Deitu probatu nahi den metodoari
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			testDA.close();
 
 
@@ -528,7 +528,7 @@ public class GertaerakSortuDABTest {
 
 			//Deitu probatu nahi den metodoari
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d,sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d,sportName);
 			testDA.close();
 
 

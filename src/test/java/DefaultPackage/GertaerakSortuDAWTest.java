@@ -53,7 +53,7 @@ public class GertaerakSortuDAWTest {
 			assertTrue(!emaitza);
 			
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport(description1, d, sportName);
 			testDA.close();
 			assertNull(event);
 			
@@ -102,7 +102,7 @@ public class GertaerakSortuDAWTest {
 			
 			//Egiaztatu gertaera DB-an dagoela.
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("a-b", d, sportName);
+			event = testDA.findEventWithDescriptionDateAndSport("a-b", d, sportName);
 			testDA.close();
 			assertEquals(event.getDescription(),description1);
 			assertEquals(event.getEventDate(), d);
@@ -161,7 +161,7 @@ public class GertaerakSortuDAWTest {
 			
 			//Egiaztatu gertaera gehitu dela DB-ra
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("b-a", d, sport2Name);
+			event = testDA.findEventWithDescriptionDateAndSport("b-a", d, sport2Name);
 			testDA.close();
 			assertEquals(event.getDescription(),description2);
 			assertEquals(event.getEventDate(), d);
@@ -220,7 +220,7 @@ public class GertaerakSortuDAWTest {
 			
 			//Egiaztatu DBra ez dela gertaera gehitu, hau da, DB-an dagoen kirola "sport" kirola duena dela, ez "sport2" duena.
 			testDA.open();
-			event = testDA.findEventWithDescriptionAndDate("a-b", d, "sport2");
+			event = testDA.findEventWithDescriptionDateAndSport("a-b", d, "sport2");
 			testDA.close();
 			assertNull(event);
 
