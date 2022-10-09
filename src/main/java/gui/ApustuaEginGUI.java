@@ -410,7 +410,7 @@ public class ApustuaEginGUI extends JFrame{
 						}
 						jComboBoxEvents.repaint();
 						
-						if (events.size() == 0) {
+						if (events.isEmpty()) {
 							btnApustuaGehitu.setEnabled(false);
 						}else {
 							
