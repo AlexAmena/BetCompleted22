@@ -99,7 +99,7 @@ public class RankingLortuINTT {
 			 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 			 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 			 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-			 assertEquals(ra.get(i).getIrabazitakoa(),0.0);
+			 assertTrue(ra.get(i).getIrabazitakoa()==0.0);
 		 }
 		
 		

@@ -95,7 +95,7 @@ public class RankingLortuDAB {
 			 assertTrue(ra.get(i).getUsername().equals(testList.get(i).getUsername()));
 			 assertTrue(ra.get(i).getPassword().equals(testList.get(i).getPassword()));
 			 assertTrue(ra.get(i).getBankAccount()==testList.get(i).getBankAccount());
-			 assertEquals(ra.get(i).getIrabazitakoa(),0.0);
+			 assertTrue(ra.get(i).getIrabazitakoa()==0.0);
 		 }
 		 
 	 }
@@ -212,7 +212,7 @@ public class RankingLortuDAB {
 			 assertTrue(lista.get(0).getUsername().equals(user11.getUsername()));
 			 assertTrue(lista.get(0).getPassword().equals(user11.getPassword()));
 			 assertTrue(lista.get(0).getBankAccount()==user11.getBankAccount());
-			 assertEquals(lista.get(0).getIrabazitakoa(),user11.getIrabazitakoa());//
+			 assertEquals(lista.get(0).getIrabazitakoa(),user11.getIrabazitakoa());
 		 }
 		 catch (Exception e) {
 			 fail();
