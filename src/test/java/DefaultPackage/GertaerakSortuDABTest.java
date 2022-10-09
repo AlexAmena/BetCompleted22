@@ -303,14 +303,13 @@ public class GertaerakSortuDABTest {
 			//Deitu probatu nahi den metodoari
 			boolean emaitza = sut.gertaerakSortu(description1, d, sportName);
 			
-			//Gertaera sortzen badu true itzuliko du:
-			assertTrue(emaitza);
-			
+
 			//Egiaztatu ez dela gertaera sortu:
 			testDA.open();
 			event = testDA.findEventWithDescriptionAndDate(description1, d, sportName);
 			testDA.close();
 			assertNull(event);
+			assertTrue(!emaitza);
 			fail();
 		
 		
