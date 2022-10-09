@@ -1246,14 +1246,14 @@ public void open(boolean initializeMode){
 			if(ema.isEmpty()) {
 				ema.add(0, r);
 			}else {
-				i=0;
+				i=0; 
 				while(i<ema.size() && r.getIrabazitakoa()<ema.get(i).getIrabazitakoa()) {
-					i++;
+					i++;  
 				}
 				ema.add(i, r);
 			}
 		}
-		return ema;
+		return ema; 
 	}
 	
 	public List<Event> getEventsAll() {	

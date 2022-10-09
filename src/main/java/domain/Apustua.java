@@ -1,6 +1,7 @@
 package domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Vector;
 
 import javax.persistence.CascadeType;
@@ -93,5 +94,10 @@ public class Apustua implements Serializable{
 		Apustua a = (Apustua) o; 
 		
 		return this.getApostuaNumber().equals(a.getApostuaNumber()); 
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(apustuaNumber, egoera, kuota, apustuAnitza);
 	}
 }

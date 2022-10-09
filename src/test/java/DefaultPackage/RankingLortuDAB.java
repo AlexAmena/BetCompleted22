@@ -27,10 +27,10 @@ public class RankingLortuDAB {
 	 @Test
 	 public void test1() {
 		 try {
-			 String username1="user1";
+			 String username1="user1123124"; 
 			 String password1="password";
 			 int bankAccount1=1;
-			 Double gains1=5.0;
+			 Double gains1=45.0;
 			 String username2="user2";
 			 String password2="password";
 			 int bankAccount2=2;
@@ -47,9 +47,9 @@ public class RankingLortuDAB {
 			 Registered user2 = new Registered(username2, password2, bankAccount2, gains2);
 			 Registered user3 = new Registered(username3, password3, bankAccount3, gains3);
 		 
-			 ra.add(user3);
-			 ra.add(user2);
 			 ra.add(user1);
+			 ra.add(user3); 
+			 ra.add(user2);
 			 
 			 testDA.open();
 			 testDA.addUser(user1);
@@ -80,7 +80,7 @@ public class RankingLortuDAB {
 			 for(Registered r:ra) {
 				 testDA.deleteUser(r);
 			 }
-			 testDA.close();
+			 testDA.close(); 
 		 } 
 	 }
 	 
