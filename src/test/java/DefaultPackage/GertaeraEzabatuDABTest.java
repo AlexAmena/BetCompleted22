@@ -5,9 +5,8 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
+import static org.junit.Assert.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -290,7 +289,7 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			assertFalse(diruaHasieran==diruTotala);			//DIRUA EZ DA BUELTATU         //ALDAKETA EGIN DA NOTNULLETIK
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar 
@@ -386,7 +385,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			//assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			assertFalse(diruaHasieran==diruTotala);			//DIRUA EZ DA BUELTATU
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar 
@@ -487,7 +487,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			//assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			assertFalse(diruaHasieran==diruTotala);			//DIRUA EZ DA BUELTATU
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertFalse(existApA);//apustuAnitza borratzen da 
