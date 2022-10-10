@@ -59,6 +59,12 @@
  	   <scope>test</scope>
 	</dependency> 
 		<dependency>
+      			<groupId>org.junit.jupiter</groupId>
+      			<artifactId>junit-jupiter</artifactId>
+      			<version>5.5.2</version>
+      			<scope>test</scope>
+    		</dependency>
+		<dependency>
 			<groupId>com.toedter</groupId>
 			<artifactId>jcalendar</artifactId>
 			<version>1.4</version>
