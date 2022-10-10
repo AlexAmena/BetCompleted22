@@ -4,8 +4,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.Assert.assertEquals;
 
 import java.text.Format;
 import java.text.ParseException;
@@ -304,7 +305,9 @@ public class GertaeraEzabatuINTTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala); 	//dirua ez dela bueltatu konprobatu
+			//assertNotEquals(diruaHasieran,diruTotala); 	//dirua ez dela bueltatu konprobatu
+			assertFalse(diruaHasieran==diruTotala); 	//dirua ez dela bueltatu konprobatu
+
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);		//kasu honetan apustuanitza ez du borratu behar, gertaera jada pasa zen
@@ -398,7 +401,9 @@ public class GertaeraEzabatuINTTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala); 	//dirua ez dela bueltatu konprobatu
+			//assertNotEquals(diruaHasieran,diruTotala); 	//dirua ez dela bueltatu konprobatu
+			assertFalse(diruaHasieran==diruTotala); 	//dirua ez dela bueltatu konprobatu
+
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);		//kasu honetan apustuanitza ez du borratu behar, gertaera jada pasa zen
@@ -532,3 +537,4 @@ public class GertaeraEzabatuINTTest {
 	}
 
 }
+
