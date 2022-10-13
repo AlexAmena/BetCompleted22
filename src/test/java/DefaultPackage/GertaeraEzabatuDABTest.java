@@ -162,7 +162,7 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q7.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(null);
+			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -259,7 +259,7 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(null);
+			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -356,7 +356,7 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(null);
+			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -458,7 +458,7 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(null);
+			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));

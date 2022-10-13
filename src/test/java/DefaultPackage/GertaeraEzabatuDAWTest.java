@@ -329,7 +329,7 @@ public class GertaeraEzabatuDAWTest {
 				testDA.addQuotetoQuestion(q7, 1.43, "Forecast 1 penalty");
 				testDA.close();
 				Quote k2=q7.getQuotes().get(0);
-				sut.DiruaSartu(null);
+				sut.DiruaSartu(u, 100.0, oneDate, "sartu");
 				sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 				testDA.open();
 				Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -433,7 +433,7 @@ public class GertaeraEzabatuDAWTest {
 				
 				
 				
-				sut.DiruaSartu(null);
+				sut.DiruaSartu(u, 10.0, oneDate, "Diruasartu");
 								
 				testDA.open();
 				testDA.apustuaXaldiz(u, ev.getQuestions().get(0).getQuotes(), 4.0, 2,true);//bikoitza egin
@@ -554,7 +554,7 @@ public class GertaeraEzabatuDAWTest {
 				
 				
 				
-				sut.DiruaSartu(null);
+				sut.DiruaSartu(u, 10.0, oneDate, "Diruasartu");
 				sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 				testDA.open();
 				Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));

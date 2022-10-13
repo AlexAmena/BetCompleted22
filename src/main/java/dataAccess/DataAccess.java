@@ -746,10 +746,10 @@ public class DataAccess  {
 			
 			db.getTransaction().commit();
 			
-			this.DiruaSartu(null);
-			this.DiruaSartu(null);
-			this.DiruaSartu(null);
-			this.DiruaSartu(null);
+			this.DiruaSartu(reg1, 50.0, new Date(), "DiruaSartu");
+			this.DiruaSartu(reg2, 50.0, new Date(), "DiruaSartu");
+			this.DiruaSartu(reg3, 50.0, new Date(), "DiruaSartu");
+			this.DiruaSartu(reg4, 50.0, new Date(), "DiruaSartu");
 			
 			System.out.println("Db initialized");
 		}
@@ -1005,23 +1005,13 @@ public void open(boolean initializeMode){
 		return Qquery.getResultList();
 	}
 	
-//	public void DiruaSartu(User u, Double dirua, Date data, String mota) {
-//		Registered user = (Registered) db.find(User.class, u.getUsername()); 
-//		db.getTransaction().begin();
-//		Transaction t = new Transaction(user, dirua, data, mota); 
-//		System.out.println(t.getMota());
-//		user.addTransaction(t);
-//		user.updateDiruKontua(dirua);
-//		db.persist(t);
-//		db.getTransaction().commit();
-//	}
-	public void DiruaSartu(Transaction transaction) {
-		Registered user = (Registered) db.find(User.class, transaction.getErabiltzailea().getUsername()); 
+	public void DiruaSartu(User u, Double dirua, Date data, String mota) {
+		Registered user = (Registered) db.find(User.class, u.getUsername()); 
 		db.getTransaction().begin();
-		Transaction t = new Transaction(user, transaction.getDirua(), transaction.getData(), transaction.getMota()); 
+		Transaction t = new Transaction(user, dirua, data, mota); 
 		System.out.println(t.getMota());
 		user.addTransaction(t);
-		user.updateDiruKontua(t.getDirua());
+		user.updateDiruKontua(dirua);
 		db.persist(t);
 		db.getTransaction().commit();
 	}
