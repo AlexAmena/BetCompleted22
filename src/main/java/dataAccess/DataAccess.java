@@ -1104,6 +1104,40 @@ public void open(boolean initializeMode){
 		db.getTransaction().commit();
 	}
 	
+	/*public void EmaitzakIpini(Quote quote) throws EventNotFinished{
+		
+		Quote q = db.find(Quote.class, quote); 
+		String result = q.getForecast();
+		
+		if(new Date().compareTo(q.getQuestion().getEvent().getEventDate())<0)
+			throw new EventNotFinished();
+
+		List<Apustua> listApustuak = q.getApustuak();
+		db.getTransaction().begin();
+		Question que = q.getQuestion(); 
+		Question question = db.find(Question.class, que); 
+		question.setResult(result);
+		for(Quote quo: question.getQuotes()) {
+			for(Apustua apu: quo.getApustuak()) {
+				
+				Boolean b=apu.galdutaMarkatu(quo);
+				if(b) {
+					apu.getApustuAnitza().setEgoera("galduta");
+				}else {
+					apu.setEgoera("irabazita");
+				}
+			}
+		}
+		db.getTransaction().commit();
+		for(Apustua a : listApustuak) {
+			db.getTransaction().begin();
+			Boolean bool=a.getApustuAnitza().irabazitaMarkatu();
+			db.getTransaction().commit();
+			if(bool) {
+				this.ApustuaIrabazi(a.getApustuAnitza());
+			}
+		}
+	}*/
 	public void EmaitzakIpini(Quote quote) throws EventNotFinished{
 		
 		Quote q = db.find(Quote.class, quote); 
