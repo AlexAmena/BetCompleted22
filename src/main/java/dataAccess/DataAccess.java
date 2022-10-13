@@ -746,10 +746,10 @@ public class DataAccess  {
 			
 			db.getTransaction().commit();
 			
-			this.DiruaSartu(reg1, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg2, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg3, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg4, 50.0, new Date(), "DiruaSartu");
+			this.DiruaSartu(null);
+			this.DiruaSartu(null);
+			this.DiruaSartu(null);
+			this.DiruaSartu(null);
 			
 			System.out.println("Db initialized");
 		}
@@ -880,6 +880,37 @@ public void open(boolean initializeMode){
 		db.getTransaction().commit();
 	}
 	
+	
+//	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
+//		boolean b = true;
+//
+//		//db.getTransaction().begin();
+//		Sport spo =db.find(Sport.class, sport);
+//		if(spo!=null) {
+//			TypedQuery<Event> Equery = db.createQuery("SELECT e FROM Event e WHERE e.getEventDate() =?1 ",Event.class);
+//			Equery.setParameter(1, eventDate);
+//			for(Event ev: Equery.getResultList()) {
+//				if(ev.getDescription().equals(description)) {
+//					b = false;
+//				}
+//			}
+//			if(b) {
+//				String[] taldeak = description.split("-");
+//				Team lokala = new Team(taldeak[0]);
+//				Team kanpokoa = new Team(taldeak[1]);
+//				Event e = new Event(description, eventDate, lokala, kanpokoa);
+//				e.setSport(spo);
+//				spo.addEvent(e);
+//				db.getTransaction().begin();
+//				db.persist(e);
+//				db.getTransaction().commit();
+//			}
+//		}else {
+//			return false;
+//		}
+//		//db.getTransaction().commit();
+//		return b;
+//	}
 	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
 		boolean b = true;
 
@@ -888,11 +919,7 @@ public void open(boolean initializeMode){
 		if(spo!=null) {
 			TypedQuery<Event> Equery = db.createQuery("SELECT e FROM Event e WHERE e.getEventDate() =?1 ",Event.class);
 			Equery.setParameter(1, eventDate);
-			for(Event ev: Equery.getResultList()) {
-				if(ev.getDescription().equals(description)) {
-					b = false;
-				}
-			}
+			b = extracted(description, b, Equery);
 			if(b) {
 				String[] taldeak = description.split("-");
 				Team lokala = new Team(taldeak[0]);
@@ -908,6 +935,15 @@ public void open(boolean initializeMode){
 			return false;
 		}
 		//db.getTransaction().commit();
+		return b;
+	}
+
+	private boolean extracted(String description, boolean b, TypedQuery<Event> Equery) {
+		for(Event ev: Equery.getResultList()) {
+			if(ev.getDescription().equals(description)) {
+				b = false;
+			}
+		}
 		return b;
 	}
 	
@@ -969,13 +1005,23 @@ public void open(boolean initializeMode){
 		return Qquery.getResultList();
 	}
 	
-	public void DiruaSartu(User u, Double dirua, Date data, String mota) {
-		Registered user = (Registered) db.find(User.class, u.getUsername()); 
+//	public void DiruaSartu(User u, Double dirua, Date data, String mota) {
+//		Registered user = (Registered) db.find(User.class, u.getUsername()); 
+//		db.getTransaction().begin();
+//		Transaction t = new Transaction(user, dirua, data, mota); 
+//		System.out.println(t.getMota());
+//		user.addTransaction(t);
+//		user.updateDiruKontua(dirua);
+//		db.persist(t);
+//		db.getTransaction().commit();
+//	}
+	public void DiruaSartu(Transaction transaction) {
+		Registered user = (Registered) db.find(User.class, transaction.getErabiltzailea().getUsername()); 
 		db.getTransaction().begin();
-		Transaction t = new Transaction(user, dirua, data, mota); 
+		Transaction t = new Transaction(user, transaction.getDirua(), transaction.getData(), transaction.getMota()); 
 		System.out.println(t.getMota());
 		user.addTransaction(t);
-		user.updateDiruKontua(dirua);
+		user.updateDiruKontua(t.getDirua());
 		db.persist(t);
 		db.getTransaction().commit();
 	}
