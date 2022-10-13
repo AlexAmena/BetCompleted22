@@ -37,7 +37,7 @@ public class CreateQuestionDAB {
 		try {
 			
 			//define paramaters
-			String eventText="event1";
+			String eventText="event1";//
 			String queryText="query1";
 			Float betMinimum=new Float(2);
 			//Team lokala=new Team("Team1");
