@@ -5,16 +5,18 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.DisplayName;
+import org.junit.Test;
+
+//import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.DisplayName;
 
 import dataAccess.DataAccess;
 import domain.ApustuAnitza;
@@ -37,7 +39,7 @@ public class GertaeraEzabatuDABTest {
 	private Event ev;
 
 	@Test
-	@DisplayName("Event not in DB")
+	//@DisplayName("Event not in DB")
 	public void test1() {
 		Team t1=new Team("RSO");
 		Team t2=new Team("ATL");
@@ -66,7 +68,7 @@ public class GertaeraEzabatuDABTest {
 	}
 	
 	@Test
-	@DisplayName("Galderak erantzurik gabe daude")
+	//@DisplayName("Galderak erantzurik gabe daude")
 	public void test2() {//emaitzak ez dituzte
 		try {
 			//define paramaters
@@ -120,7 +122,7 @@ public class GertaeraEzabatuDABTest {
 		   }
 	
 	@Test
-	@DisplayName("emaitzak argitaratuta daude --> itzuli dirua eta borratu normal")
+	//@DisplayName("emaitzak argitaratuta daude --> itzuli dirua eta borratu normal")
 	public void test3() {
 		
 		String t1=null;
@@ -194,7 +196,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertEquals(diruaHasieran,diruTotala);//konparatu hasieran zuen diru kantitate berdina duela
+			//assertEquals(diruaHasieran,diruTotala);//konparatu hasieran zuen diru kantitate berdina duela
+			assertTrue(diruaHasieran==diruTotala);
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertFalse(existApA);//apustuAnitza azkeneko iterazioan ezabatzen da, beraz ez da existitu behar	
@@ -217,7 +220,7 @@ public class GertaeraEzabatuDABTest {
 	}
 	
 	@Test
-	@DisplayName("gertaera pasa zen: MugaBalioa n-1 (gertaera atzo)")
+	//@DisplayName("gertaera pasa zen: MugaBalioa n-1 (gertaera atzo)")
 	public void test4() {
 		String t1=null;
 		String t2=null;
@@ -289,7 +292,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU        
+			//assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU    
+			assertFalse(diruaHasieran==diruTotala);
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar 
@@ -313,7 +317,7 @@ public class GertaeraEzabatuDABTest {
 		   }
 	
 	@Test
-	@DisplayName("gertaera pasa zen: MugaBalioa n (gaur)")
+	//@DisplayName("gertaera pasa zen: MugaBalioa n (gaur)")
 	public void test5() {
 		String t1=null;
 		String t2=null;
@@ -385,7 +389,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			//assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			assertFalse(diruaHasieran==diruTotala);
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertTrue(existApA);//apustuAnitza ez da berez automatikoki borratu behar 
@@ -409,7 +414,7 @@ public class GertaeraEzabatuDABTest {
 		   }
 	
 	@Test
-	@DisplayName("gertaera pasa zen: MugaBalioa n+1 (gertara bihar)")
+	//@DisplayName("gertaera pasa zen: MugaBalioa n+1 (gertara bihar)")
 	public void test6() {
 		String t1=null;
 		String t2=null;
@@ -486,7 +491,8 @@ public class GertaeraEzabatuDABTest {
 			assertFalse(existKuote);
 			assertFalse(existAp);
 			assertTrue(existUser);//user ez da berez automatikoki borratu behar
-			assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			//assertNotEquals(diruaHasieran,diruTotala);			//DIRUA EZ DA BUELTATU
+			assertFalse(diruaHasieran==diruTotala);
 			assertTrue(existTeam);//user ez da berez automatikoki borratu behar
 			assertTrue(existTeam2);//user ez da berez automatikoki borratu behar
 			assertFalse(existApA);//apustuAnitza borratzen da 
@@ -510,7 +516,7 @@ public class GertaeraEzabatuDABTest {
 		   }
 	
 	@Test
-	@DisplayName("Event=null?")
+	//@DisplayName("Event=null?")
 	public void test7() {
 		ev =null;
 		try {
