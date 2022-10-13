@@ -1114,6 +1114,19 @@ public void open(boolean initializeMode){
 
 		List<Apustua> listApustuak = q.getApustuak();
 		db.getTransaction().begin();
+		extracted(q, result);
+		db.getTransaction().commit();
+		for(Apustua a : listApustuak) {
+			db.getTransaction().begin();
+			Boolean bool=a.getApustuAnitza().irabazitaMarkatu();
+			db.getTransaction().commit();
+			if(bool) {
+				this.ApustuaIrabazi(a.getApustuAnitza());
+			}
+		}
+	}
+
+	private void extracted(Quote q, String result) {
 		Question que = q.getQuestion(); 
 		Question question = db.find(Question.class, que); 
 		question.setResult(result);
@@ -1126,15 +1139,6 @@ public void open(boolean initializeMode){
 				}else {
 					apu.setEgoera("irabazita");
 				}
-			}
-		}
-		db.getTransaction().commit();
-		for(Apustua a : listApustuak) {
-			db.getTransaction().begin();
-			Boolean bool=a.getApustuAnitza().irabazitaMarkatu();
-			db.getTransaction().commit();
-			if(bool) {
-				this.ApustuaIrabazi(a.getApustuAnitza());
 			}
 		}
 	}
