@@ -109,7 +109,7 @@ public interface BLFacade{
 	
 	@WebMethod public List<ElkarrizketaContainer> elkarrizketakLortu(User u);
 	
-	@WebMethod public boolean mezuaBidali(User igorle, String hartzailea, String asunto, String test, Elkarrizketa m);
+	@WebMethod public boolean mezuaBidali(User igorle,  Elkarrizketa m,Vector<String> osagaiak);
 	
 	@WebMethod public List<Registered> rankingLortu();
 	

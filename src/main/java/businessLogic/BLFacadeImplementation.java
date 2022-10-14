@@ -272,13 +272,6 @@ public class BLFacadeImplementation  implements BLFacade{
     	return list;
     }
 	
-	@WebMethod
-	public boolean mezuaBidali(User igorle, String hartzailea, String titulo, String test, Elkarrizketa m) {
-		dbManager.open(false);
-		Boolean ema = dbManager.mezuaBidali(igorle, hartzailea, titulo, test, m);
-		dbManager.close();
-		return ema;
-	}
 	
 	@WebMethod
 	public List<Registered> rankingLortu(){
@@ -425,6 +418,14 @@ public class BLFacadeImplementation  implements BLFacade{
 		Sport team = dbManager.findSport(q);
 		dbManager.close();
 		return team;
+	}
+
+	@Override
+	public boolean mezuaBidali(User igorle,  Elkarrizketa m,Vector<String> osagaiak) {
+		dbManager.open(false);
+		Boolean ema = dbManager.mezuaBidali(igorle, m, osagaiak);
+		dbManager.close();
+		return ema;
 	}
 }
 

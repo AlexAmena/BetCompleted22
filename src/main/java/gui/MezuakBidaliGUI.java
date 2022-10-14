@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ResourceBundle;
+import java.util.Vector;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -112,7 +113,11 @@ public class MezuakBidaliGUI extends JFrame{
 		btnEnviar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(!user.getUsername().equals(txtHartzailea.getText())) {
-					Boolean ema= businessLogic.mezuaBidali(user, txtHartzailea.getText(), txtAsunto.getText(), txtTestua.getText(), elkarrizketa);
+					Vector <String>osagaiak=new Vector<String>();
+					osagaiak.add(txtHartzailea.getText());
+					osagaiak.add(txtAsunto.getText());
+					osagaiak.add(txtTestua.getText());
+					Boolean ema= businessLogic.mezuaBidali(user, elkarrizketa,osagaiak);
 					if(ema) {
 						thisw.setVisible(false);
 						JFrame a = new SarreraOntziaGUI(user);

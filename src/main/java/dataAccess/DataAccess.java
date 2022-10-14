@@ -745,11 +745,11 @@ public class DataAccess  {
 			db.persist(m12);
 			
 			db.getTransaction().commit();
-			
-			this.DiruaSartu(reg1, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg2, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg3, 50.0, new Date(), "DiruaSartu");
-			this.DiruaSartu(reg4, 50.0, new Date(), "DiruaSartu");
+			String mugimenduMota="DiruaSartu";
+			this.DiruaSartu(reg1, 50.0, new Date(), mugimenduMota);
+			this.DiruaSartu(reg2, 50.0, new Date(), mugimenduMota);
+			this.DiruaSartu(reg3, 50.0, new Date(), mugimenduMota);
+			this.DiruaSartu(reg4, 50.0, new Date(), mugimenduMota);
 			
 			System.out.println("Db initialized");
 		}
@@ -880,37 +880,6 @@ public void open(boolean initializeMode){
 		db.getTransaction().commit();
 	}
 	
-	
-//	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
-//		boolean b = true;
-//
-//		//db.getTransaction().begin();
-//		Sport spo =db.find(Sport.class, sport);
-//		if(spo!=null) {
-//			TypedQuery<Event> Equery = db.createQuery("SELECT e FROM Event e WHERE e.getEventDate() =?1 ",Event.class);
-//			Equery.setParameter(1, eventDate);
-//			for(Event ev: Equery.getResultList()) {
-//				if(ev.getDescription().equals(description)) {
-//					b = false;
-//				}
-//			}
-//			if(b) {
-//				String[] taldeak = description.split("-");
-//				Team lokala = new Team(taldeak[0]);
-//				Team kanpokoa = new Team(taldeak[1]);
-//				Event e = new Event(description, eventDate, lokala, kanpokoa);
-//				e.setSport(spo);
-//				spo.addEvent(e);
-//				db.getTransaction().begin();
-//				db.persist(e);
-//				db.getTransaction().commit();
-//			}
-//		}else {
-//			return false;
-//		}
-//		//db.getTransaction().commit();
-//		return b;
-//	}
 	public boolean gertaerakSortu(String description,Date eventDate, String sport) {
 		boolean b = true;
 
@@ -919,7 +888,11 @@ public void open(boolean initializeMode){
 		if(spo!=null) {
 			TypedQuery<Event> Equery = db.createQuery("SELECT e FROM Event e WHERE e.getEventDate() =?1 ",Event.class);
 			Equery.setParameter(1, eventDate);
-			b = extracted(description, b, Equery);
+			for(Event ev: Equery.getResultList()) {
+				if(ev.getDescription().equals(description)) {
+					b = false;
+				}
+			}
 			if(b) {
 				String[] taldeak = description.split("-");
 				Team lokala = new Team(taldeak[0]);
@@ -935,15 +908,6 @@ public void open(boolean initializeMode){
 			return false;
 		}
 		//db.getTransaction().commit();
-		return b;
-	}
-
-	private boolean extracted(String description, boolean b, TypedQuery<Event> Equery) {
-		for(Event ev: Equery.getResultList()) {
-			if(ev.getDescription().equals(description)) {
-				b = false;
-			}
-		}
 		return b;
 	}
 	
@@ -1284,31 +1248,39 @@ public void open(boolean initializeMode){
 		return lista;
 	}
 	
-	public boolean mezuaBidali(User igorlea, String hartzailea, String titulo, String test, Elkarrizketa elkarrizketa) {
-		User igorle = db.find(User.class, igorlea.getUsername());
-		User hartzaile = db.find(User.class, hartzailea);
-		Elkarrizketa elk=null;
-		if(hartzaile==null) {
-			return false;
-		}else {
-			db.getTransaction().begin();
-			Message m = new Message(igorle, hartzaile, test);
-			db.persist(m);
-			if(elkarrizketa!=null) {
-				elk = db.find(Elkarrizketa.class, elkarrizketa.getElkarrizketaNumber());
+	public boolean mezuaBidali(User igorlea, Elkarrizketa elkarrizketa, Vector<String> osagaiak) {
+		if(osagaiak.size()==3) {
+			String hartzailea=osagaiak.get(0);
+			String titulo=osagaiak.get(1);
+			String testua=osagaiak.get(2);
+			
+			User igorle = db.find(User.class, igorlea.getUsername());
+			User hartzaile = db.find(User.class, hartzailea);
+			Elkarrizketa elk=null;
+			if(hartzaile==null) {
+				return false;
 			}else {
-				elk= new Elkarrizketa(titulo, igorle, hartzaile);
-				db.persist(elk);
-				m.setElkarrizketa(elk);
-				igorle.addElkarrizketak(elk);
-				hartzaile.addElkarrizketak(elk);
+				db.getTransaction().begin();
+				Message m = new Message(igorle, hartzaile, testua);
+				db.persist(m);
+				if(elkarrizketa!=null) {
+					elk = db.find(Elkarrizketa.class, elkarrizketa.getElkarrizketaNumber());
+				}else {
+					elk= new Elkarrizketa(titulo, igorle, hartzaile);
+					db.persist(elk);
+					m.setElkarrizketa(elk);
+					igorle.addElkarrizketak(elk);
+					hartzaile.addElkarrizketak(elk);
+				}
+				elk.addMezua(m);
+				igorle.addBidalitakoMezuak(m);
+				hartzaile.addJasotakoMezuak(m);
+				db.getTransaction().commit();
+				return true;
 			}
-			elk.addMezua(m);
-			igorle.addBidalitakoMezuak(m);
-			hartzaile.addJasotakoMezuak(m);
-			db.getTransaction().commit();
-			return true;
-		}
+		}//size!=3 
+		return false;
+		
 	}
 	
 	public List<Registered> rankingLortu(){
