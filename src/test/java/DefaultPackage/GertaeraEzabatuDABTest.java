@@ -27,6 +27,7 @@ import domain.Quote;
 import domain.Registered;
 import domain.Sport;
 import domain.Team;
+import domain.Transaction;
 import test.DataAccess.TestDataAccess;
 
 public class GertaeraEzabatuDABTest {
@@ -162,7 +163,8 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q7.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
+			Transaction t = new Transaction(u, diruaHasieran, oneDate, "sartu");
+			sut.DiruaSartu(t);
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -259,7 +261,8 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
+			Transaction t = new Transaction(u, diruaHasieran, oneDate, "sartu");
+			sut.DiruaSartu(t);
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -356,7 +359,8 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
+			Transaction t = new Transaction(u, diruaHasieran, oneDate, "sartu");
+			sut.DiruaSartu(t);
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));
@@ -458,7 +462,8 @@ public class GertaeraEzabatuDABTest {
 			testDA.close();
 			Quote k2=q2.getQuotes().get(0);
 			double diruaHasieran=100.0;
-			sut.DiruaSartu(u, diruaHasieran, oneDate, "sartu");
+			Transaction t = new Transaction(u, diruaHasieran, oneDate, "sartu");
+			sut.DiruaSartu(t);
 			sut.ApustuaEgin(u, ev.getQuestions().get(0).getQuotes(), 4.0, -1);
 			testDA.open();
 			Apustua apustu=testDA.aurkituApustua(ev.getQuestions().get(0).getQuotes().get(0));

@@ -197,7 +197,8 @@ public class BLFacadeImplementation  implements BLFacade{
     public void DiruaSartu(User u, Double dirua, String mota) {
     	Date data = new Date();
     	dbManager.open(false); 
-    	dbManager.DiruaSartu(u, dirua, data, mota);
+    	Registered r = (Registered)u;
+    	dbManager.DiruaSartu(new Transaction(r,dirua,data,mota));
     	dbManager.close();
     }
     @WebMethod	
