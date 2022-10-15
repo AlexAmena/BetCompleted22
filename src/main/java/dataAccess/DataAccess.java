@@ -236,11 +236,12 @@ public class DataAccess  {
 				
 			}
 			else if (Locale.getDefault().equals(new Locale("en"))) {
-				q1=ev1.addQuestion("Who will win the match?",1);
+				String questionName="Who will win the match?";
+				q1=ev1.addQuestion(questionName,1);
 				q2=ev1.addQuestion("Who will score first?",2);
-				q3=ev11.addQuestion("Who will win the match?",1);
+				q3=ev11.addQuestion(questionName,1);
 				q4=ev11.addQuestion("How many goals will be scored in the match?",2);
-				q5=ev17.addQuestion("Who will win the match?",1);
+				q5=ev17.addQuestion(questionName,1);
 				q6=ev17.addQuestion("Will there be goals in the first half?",2);
 				
 			}			
@@ -1228,6 +1229,9 @@ public void open(boolean initializeMode){
 		db.getTransaction().commit();
 		return true; 
 	}
+
+	
+	
 	
 	public String saldoaBistaratu(User u) {
 		Registered reg = (Registered)db.find(User.class, u.getUsername());
