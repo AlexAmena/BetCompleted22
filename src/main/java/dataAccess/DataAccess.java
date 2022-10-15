@@ -1048,7 +1048,7 @@ public void open(boolean initializeMode){
 		}
 		
 	}
-	
+	//errefaktorizatuta
 	public void apustuaEzabatu(User user1, ApustuAnitza ap) {
 		Registered user = (Registered) db.find(User.class, user1.getUsername());
 		ApustuAnitza apustuAnitza = db.find(ApustuAnitza.class, ap.getApustuAnitzaNumber());
@@ -1062,7 +1062,7 @@ public void open(boolean initializeMode){
 		db.remove(apustuAnitza);
 		db.getTransaction().commit();
 	}
-
+	//errefaktorizatuta
 	private void tratatuApustuAnitza(Registered user, ApustuAnitza apustuAnitza) {
 		for(int i=0; i<apustuAnitza.getApustuak().size(); i++) {
 			apustuAnitza.getApustuak().get(i).getKuota().removeApustua(apustuAnitza.getApustuak().get(i));
@@ -1267,31 +1267,41 @@ public void open(boolean initializeMode){
 			
 			User igorle = db.find(User.class, igorlea.getUsername());
 			User hartzaile = db.find(User.class, hartzailea);
-			Elkarrizketa elk=null;
+	
 			if(hartzaile==null) {
 				return false;
 			}else {
-				db.getTransaction().begin();
-				Message m = new Message(igorle, hartzaile, testua);
-				db.persist(m);
-				if(elkarrizketa!=null) {
-					elk = db.find(Elkarrizketa.class, elkarrizketa.getElkarrizketaNumber());
-				}else {
-					elk= new Elkarrizketa(titulo, igorle, hartzaile);
-					db.persist(elk);
-					m.setElkarrizketa(elk);
-					igorle.addElkarrizketak(elk);
-					hartzaile.addElkarrizketak(elk);
-				}
-				elk.addMezua(m);
-				igorle.addBidalitakoMezuak(m);
-				hartzaile.addJasotakoMezuak(m);
-				db.getTransaction().commit();
-				return true;
+				List<User> users=new ArrayList<User>();
+				users.add(igorle);
+				users.add(hartzaile);
+				return bidali(elkarrizketa, titulo, testua, users);
 			}
 		}//size!=3 
 		return false;
 		
+	}
+
+	private boolean bidali(Elkarrizketa elkarrizketa, String titulo, String testua, List<User> users) {
+		Elkarrizketa elk;
+		User igorle=users.get(0);
+		User hartzaile=users.get(1);
+		db.getTransaction().begin();
+		Message m = new Message(igorle, hartzaile, testua);
+		db.persist(m);
+		if(elkarrizketa!=null) {
+			elk = db.find(Elkarrizketa.class, elkarrizketa.getElkarrizketaNumber());
+		}else {
+			elk= new Elkarrizketa(titulo, igorle, hartzaile);
+			db.persist(elk);
+			m.setElkarrizketa(elk);
+			igorle.addElkarrizketak(elk);
+			hartzaile.addElkarrizketak(elk);
+		}
+		elk.addMezua(m);
+		igorle.addBidalitakoMezuak(m);
+		hartzaile.addJasotakoMezuak(m);
+		db.getTransaction().commit();
+		return true;
 	}
 	
 	public List<Registered> rankingLortu(){
