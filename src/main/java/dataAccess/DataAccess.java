@@ -1057,16 +1057,19 @@ public void open(boolean initializeMode){
 		user.addTransaction(t);
 		db.persist(t);
 		user.removeApustua(apustuAnitza);
-		int i;
-		for(i=0; i<apustuAnitza.getApustuak().size(); i++) {
+		tratatuApustuAnitza(user, apustuAnitza);
+		db.remove(apustuAnitza);
+		db.getTransaction().commit();
+	}
+
+	private void tratatuApustuAnitza(Registered user, ApustuAnitza apustuAnitza) {
+		for(int i=0; i<apustuAnitza.getApustuak().size(); i++) {
 			apustuAnitza.getApustuak().get(i).getKuota().removeApustua(apustuAnitza.getApustuak().get(i));
 			Sport spo =apustuAnitza.getApustuak().get(i).getKuota().getQuestion().getEvent().getSport();
 			spo.setApustuKantitatea(spo.getApustuKantitatea()-1);
 			KirolEstatistikak ke=user.kirolEstatistikakLortu(spo);
 			ke.setKont(ke.getKont()-1);
 		}
-		db.remove(apustuAnitza);
-		db.getTransaction().commit();
 	}
 	
 	public List<Apustua> findApustua(User u){
