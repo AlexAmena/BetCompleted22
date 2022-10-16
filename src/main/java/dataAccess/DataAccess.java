@@ -1090,7 +1090,7 @@ public void open(boolean initializeMode){
 			db.persist(t);
 			db.getTransaction().commit();
 			for(Jarraitzailea reg:user.getJarraitzaileLista()) {
-				jarraitzaileekApostatu(quote, balioa, apustuBikoitzaGalarazi, apustuAnitza, reg);
+				jarraitzaileekApostatu(quote, apustuBikoitzaGalarazi, apustuAnitza, reg);
 			}
 			return true; 
 		}else{
@@ -1115,11 +1115,12 @@ public void open(boolean initializeMode){
 			}
 		}
 	}
-	private void jarraitzaileekApostatu(Vector<Quote> quote, Double balioa, Integer apustuBikoitzaGalarazi,
+	private void jarraitzaileekApostatu(Vector<Quote> quote, Integer apustuBikoitzaGalarazi,
 			ApustuAnitza apustuAnitza, Jarraitzailea reg) {
 		Boolean b;
 		Jarraitzailea erab=db.find(Jarraitzailea.class, reg.getJarraitzaileaNumber());
 		b=true;
+		Double balioa = apustuAnitza.getBalioa();
 		for(ApustuAnitza apu: erab.getNork().getApustuAnitzak()) {
 			if(apu.getApustuKopia()==apustuAnitza.getApustuKopia()) {
 				b=false;
