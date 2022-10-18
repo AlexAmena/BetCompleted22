@@ -105,24 +105,24 @@ public class RankingLortuDAB {
 	 public void test3() {
 		 
 			 testDA.open();
-			 List<Registered> testList= testDA.getAllUsers();
+			 List<Registered> testList= new ArrayList<Registered>();
 		 try {
-			 for (Registered r : testList) {
-				 testDA.deleteUser(r);
-			 }
+			
 			 
 			 
 			 
 			 ra=sut.rankingLortu();
-			 assertEquals(ra.size(), 0);
+			 
+			 for(Registered r : ra) {
+				 if(r.getIrabazitakoa() != 0) {
+					 testList.add(r);
+				 }
+			 }
+			 
+			 assertEquals(testList.size(), 0);
 		 }
 		 catch(Exception e){
 			 fail();
-		 }
-		 finally{
-			 for (Registered r : testList) {
-				 testDA.addUser(r);
-			 }
 		 }
 		 testDA.close();
 		 
@@ -200,14 +200,16 @@ public class RankingLortuDAB {
 		 Double gains1=5.0;
 		 Registered user11 = new Registered(username1, password1, bankAccount1, gains1);
 		 testDA.open();
-		 List<Registered> testList= testDA.getAllUsers();
+		 List<Registered> lista = new ArrayList<Registered>();
 		 try {
-			 for (Registered r : testList) {
-				 testDA.deleteUser(r);
-			 }
-			 testDA.addUser(user11);
-			 List<Registered> lista = sut.rankingLortu();
 			 
+			 testDA.addUser(user11);
+			 List<Registered> testlist = sut.rankingLortu();
+			 for(Registered r : testlist) {
+				 if(r.getIrabazitakoa() != 0) {
+					 lista.add(r);
+				 }
+			 }
 			 assertEquals(lista.size(),1);
 			 assertTrue(lista.get(0).getUsername().equals(user11.getUsername()));
 			 assertTrue(lista.get(0).getPassword().equals(user11.getPassword()));
@@ -218,9 +220,6 @@ public class RankingLortuDAB {
 			 fail();
 		 }
 		 finally { 
-				 for (Registered r : testList) {
-					 testDA.addUser(r);
-				 }
 				 testDA.deleteUser(user11);
 			 
 		 }

@@ -151,12 +151,7 @@ public class RankingLortuINTT {
 			 fail();
 		 }
 		 finally { 
-			 	 testBL.deleteAllUsers();
-				 for (Registered r : testList) {
-					 testBL.addUser(r);
-				 }
-				 
-			 
+				 testBL.deleteUser(user11);	 
 		 }
 		 
 	 }
