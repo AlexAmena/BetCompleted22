@@ -40,6 +40,8 @@ import domain.User;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
+import iterator.ExtendedIterator;
+import iterator.ExtendedIteratorEvents;
 
 /**
  * It implements the data access to the objectDb database
@@ -1557,6 +1559,12 @@ public void open(boolean initializeMode){
 		query.setParameter(1, t.getIzena());
 		query.setParameter(2, t.getIzena());
 		return query.getResultList();
+		
+	}
+	
+	public ExtendedIterator getEventsIterator(Date date) {
+		Vector<Event> events = getEvents(date);
+		return new ExtendedIteratorEvents(events);
 		
 	}
 }

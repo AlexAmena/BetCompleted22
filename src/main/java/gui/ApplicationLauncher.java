@@ -10,12 +10,13 @@ import javax.xml.ws.Service;
 
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeImplementation;
+import businessLogic.Factory;
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
 
 public class ApplicationLauncher { 
 	
-	
+	private static Factory logicFactory = new Factory();
 	
 	public static void main(String[] args) {
 
@@ -41,7 +42,11 @@ public class ApplicationLauncher {
 //			UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 			
-			if (c.isBusinessLogicLocal()) {
+			
+			appFacadeInterface = logicFactory.createBLFacade(c);
+			
+			
+			/*if (c.isBusinessLogicLocal()) {
 				
 				//In this option the DataAccess is created by FacadeImplementationWS
 				//appFacadeInterface=new BLFacadeImplementation();
@@ -70,7 +75,9 @@ public class ApplicationLauncher {
 		        Service service = Service.create(url, qname);
 
 		         appFacadeInterface = service.getPort(BLFacade.class);
-			} 
+			} */
+			
+			
 			/*if (c.getDataBaseOpenMode().equals("initialize")) 
 				appFacadeInterface.initializeBD();
 				*/

@@ -30,6 +30,8 @@ import exceptions.EventFinished;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
+import iterator.ExtendedIterator;
+import iterator.ExtendedIteratorEvents;
 
 /**
  * It implements the business logic as a web service.
@@ -105,7 +107,7 @@ public class BLFacadeImplementation  implements BLFacade{
     @WebMethod	
 	public Vector<Event> getEvents(Date date)  {
 		dbManager.open(false);
-		Vector<Event>  events=dbManager.getEvents(date);
+		Vector<Event> events=dbManager.getEvents(date);
 		dbManager.close();
 		return events;
 	}
@@ -427,6 +429,14 @@ public class BLFacadeImplementation  implements BLFacade{
 		Boolean ema = dbManager.mezuaBidali(igorle, m, osagaiak);
 		dbManager.close();
 		return ema;
+	}
+	
+	@Override
+	public ExtendedIterator getEventsIterator(Date date) {
+		dbManager.open(false);
+		ExtendedIteratorEvents events = (ExtendedIteratorEvents) dbManager.getEventsIterator(date);
+		dbManager.close();
+		return events;
 	}
 }
 
