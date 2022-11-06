@@ -17,6 +17,7 @@ import configuration.UtilDate;
 import domain.Event;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
+import iterator.ExtendedIteratorEvents;
 
 public class CreateQuestionGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -159,9 +160,11 @@ public class CreateQuestionGUI extends JFrame {
 					try {
 						BLFacade facade = MainGUI.getBusinessLogic();
 
-						Vector<domain.Event> events = facade.getEvents(firstDay);
+						//Vector<domain.Event> events = facade.getEvents(firstDay);
+						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEventsIterator(firstDay);
 
-						if (events.isEmpty())
+						//if (events.isEmpty())
+						if(events.getEvents().isEmpty())
 							jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")
 									+ ": " + dateformat1.format(calendarAct.getTime()));
 						else
@@ -170,11 +173,14 @@ public class CreateQuestionGUI extends JFrame {
 						jComboBoxEvents.removeAllItems();
 						System.out.println("Events " + events);
 
-						for (domain.Event ev : events)
-							modelEvents.addElement(ev);
+						/*for (domain.Event ev : events)
+							modelEvents.addElement(ev);*/
+						while(events.hasNext())
+							modelEvents.addElement(events.next());
 						jComboBoxEvents.repaint();
 
-						if (events.size() == 0)
+						//if (events.size() == 0)
+						if(events.getEvents().isEmpty())
 							jButtonCreate.setEnabled(false);
 						else
 							jButtonCreate.setEnabled(true);

@@ -31,6 +31,7 @@ import configuration.UtilDate;
 import domain.Event;
 import domain.Question;
 import exceptions.QuoteAlreadyExist;
+import iterator.ExtendedIteratorEvents;
 
 public class KuotakIpiniGUI extends JFrame{
 	
@@ -257,9 +258,11 @@ public class KuotakIpiniGUI extends JFrame{
 					try {
 						BLFacade facade = MainGUI.getBusinessLogic();
 
-						Vector<domain.Event> events = facade.getEvents(firstDay);
+						//Vector<domain.Event> events = facade.getEvents(firstDay);
+						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEventsIterator(firstDay);
 						
-						if (events.isEmpty()) {
+						//if (events.isEmpty()) {
+						if(events.getEvents().isEmpty()) {
 							jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")
 									+ ": " + dateformat1.format(calendarAct.getTime()));
 							System.out.println("no events"); 
@@ -271,12 +274,16 @@ public class KuotakIpiniGUI extends JFrame{
 						jComboBoxEvents.removeAllItems();
 						System.out.println("Events " + events);
 
-						for (domain.Event ev : events) {
+						/*for (domain.Event ev : events) {
 							modelEvents.addElement(ev);
+						}*/
+						while(events.hasNext()) {
+							modelEvents.addElement(events.next());
 						}
 						jComboBoxEvents.repaint();
 						
-						if (events.size() == 0)
+						//if (events.size() == 0)
+						if(events.getEvents().isEmpty())
 							jButtonCreate.setEnabled(false);
 						else
 							jButtonCreate.setEnabled(true);

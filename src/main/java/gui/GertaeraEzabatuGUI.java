@@ -28,6 +28,8 @@ import businessLogic.BLFacade;
 import configuration.UtilDate;
 import domain.Apustua;
 import domain.Event;
+import iterator.ExtendedIteratorEvents;
+
 import javax.swing.SwingConstants;
 
 public class GertaeraEzabatuGUI extends JFrame{
@@ -117,8 +119,10 @@ public class GertaeraEzabatuGUI extends JFrame{
 				boolean b = businessLogic.gertaeraEzabatu(event); 
 				
 				modelEvents.removeAllElements();
-				for(Event a : businessLogic.getEvents(event.getEventDate())){
-					modelEvents.addElement(a); 
+				//for(Event a : businessLogic.getEvents(event.getEventDate())){
+				ExtendedIteratorEvents events = (ExtendedIteratorEvents) businessLogic.getEventsIterator(event.getEventDate());
+				while(events.hasNext()) {
+					modelEvents.addElement(events.next()); 
 				}
 				
 				if(b==false) {
@@ -183,9 +187,11 @@ public class GertaeraEzabatuGUI extends JFrame{
 					try {
 						BLFacade facade = MainGUI.getBusinessLogic();
 
-						Vector<domain.Event> events = facade.getEvents(firstDay);
+						//Vector<domain.Event> events = facade.getEvents(firstDay);
+						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEventsIterator(firstDay);
 
-						if (events.isEmpty())
+						//if (events.isEmpty())
+						if(events.getEvents().isEmpty())
 							jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")
 									+ ": " + dateformat1.format(calendarAct.getTime()));
 						else
@@ -194,11 +200,14 @@ public class GertaeraEzabatuGUI extends JFrame{
 						jComboBoxEvents.removeAllItems();
 						System.out.println("Events " + events);
 
-						for (domain.Event ev : events)
-							modelEvents.addElement(ev);
+						/*for (domain.Event ev : events)
+							modelEvents.addElement(ev);^*/
+						while(events.hasNext())
+							modelEvents.addElement(events.next());
 						jComboBoxEvents.repaint();
 
-						if (events.size() == 0)
+						//if (events.size() == 0)
+						if(events.getEvents().isEmpty())
 							jButtonEzabatu.setEnabled(false);
 						else
 							jButtonEzabatu.setEnabled(true);
