@@ -137,7 +137,7 @@ public class RegisterGUI extends JFrame {
 							Integer i = Integer.parseInt(bankAccount);
 							businessLogic.storeRegistered(izena, password, i);
 						}catch (NumberFormatException ex) {
-							System.out.println(ex.getMessage());
+							//System.out.println(ex.getMessage());
 						}
 						
 						JFrame log= new LoginGUI();

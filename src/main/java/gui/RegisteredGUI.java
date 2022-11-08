@@ -19,6 +19,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JTable;
 import javax.swing.SwingConstants;
 
 import businessLogic.BLFacade;
@@ -112,6 +113,21 @@ public class RegisteredGUI extends JFrame {
 			jContentPane.add(getBtnNewButton());
 			jContentPane.add(getBtnRank());
 			jContentPane.add(getBtnDestacados());
+			
+			JButton btnIkusiApostuak = new JButton(ResourceBundle.getBundle("Etiquetas").getString("RegisteredGUI.btnIkusiApostuak.text")); //$NON-NLS-1$ //$NON-NLS-2$
+			btnIkusiApostuak.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					
+					JFrame a = new ApustuakIkusiGUI((new JTable));//HAU ZUZENTZEKOD AGO
+
+					a.setVisible(true);
+				}
+			});
+			btnIkusiApostuak.setForeground(Color.DARK_GRAY);
+			btnIkusiApostuak.setFont(new Font("Tahoma", Font.PLAIN, 16));
+			btnIkusiApostuak.setBackground(Color.PINK);
+			btnIkusiApostuak.setBounds(10, 484, 282, 68);
+			jContentPane.add(btnIkusiApostuak);
 		}
 		return jContentPane;
 	}
