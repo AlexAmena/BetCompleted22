@@ -1,14 +1,13 @@
 package iterator;
 
 import java.util.Calendar;
-import java.util.Date;
+import java.util.Iterator;
+import java.util.Vector;
 
 import businessLogic.BLFacade;
 import businessLogic.Factory;
-import configuration.ConfigXML;
 import configuration.UtilDate;
 import domain.Event;
-import gui.ApplicationLauncher;
 
 public class main {
 
@@ -16,12 +15,10 @@ public class main {
 		// TODO Auto-generated method stub
 		boolean isLocal=true;
 
-		ConfigXML c=ConfigXML.getInstance();
-
 		//Facade objektua lortu lehendabiziko ariketa erabiliz
 		Factory f = new Factory();
 		BLFacade facadeInterface;
-		facadeInterface = f.createBLFacade(c);
+		facadeInterface = f.createBLFacade(isLocal);
 		//BLFacade facadeInterface=……….
 		Calendar today = Calendar.getInstance();
 
@@ -31,6 +28,10 @@ public class main {
 		if (month==12) { month=0; year+=1;}
 		ExtendedIterator i=facadeInterface.getEventsIterator(UtilDate.newDate(year,month,17));
 
+//		Vector events = facadeInterface.getEvents(UtilDate.newDate(year,month,17));
+//		
+//		ExtendedIterator i = (ExtendedIterator) new EventList(events).getIterator();
+		
 		System.out.println("=======================================================\n\n\n");
 		System.out.println("=======================================================");
 

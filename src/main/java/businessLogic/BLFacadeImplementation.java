@@ -1,5 +1,4 @@
 package businessLogic;
-import java.io.Serializable;
 import java.util.Collection;
 //hola
 import java.util.Date;
@@ -30,6 +29,7 @@ import exceptions.EventFinished;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
+import iterator.EventList;
 import iterator.ExtendedIterator;
 import iterator.ExtendedIteratorEvents;
 
@@ -433,10 +433,13 @@ public class BLFacadeImplementation  implements BLFacade{
 	
 	@Override
 	public ExtendedIterator getEventsIterator(Date date) {
-		dbManager.open(false);
-		ExtendedIteratorEvents events = (ExtendedIteratorEvents) dbManager.getEventsIterator(date);
-		dbManager.close();
-		return events;
+		//dbManager.open(false);
+		Vector<Event> events = this.getEvents(date);
+		ExtendedIterator i = (ExtendedIterator) new EventList(events).getIterator();
+		//dbManager.close();
+		return i;
 	}
+
+	
 }
 

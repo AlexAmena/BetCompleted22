@@ -27,6 +27,7 @@ import exceptions.EventFinished;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
+import iterator.Aggregate;
 import iterator.ExtendedIterator;
 
 /**

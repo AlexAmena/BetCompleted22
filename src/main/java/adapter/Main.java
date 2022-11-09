@@ -23,7 +23,7 @@ public class Main {
 			//Facade objektua lortu lehendabiziko ariketa erabiliz
 			Factory f = new Factory();
 			BLFacade facadeInterface;
-			facadeInterface = f.createBLFacade(0);
+			facadeInterface = f.createBLFacade(c.isBusinessLogicLocal());
 			Registered u = new Registered("mikel","123",123);
 			
 			User user = facadeInterface.findUser(u);

@@ -30,24 +30,27 @@ public class ApplicationLauncher {
 		System.out.println("Locale: "+Locale.getDefault());
 		
 		MainGUI a=new MainGUI();
+		//a.setVisible(false);
+		a=new MainGUI();
 		a.setVisible(false);
+
 		
 		MainUserGUI b = new MainUserGUI(); 
+		//b.setVisible(true);
+		
+		b = new MainUserGUI(); 
 		b.setVisible(true);
 
 
 		try {
+			
 			
 			BLFacade appFacadeInterface;
 //			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel");
 //			UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 			
-			System.out.println("0 idatzi lokalean exekutatzeko.\n1 idatzi zerbitzarian exekutatzeko negozio logika.");
-			Scanner s = new Scanner(System.in);
-			int aukera = s.nextInt();
-			
-			appFacadeInterface = logicFactory.createBLFacade(aukera);
+			appFacadeInterface = logicFactory.createBLFacade(c.isBusinessLogicLocal());
 			
 			
 			/*if (c.isBusinessLogicLocal()) {
