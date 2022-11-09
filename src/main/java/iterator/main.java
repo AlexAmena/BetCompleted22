@@ -20,7 +20,7 @@ public class main {
 		BLFacade facadeInterface;
 		facadeInterface = f.createBLFacade(isLocal);
 		//BLFacade facadeInterface=……….
-		Calendar today = Calendar.getInstance();
+		Calendar today = Calendar.getInstance();//
 
 		int month=today.get(Calendar.MONTH);
 		month+=1;
