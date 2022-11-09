@@ -14,7 +14,7 @@ import domain.Registered;
 public class UserAdapter extends AbstractTableModel{
 	private  List<Apustua> apustuak=new ArrayList();
 	private User user;
-	private String[] colNames = new String[] {"Event", "Question", "EventDate", "Bet(€)"}; 
+	private String[] colNames = {"Event", "Question", "EventDate", "Bet(€)"}; 
 
 	public UserAdapter(User u) {
 		Registered r = (Registered) u;

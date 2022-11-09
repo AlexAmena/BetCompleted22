@@ -3,6 +3,7 @@ package gui;
 import java.awt.Color;
 import java.net.URL;
 import java.util.Locale;
+import java.util.Scanner;
 
 import javax.swing.UIManager;
 import javax.xml.namespace.QName;
@@ -42,8 +43,11 @@ public class ApplicationLauncher {
 //			UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 			
+			System.out.println("0 idatzi lokalean exekutatzeko.\n1 idatzi zerbitzarian exekutatzeko negozio logika.");
+			Scanner s = new Scanner(System.in);
+			int aukera = s.nextInt();
 			
-			appFacadeInterface = logicFactory.createBLFacade(c);
+			appFacadeInterface = logicFactory.createBLFacade(aukera);
 			
 			
 			/*if (c.isBusinessLogicLocal()) {

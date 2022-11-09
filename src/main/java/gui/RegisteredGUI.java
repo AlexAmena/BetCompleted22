@@ -22,6 +22,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 
+import adapter.UserAdapter;
 import businessLogic.BLFacade;
 import domain.Event;
 import domain.User;
@@ -114,11 +115,11 @@ public class RegisteredGUI extends JFrame {
 			jContentPane.add(getBtnRank());
 			jContentPane.add(getBtnDestacados());
 			
-			JButton btnIkusiApostuak = new JButton(ResourceBundle.getBundle("Etiquetas").getString("RegisteredGUI.btnIkusiApostuak.text")); //$NON-NLS-1$ //$NON-NLS-2$
+			JButton btnIkusiApostuak = new JButton("Ikusi apustuak"); //$NON-NLS-1$ //$NON-NLS-2$
 			btnIkusiApostuak.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					
-					JFrame a = new ApustuakIkusiGUI((new JTable));//HAU ZUZENTZEKOD AGO
+					UserAdapter ue = new UserAdapter(user);
+					JFrame a = new ApustuakIkusiGUI((new JTable(ue)));//HAU ZUZENTZEKOD AGO
 
 					a.setVisible(true);
 				}

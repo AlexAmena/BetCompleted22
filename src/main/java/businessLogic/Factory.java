@@ -11,8 +11,11 @@ import dataAccess.DataAccess;
 
 public class Factory {
 
-	public BLFacade createBLFacade(ConfigXML c) {
-		if(c.isBusinessLogicLocal()) {
+	public BLFacade createBLFacade(int aukera) {
+
+		ConfigXML c=ConfigXML.getInstance();
+
+		if(aukera==0) {
 			//In this option the DataAccess is created by FacadeImplementationWS
 			//appFacadeInterface=new BLFacadeImplementation();
 
@@ -21,7 +24,7 @@ public class Factory {
 			DataAccess da= new DataAccess(c.getDataBaseOpenMode().equals("initialize"));
 			 return new BLFacadeImplementation(da);
 		}
-		else {
+		else if(aukera==1){
 			String serviceName= "http://"+c.getBusinessLogicNode() +":"+ c.getBusinessLogicPort()+"/ws/"+c.getBusinessLogicName()+"?wsdl";
 			 
 			//URL url = new URL("http://localhost:9999/ws/ruralHouses?wsdl");
@@ -42,6 +45,9 @@ public class Factory {
 	        Service service = Service.create(url, qname);
 
 	         return service.getPort(BLFacade.class);
+		}
+		else {
+			return null;
 		}
 	}
 }

@@ -1,9 +1,13 @@
 package adapter;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import businessLogic.BLFacade;
-import businessLogic.BLFacadeImplementation;
 import businessLogic.Factory;
 import configuration.ConfigXML;
 import domain.Registered;
@@ -19,7 +23,7 @@ public class Main {
 			//Facade objektua lortu lehendabiziko ariketa erabiliz
 			Factory f = new Factory();
 			BLFacade facadeInterface;
-			facadeInterface = f.createBLFacade(c);
+			facadeInterface = f.createBLFacade(0);
 			Registered u = new Registered("mikel","123",123);
 			
 			User user = facadeInterface.findUser(u);
@@ -30,6 +34,9 @@ public class Main {
 			
 			ApustuakIkusiGUI gui = new ApustuakIkusiGUI(table);
 			gui.setVisible(true);
+		
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
