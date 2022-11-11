@@ -161,7 +161,7 @@ public class CreateQuestionGUI extends JFrame {
 						BLFacade facade = MainGUI.getBusinessLogic();
 
 						//Vector<domain.Event> events = facade.getEvents(firstDay);
-						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEventsIterator(firstDay);
+						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEvents(firstDay);
 
 						//if (events.isEmpty())
 						if(events.getEvents().isEmpty())

@@ -26,7 +26,7 @@ public class main {
 		month+=1;
 		int year=today.get(Calendar.YEAR);
 		if (month==12) { month=0; year+=1;}
-		ExtendedIterator i=facadeInterface.getEventsIterator(UtilDate.newDate(year,month,17));
+		ExtendedIterator i=facadeInterface.getEvents(UtilDate.newDate(year,month,17));
 
 //		Vector events = facadeInterface.getEvents(UtilDate.newDate(year,month,17));
 //		

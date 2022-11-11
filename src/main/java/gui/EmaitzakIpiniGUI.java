@@ -250,7 +250,7 @@ public class EmaitzakIpiniGUI extends JFrame{
 						BLFacade facade = MainGUI.getBusinessLogic();
 
 						//Vector<domain.Event> events = facade.getEvents(firstDay);
-						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEventsIterator(firstDay);
+						ExtendedIteratorEvents events = (ExtendedIteratorEvents) facade.getEvents(firstDay);
 						
 						
 						//if (events.isEmpty()) {

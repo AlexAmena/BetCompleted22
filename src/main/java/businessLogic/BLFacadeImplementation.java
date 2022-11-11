@@ -29,7 +29,6 @@ import exceptions.EventFinished;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
-import iterator.EventList;
 import iterator.ExtendedIterator;
 import iterator.ExtendedIteratorEvents;
 
@@ -105,9 +104,9 @@ public class BLFacadeImplementation  implements BLFacade{
 	 * @return collection of events
 	 */
     @WebMethod	
-	public Vector<Event> getEvents(Date date)  {
+	public ExtendedIterator getEvents(Date date)  {
 		dbManager.open(false);
-		Vector<Event> events=dbManager.getEvents(date);
+		ExtendedIterator events=dbManager.getEvents(date);
 		dbManager.close();
 		return events;
 	}
@@ -431,14 +430,7 @@ public class BLFacadeImplementation  implements BLFacade{
 		return ema;
 	}
 	
-	@Override
-	public ExtendedIterator getEventsIterator(Date date) {
-		//dbManager.open(false);
-		Vector<Event> events = this.getEvents(date);
-		ExtendedIterator i = (ExtendedIterator) new EventList(events).getIterator();
-		//dbManager.close();
-		return i;
-	}
+
 
 	
 }

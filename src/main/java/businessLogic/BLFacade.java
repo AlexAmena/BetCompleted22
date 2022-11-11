@@ -27,7 +27,6 @@ import exceptions.EventFinished;
 import exceptions.EventNotFinished;
 import exceptions.QuestionAlreadyExist;
 import exceptions.QuoteAlreadyExist;
-import iterator.Aggregate;
 import iterator.ExtendedIterator;
 
 /**
@@ -56,7 +55,7 @@ public interface BLFacade{
 	 * @param date in which events are retrieved
 	 * @return collection of events
 	 */
-	@WebMethod public Vector<Event> getEvents(Date date);
+	@WebMethod public ExtendedIterator getEvents(Date date);
 	
 	/**
 	 * This method retrieves from the database the dates a month for which there are events
@@ -145,6 +144,4 @@ public interface BLFacade{
 	
 	@WebMethod public Sport findSport(Event q);
 	
-	@WebMethod public ExtendedIterator getEventsIterator(Date date); 
-
 }
